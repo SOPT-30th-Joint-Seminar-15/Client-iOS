@@ -32,6 +32,7 @@
 		F6CE902628310F69005A5C0D /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE902528310F69005A5C0D /* UIViewController+.swift */; };
 		F6CE902D2831120C005A5C0D /* CALayer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE902C2831120C005A5C0D /* CALayer+.swift */; };
 		F6CE9030283113FF005A5C0D /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F6CE902F283113FF005A5C0D /* Then */; };
+		F6CE9033283115AD005A5C0D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE9032283115AD005A5C0D /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		F6CE902328310DE7005A5C0D /* Adjusted+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Adjusted+.swift"; sourceTree = "<group>"; };
 		F6CE902528310F69005A5C0D /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		F6CE902C2831120C005A5C0D /* CALayer+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+.swift"; sourceTree = "<group>"; };
+		F6CE9032283115AD005A5C0D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 		F6CE8FDE2830F60D005A5C0D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F6CE9031283115A3005A5C0D /* Common */,
 				F6CE8FE12830FB37005A5C0D /* Create */,
 				F6CE8FE02830FAB6005A5C0D /* Read */,
 			);
@@ -267,6 +270,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		F6CE9031283115A3005A5C0D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F6CE9032283115AD005A5C0D /* BaseViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -353,6 +364,7 @@
 				F6CE8FEA2830FC26005A5C0D /* HeeViewController.swift in Sources */,
 				F6CE8FF02830FCCD005A5C0D /* NeulViewController.swift in Sources */,
 				F6CE8FC8282F9471005A5C0D /* AppDelegate.swift in Sources */,
+				F6CE9033283115AD005A5C0D /* BaseViewController.swift in Sources */,
 				F6CE900C283100AB005A5C0D /* UIView+.swift in Sources */,
 				F6CE9016283100F4005A5C0D /* UITextField+.swift in Sources */,
 				F6CE8FF22830FD11005A5C0D /* ReadViewController.swift in Sources */,

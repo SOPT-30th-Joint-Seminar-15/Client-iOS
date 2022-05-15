@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HeeViewController: UIViewController {
+final class HeeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
