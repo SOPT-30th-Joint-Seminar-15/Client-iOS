@@ -31,6 +31,7 @@
 		F6CE902428310DE8005A5C0D /* Adjusted+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE902328310DE7005A5C0D /* Adjusted+.swift */; };
 		F6CE902628310F69005A5C0D /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE902528310F69005A5C0D /* UIViewController+.swift */; };
 		F6CE902D2831120C005A5C0D /* CALayer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE902C2831120C005A5C0D /* CALayer+.swift */; };
+		F6CE9030283113FF005A5C0D /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F6CE902F283113FF005A5C0D /* Then */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6CE9030283113FF005A5C0D /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +283,9 @@
 			dependencies = (
 			);
 			name = "29cm-iOS";
+			packageProductDependencies = (
+				F6CE902F283113FF005A5C0D /* Then */,
+			);
 			productName = "29cm-iOS";
 			productReference = F6CE8FC4282F9471005A5C0D /* 29cm-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -309,6 +314,9 @@
 				Base,
 			);
 			mainGroup = F6CE8FBB282F9471005A5C0D;
+			packageReferences = (
+				F6CE902E283113FF005A5C0D /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = F6CE8FC5282F9471005A5C0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -568,6 +576,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6CE902E283113FF005A5C0D /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6CE902F283113FF005A5C0D /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6CE902E283113FF005A5C0D /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6CE8FBC282F9471005A5C0D /* Project object */;
 }
