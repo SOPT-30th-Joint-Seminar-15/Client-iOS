@@ -34,7 +34,6 @@
 		F6CE902428310DE8005A5C0D /* Adjusted+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE902328310DE7005A5C0D /* Adjusted+.swift */; };
 		F6CE902628310F69005A5C0D /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE902528310F69005A5C0D /* UIViewController+.swift */; };
 		F6CE902D2831120C005A5C0D /* CALayer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE902C2831120C005A5C0D /* CALayer+.swift */; };
-		F6CE9030283113FF005A5C0D /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F6CE902F283113FF005A5C0D /* Then */; };
 		F6CE9033283115AD005A5C0D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE9032283115AD005A5C0D /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6CE9030283113FF005A5C0D /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +302,6 @@
 			);
 			name = "29cm-iOS";
 			packageProductDependencies = (
-				F6CE902F283113FF005A5C0D /* Then */,
 			);
 			productName = "29cm-iOS";
 			productReference = F6CE8FC4282F9471005A5C0D /* 29cm-iOS.app */;
@@ -611,14 +608,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F6CE902F283113FF005A5C0D /* Then */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F6CE902E283113FF005A5C0D /* XCRemoteSwiftPackageReference "Then" */;
-			productName = Then;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6CE8FBC282F9471005A5C0D /* Project object */;
 }
