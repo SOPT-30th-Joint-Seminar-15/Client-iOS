@@ -5,7 +5,7 @@
 //  Created by 김지민 on 2022/05/16.
 //
 
-import UIKit.UIImage
+import UIKit
 
 extension Const {
     enum Image {
