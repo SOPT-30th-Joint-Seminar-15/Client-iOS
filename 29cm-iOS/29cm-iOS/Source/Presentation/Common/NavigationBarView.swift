@@ -7,14 +7,33 @@
 
 import UIKit
 
-class NavigationBarView: UIView {
+protocol NavigationBarViewDelegate {
+    func dismissButtonClicked()
+}
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+class NavigationBarView: UIView, Reusable {
+
+    // MARK: - Properties
+    var delegate: NavigationBarViewDelegate?
+    
+    // MARK: - Initialization
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+
+        commonInit()
     }
-    */
-
+    
+    // MARK: - Functions
+    private func commonInit() {
+        guard let navigationBarView = UINib(nibName: NavigationBarView.reuseIdentifier, bundle: nil).instantiate(withOwner: self, options: nil).first as? UIView else { return }
+        navigationBarView.frame = self.bounds
+        addSubview(navigationBarView)
+    }
+    
+    // MARK: - @IBAction Properties
+    @IBAction func backButtonClicked(_ sender: UIButton) {
+        if let delegate = delegate {
+            delegate.dismissButtonClicked()
+        }
+    }
 }
