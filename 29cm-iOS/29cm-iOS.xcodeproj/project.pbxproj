@@ -7,9 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		086B728E2832A45400D4BC00 /* NotoSansKR in Resources */ = {isa = PBXBuildFile; fileRef = 086B728D2832A45400D4BC00 /* NotoSansKR */; };
-		086B72922832A46300D4BC00 /* Quicksand in Resources */ = {isa = PBXBuildFile; fileRef = 086B72912832A46300D4BC00 /* Quicksand */; };
 		086B72942832A50C00D4BC00 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086B72932832A50C00D4BC00 /* Font.swift */; };
+		086B72B1283363E100D4BC00 /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 086B729F283363E100D4BC00 /* NotoSansKR-Light.otf */; };
+		086B72B2283363E100D4BC00 /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72A0283363E100D4BC00 /* NotoSansKR-Bold.otf */; };
+		086B72B3283363E100D4BC00 /* NotoSansKR-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72A1283363E100D4BC00 /* NotoSansKR-Thin.otf */; };
+		086B72B4283363E100D4BC00 /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72A2283363E100D4BC00 /* NotoSansKR-Black.otf */; };
+		086B72B5283363E100D4BC00 /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72A3283363E100D4BC00 /* NotoSansKR-Medium.otf */; };
+		086B72B6283363E100D4BC00 /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72A4283363E100D4BC00 /* NotoSansKR-Regular.otf */; };
+		086B72B7283363E100D4BC00 /* SpoqaHanSansNeo-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72A6283363E100D4BC00 /* SpoqaHanSansNeo-Thin.otf */; };
+		086B72B8283363E100D4BC00 /* SpoqaHanSansNeo-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72A7283363E100D4BC00 /* SpoqaHanSansNeo-Light.otf */; };
+		086B72B9283363E100D4BC00 /* SpoqaHanSansNeo-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72A8283363E100D4BC00 /* SpoqaHanSansNeo-Bold.otf */; };
+		086B72BA283363E100D4BC00 /* SpoqaHanSansNeo-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72A9283363E100D4BC00 /* SpoqaHanSansNeo-Medium.otf */; };
+		086B72BB283363E100D4BC00 /* SpoqaHanSansNeo-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72AA283363E100D4BC00 /* SpoqaHanSansNeo-Regular.otf */; };
+		086B72BC283363E100D4BC00 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72AC283363E100D4BC00 /* Quicksand-Bold.ttf */; };
+		086B72BD283363E100D4BC00 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72AD283363E100D4BC00 /* Quicksand-Medium.ttf */; };
+		086B72BE283363E100D4BC00 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72AE283363E100D4BC00 /* Quicksand-Regular.ttf */; };
+		086B72BF283363E100D4BC00 /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72AF283363E100D4BC00 /* Quicksand-SemiBold.ttf */; };
+		086B72C0283363E100D4BC00 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72B0283363E100D4BC00 /* Quicksand-Light.ttf */; };
 		4D1F581E2832335400EBEA05 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F581D2832335400EBEA05 /* Image.swift */; };
 		4D1F58202832469300EBEA05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F581F2832469300EBEA05 /* Images.xcassets */; };
 		F6CE8FC8282F9471005A5C0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FC7282F9471005A5C0D /* AppDelegate.swift */; };
@@ -38,15 +52,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		086B728D2832A45400D4BC00 /* NotoSansKR */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NotoSansKR; sourceTree = "<group>"; };
-		086B72912832A46300D4BC00 /* Quicksand */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Quicksand; sourceTree = "<group>"; };
 		086B72932832A50C00D4BC00 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
-		086B72962832A5C200D4BC00 /* SpoqaHanSansNeo-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Thin.otf"; sourceTree = "<group>"; };
-		086B72972832A5C200D4BC00 /* SpoqaHanSansNeo-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Light.otf"; sourceTree = "<group>"; };
-		086B72982832A5C200D4BC00 /* SpoqaHanSansNeo-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Bold.otf"; sourceTree = "<group>"; };
-		086B72992832A5C200D4BC00 /* SpoqaHanSansNeo-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Medium.otf"; sourceTree = "<group>"; };
-		086B729A2832A5C200D4BC00 /* SpoqaHanSansNeo-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Regular.otf"; sourceTree = "<group>"; };
 		086B729D2832A5EA00D4BC00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		086B729F283363E100D4BC00 /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Light.otf"; sourceTree = "<group>"; };
+		086B72A0283363E100D4BC00 /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		086B72A1283363E100D4BC00 /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
+		086B72A2283363E100D4BC00 /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Black.otf"; sourceTree = "<group>"; };
+		086B72A3283363E100D4BC00 /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
+		086B72A4283363E100D4BC00 /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		086B72A6283363E100D4BC00 /* SpoqaHanSansNeo-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Thin.otf"; sourceTree = "<group>"; };
+		086B72A7283363E100D4BC00 /* SpoqaHanSansNeo-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Light.otf"; sourceTree = "<group>"; };
+		086B72A8283363E100D4BC00 /* SpoqaHanSansNeo-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Bold.otf"; sourceTree = "<group>"; };
+		086B72A9283363E100D4BC00 /* SpoqaHanSansNeo-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Medium.otf"; sourceTree = "<group>"; };
+		086B72AA283363E100D4BC00 /* SpoqaHanSansNeo-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Regular.otf"; sourceTree = "<group>"; };
+		086B72AC283363E100D4BC00 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		086B72AD283363E100D4BC00 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
+		086B72AE283363E100D4BC00 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		086B72AF283363E100D4BC00 /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
+		086B72B0283363E100D4BC00 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
 		4D1F581D2832335400EBEA05 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		4D1F581F2832469300EBEA05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F6CE8FC4282F9471005A5C0D /* 29cm-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29cm-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,24 +110,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		086B72952832A5C200D4BC00 /* SpoqaHanSansNEo */ = {
-			isa = PBXGroup;
-			children = (
-				086B72962832A5C200D4BC00 /* SpoqaHanSansNeo-Thin.otf */,
-				086B72972832A5C200D4BC00 /* SpoqaHanSansNeo-Light.otf */,
-				086B72982832A5C200D4BC00 /* SpoqaHanSansNeo-Bold.otf */,
-				086B72992832A5C200D4BC00 /* SpoqaHanSansNeo-Medium.otf */,
-				086B729A2832A5C200D4BC00 /* SpoqaHanSansNeo-Regular.otf */,
-			);
-			path = SpoqaHanSansNEo;
-			sourceTree = "<group>";
-		};
 		086B729B2832A5EA00D4BC00 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				086B729C2832A5EA00D4BC00 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		086B729E283363E100D4BC00 /* NotoSansKR */ = {
+			isa = PBXGroup;
+			children = (
+				086B729F283363E100D4BC00 /* NotoSansKR-Light.otf */,
+				086B72A0283363E100D4BC00 /* NotoSansKR-Bold.otf */,
+				086B72A1283363E100D4BC00 /* NotoSansKR-Thin.otf */,
+				086B72A2283363E100D4BC00 /* NotoSansKR-Black.otf */,
+				086B72A3283363E100D4BC00 /* NotoSansKR-Medium.otf */,
+				086B72A4283363E100D4BC00 /* NotoSansKR-Regular.otf */,
+			);
+			path = NotoSansKR;
+			sourceTree = "<group>";
+		};
+		086B72A5283363E100D4BC00 /* SpoqaHanSansNeo */ = {
+			isa = PBXGroup;
+			children = (
+				086B72A6283363E100D4BC00 /* SpoqaHanSansNeo-Thin.otf */,
+				086B72A7283363E100D4BC00 /* SpoqaHanSansNeo-Light.otf */,
+				086B72A8283363E100D4BC00 /* SpoqaHanSansNeo-Bold.otf */,
+				086B72A9283363E100D4BC00 /* SpoqaHanSansNeo-Medium.otf */,
+				086B72AA283363E100D4BC00 /* SpoqaHanSansNeo-Regular.otf */,
+			);
+			path = SpoqaHanSansNeo;
+			sourceTree = "<group>";
+		};
+		086B72AB283363E100D4BC00 /* Quicksand */ = {
+			isa = PBXGroup;
+			children = (
+				086B72AC283363E100D4BC00 /* Quicksand-Bold.ttf */,
+				086B72AD283363E100D4BC00 /* Quicksand-Medium.ttf */,
+				086B72AE283363E100D4BC00 /* Quicksand-Regular.ttf */,
+				086B72AF283363E100D4BC00 /* Quicksand-SemiBold.ttf */,
+				086B72B0283363E100D4BC00 /* Quicksand-Light.ttf */,
+			);
+			path = Quicksand;
 			sourceTree = "<group>";
 		};
 		F6CE8FBB282F9471005A5C0D = {
@@ -248,9 +296,9 @@
 		F6CE90042830FFFE005A5C0D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				086B728D2832A45400D4BC00 /* NotoSansKR */,
-				086B72912832A46300D4BC00 /* Quicksand */,
-				086B72952832A5C200D4BC00 /* SpoqaHanSansNEo */,
+				086B729E283363E100D4BC00 /* NotoSansKR */,
+				086B72AB283363E100D4BC00 /* Quicksand */,
+				086B72A5283363E100D4BC00 /* SpoqaHanSansNeo */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -368,14 +416,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				086B72922832A46300D4BC00 /* Quicksand in Resources */,
+				086B72B3283363E100D4BC00 /* NotoSansKR-Thin.otf in Resources */,
+				086B72BA283363E100D4BC00 /* SpoqaHanSansNeo-Medium.otf in Resources */,
+				086B72B7283363E100D4BC00 /* SpoqaHanSansNeo-Thin.otf in Resources */,
 				F6CE8FF42830FD18005A5C0D /* ReadView.storyboard in Resources */,
 				4D1F58202832469300EBEA05 /* Images.xcassets in Resources */,
+				086B72B4283363E100D4BC00 /* NotoSansKR-Black.otf in Resources */,
+				086B72B8283363E100D4BC00 /* SpoqaHanSansNeo-Light.otf in Resources */,
+				086B72B9283363E100D4BC00 /* SpoqaHanSansNeo-Bold.otf in Resources */,
+				086B72BB283363E100D4BC00 /* SpoqaHanSansNeo-Regular.otf in Resources */,
+				086B72B2283363E100D4BC00 /* NotoSansKR-Bold.otf in Resources */,
+				086B72B1283363E100D4BC00 /* NotoSansKR-Light.otf in Resources */,
 				F6CE8FEE2830FCC4005A5C0D /* NeulView.storyboard in Resources */,
-				086B728E2832A45400D4BC00 /* NotoSansKR in Resources */,
+				086B72BF283363E100D4BC00 /* Quicksand-SemiBold.ttf in Resources */,
 				F6CE8FE82830FBF8005A5C0D /* HeeView.storyboard in Resources */,
+				086B72BC283363E100D4BC00 /* Quicksand-Bold.ttf in Resources */,
+				086B72C0283363E100D4BC00 /* Quicksand-Light.ttf in Resources */,
 				F6CE8FD1282F9473005A5C0D /* Assets.xcassets in Resources */,
+				086B72B5283363E100D4BC00 /* NotoSansKR-Medium.otf in Resources */,
+				086B72BD283363E100D4BC00 /* Quicksand-Medium.ttf in Resources */,
+				086B72B6283363E100D4BC00 /* NotoSansKR-Regular.otf in Resources */,
 				F6CE901E28310124005A5C0D /* Colors.xcassets in Resources */,
+				086B72BE283363E100D4BC00 /* Quicksand-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
