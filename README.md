@@ -12,9 +12,9 @@
 
 ## Project Setting
 
-### 📏📐 Development Envirionment
+### 📏📐 Development Environment
 
-| Envirionment | Tool |
+| Environment | Tool |
 | --- | --- |
 | Framework | UIKit |
 | UI Configuration | Storyboard |
