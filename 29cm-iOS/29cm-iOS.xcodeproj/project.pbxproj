@@ -36,6 +36,8 @@
 		F68FE33B2833C38800FA0254 /* PurchaseCheckCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE3392833C38800FA0254 /* PurchaseCheckCollectionViewCell.xib */; };
 		F68FE33F2833C63A00FA0254 /* GeneralCheckCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE33D2833C63A00FA0254 /* GeneralCheckCollectionViewCell.swift */; };
 		F68FE3402833C63A00FA0254 /* GeneralCheckCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE33E2833C63A00FA0254 /* GeneralCheckCollectionViewCell.xib */; };
+		F68FE3432833C82B00FA0254 /* EtcCheckCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE3412833C82B00FA0254 /* EtcCheckCollectionViewCell.swift */; };
+		F68FE3442833C82C00FA0254 /* EtcCheckCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE3422833C82B00FA0254 /* EtcCheckCollectionViewCell.xib */; };
 		F6CE8FC8282F9471005A5C0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FC7282F9471005A5C0D /* AppDelegate.swift */; };
 		F6CE8FCA282F9471005A5C0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FC9282F9471005A5C0D /* SceneDelegate.swift */; };
 		F6CE8FD1282F9473005A5C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6CE8FD0282F9473005A5C0D /* Assets.xcassets */; };
@@ -91,6 +93,8 @@
 		F68FE3392833C38800FA0254 /* PurchaseCheckCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseCheckCollectionViewCell.xib; sourceTree = "<group>"; };
 		F68FE33D2833C63A00FA0254 /* GeneralCheckCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralCheckCollectionViewCell.swift; sourceTree = "<group>"; };
 		F68FE33E2833C63A00FA0254 /* GeneralCheckCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralCheckCollectionViewCell.xib; sourceTree = "<group>"; };
+		F68FE3412833C82B00FA0254 /* EtcCheckCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtcCheckCollectionViewCell.swift; sourceTree = "<group>"; };
+		F68FE3422833C82B00FA0254 /* EtcCheckCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EtcCheckCollectionViewCell.xib; sourceTree = "<group>"; };
 		F6CE8FC4282F9471005A5C0D /* 29cm-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29cm-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6CE8FC7282F9471005A5C0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6CE8FC9282F9471005A5C0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 				F68FE3392833C38800FA0254 /* PurchaseCheckCollectionViewCell.xib */,
 				F68FE33D2833C63A00FA0254 /* GeneralCheckCollectionViewCell.swift */,
 				F68FE33E2833C63A00FA0254 /* GeneralCheckCollectionViewCell.xib */,
+				F68FE3412833C82B00FA0254 /* EtcCheckCollectionViewCell.swift */,
+				F68FE3422833C82B00FA0254 /* EtcCheckCollectionViewCell.xib */,
 			);
 			path = Hee;
 			sourceTree = "<group>";
@@ -459,6 +465,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F68FE3442833C82C00FA0254 /* EtcCheckCollectionViewCell.xib in Resources */,
 				086B72B3283363E100D4BC00 /* NotoSansKR-Thin.otf in Resources */,
 				F68FE3402833C63A00FA0254 /* GeneralCheckCollectionViewCell.xib in Resources */,
 				086B72BA283363E100D4BC00 /* SpoqaHanSansNeo-Medium.otf in Resources */,
@@ -514,6 +521,7 @@
 				F6CE902D2831120C005A5C0D /* CALayer+.swift in Sources */,
 				F6CE902628310F69005A5C0D /* UIViewController+.swift in Sources */,
 				4D1F581E2832335400EBEA05 /* Image.swift in Sources */,
+				F68FE3432833C82B00FA0254 /* EtcCheckCollectionViewCell.swift in Sources */,
 				F68FE31F28329CFF00FA0254 /* NavigationBarView.swift in Sources */,
 				F6CE8FCA282F9471005A5C0D /* SceneDelegate.swift in Sources */,
 				F68FE33A2833C38800FA0254 /* PurchaseCheckCollectionViewCell.swift in Sources */,
