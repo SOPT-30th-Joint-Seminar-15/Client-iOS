@@ -26,6 +26,8 @@
 		086B72C0283363E100D4BC00 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72B0283363E100D4BC00 /* Quicksand-Light.ttf */; };
 		4D1F581E2832335400EBEA05 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F581D2832335400EBEA05 /* Image.swift */; };
 		4D1F58202832469300EBEA05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F581F2832469300EBEA05 /* Images.xcassets */; };
+		F68FE31F28329CFF00FA0254 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE31E28329CFF00FA0254 /* NavigationBarView.swift */; };
+		F68FE32128329DBD00FA0254 /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE32028329DBD00FA0254 /* NavigationBarView.xib */; };
 		F6CE8FC8282F9471005A5C0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FC7282F9471005A5C0D /* AppDelegate.swift */; };
 		F6CE8FCA282F9471005A5C0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FC9282F9471005A5C0D /* SceneDelegate.swift */; };
 		F6CE8FD1282F9473005A5C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6CE8FD0282F9473005A5C0D /* Assets.xcassets */; };
@@ -47,7 +49,6 @@
 		F6CE902428310DE8005A5C0D /* Adjusted+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE902328310DE7005A5C0D /* Adjusted+.swift */; };
 		F6CE902628310F69005A5C0D /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE902528310F69005A5C0D /* UIViewController+.swift */; };
 		F6CE902D2831120C005A5C0D /* CALayer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE902C2831120C005A5C0D /* CALayer+.swift */; };
-		F6CE9030283113FF005A5C0D /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F6CE902F283113FF005A5C0D /* Then */; };
 		F6CE9033283115AD005A5C0D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE9032283115AD005A5C0D /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,8 @@
 		086B72B0283363E100D4BC00 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
 		4D1F581D2832335400EBEA05 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		4D1F581F2832469300EBEA05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F68FE31E28329CFF00FA0254 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		F68FE32028329DBD00FA0254 /* NavigationBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
 		F6CE8FC4282F9471005A5C0D /* 29cm-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29cm-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6CE8FC7282F9471005A5C0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6CE8FC9282F9471005A5C0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +106,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6CE9030283113FF005A5C0D /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +350,8 @@
 			isa = PBXGroup;
 			children = (
 				F6CE9032283115AD005A5C0D /* BaseViewController.swift */,
+				F68FE31E28329CFF00FA0254 /* NavigationBarView.swift */,
+				F68FE32028329DBD00FA0254 /* NavigationBarView.xib */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -369,7 +373,6 @@
 			);
 			name = "29cm-iOS";
 			packageProductDependencies = (
-				F6CE902F283113FF005A5C0D /* Then */,
 			);
 			productName = "29cm-iOS";
 			productReference = F6CE8FC4282F9471005A5C0D /* 29cm-iOS.app */;
@@ -433,6 +436,7 @@
 				086B72BC283363E100D4BC00 /* Quicksand-Bold.ttf in Resources */,
 				086B72C0283363E100D4BC00 /* Quicksand-Light.ttf in Resources */,
 				F6CE8FD1282F9473005A5C0D /* Assets.xcassets in Resources */,
+				F68FE32128329DBD00FA0254 /* NavigationBarView.xib in Resources */,
 				086B72B5283363E100D4BC00 /* NotoSansKR-Medium.otf in Resources */,
 				086B72BD283363E100D4BC00 /* Quicksand-Medium.ttf in Resources */,
 				086B72B6283363E100D4BC00 /* NotoSansKR-Regular.otf in Resources */,
@@ -463,6 +467,7 @@
 				F6CE902D2831120C005A5C0D /* CALayer+.swift in Sources */,
 				F6CE902628310F69005A5C0D /* UIViewController+.swift in Sources */,
 				4D1F581E2832335400EBEA05 /* Image.swift in Sources */,
+				F68FE31F28329CFF00FA0254 /* NavigationBarView.swift in Sources */,
 				F6CE8FCA282F9471005A5C0D /* SceneDelegate.swift in Sources */,
 				F6CE8FFA2830FDA5005A5C0D /* ReadDataModel.swift in Sources */,
 				F6CE900A28310087005A5C0D /* Const.swift in Sources */,
@@ -689,14 +694,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F6CE902F283113FF005A5C0D /* Then */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F6CE902E283113FF005A5C0D /* XCRemoteSwiftPackageReference "Then" */;
-			productName = Then;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6CE8FBC282F9471005A5C0D /* Project object */;
 }
