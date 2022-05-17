@@ -32,6 +32,8 @@
 		F68FE3332833BC3C00FA0254 /* SelectButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE3322833BC3C00FA0254 /* SelectButtonView.xib */; };
 		F68FE3362833BFD600FA0254 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE3342833BFD600FA0254 /* TitleCollectionViewCell.swift */; };
 		F68FE3372833BFD600FA0254 /* TitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE3352833BFD600FA0254 /* TitleCollectionViewCell.xib */; };
+		F68FE33A2833C38800FA0254 /* PurchaseCheckCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE3382833C38800FA0254 /* PurchaseCheckCollectionViewCell.swift */; };
+		F68FE33B2833C38800FA0254 /* PurchaseCheckCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE3392833C38800FA0254 /* PurchaseCheckCollectionViewCell.xib */; };
 		F6CE8FC8282F9471005A5C0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FC7282F9471005A5C0D /* AppDelegate.swift */; };
 		F6CE8FCA282F9471005A5C0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FC9282F9471005A5C0D /* SceneDelegate.swift */; };
 		F6CE8FD1282F9473005A5C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6CE8FD0282F9473005A5C0D /* Assets.xcassets */; };
@@ -83,6 +85,8 @@
 		F68FE3322833BC3C00FA0254 /* SelectButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectButtonView.xib; sourceTree = "<group>"; };
 		F68FE3342833BFD600FA0254 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 		F68FE3352833BFD600FA0254 /* TitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCollectionViewCell.xib; sourceTree = "<group>"; };
+		F68FE3382833C38800FA0254 /* PurchaseCheckCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseCheckCollectionViewCell.swift; sourceTree = "<group>"; };
+		F68FE3392833C38800FA0254 /* PurchaseCheckCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseCheckCollectionViewCell.xib; sourceTree = "<group>"; };
 		F6CE8FC4282F9471005A5C0D /* 29cm-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29cm-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6CE8FC7282F9471005A5C0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6CE8FC9282F9471005A5C0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,10 +172,20 @@
 		F68FE32F2833BBC800FA0254 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				F68FE3342833BFD600FA0254 /* TitleCollectionViewCell.swift */,
-				F68FE3352833BFD600FA0254 /* TitleCollectionViewCell.xib */,
+				F68FE33C2833C39100FA0254 /* Hee */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		F68FE33C2833C39100FA0254 /* Hee */ = {
+			isa = PBXGroup;
+			children = (
+				F68FE3342833BFD600FA0254 /* TitleCollectionViewCell.swift */,
+				F68FE3352833BFD600FA0254 /* TitleCollectionViewCell.xib */,
+				F68FE3382833C38800FA0254 /* PurchaseCheckCollectionViewCell.swift */,
+				F68FE3392833C38800FA0254 /* PurchaseCheckCollectionViewCell.xib */,
+			);
+			path = Hee;
 			sourceTree = "<group>";
 		};
 		F6CE8FBB282F9471005A5C0D = {
@@ -459,6 +473,7 @@
 				086B72C0283363E100D4BC00 /* Quicksand-Light.ttf in Resources */,
 				F6CE8FD1282F9473005A5C0D /* Assets.xcassets in Resources */,
 				F68FE32128329DBD00FA0254 /* NavigationBarView.xib in Resources */,
+				F68FE33B2833C38800FA0254 /* PurchaseCheckCollectionViewCell.xib in Resources */,
 				086B72B5283363E100D4BC00 /* NotoSansKR-Medium.otf in Resources */,
 				086B72BD283363E100D4BC00 /* Quicksand-Medium.ttf in Resources */,
 				086B72B6283363E100D4BC00 /* NotoSansKR-Regular.otf in Resources */,
@@ -493,6 +508,7 @@
 				4D1F581E2832335400EBEA05 /* Image.swift in Sources */,
 				F68FE31F28329CFF00FA0254 /* NavigationBarView.swift in Sources */,
 				F6CE8FCA282F9471005A5C0D /* SceneDelegate.swift in Sources */,
+				F68FE33A2833C38800FA0254 /* PurchaseCheckCollectionViewCell.swift in Sources */,
 				F6CE8FFA2830FDA5005A5C0D /* ReadDataModel.swift in Sources */,
 				F6CE900A28310087005A5C0D /* Const.swift in Sources */,
 				F6CE901C28310114005A5C0D /* Color.swift in Sources */,

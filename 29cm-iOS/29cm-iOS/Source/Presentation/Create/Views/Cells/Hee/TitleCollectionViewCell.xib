@@ -26,10 +26,10 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsH-6r-aOl">
-                        <rect key="frame" x="0.0" y="165" width="375" height="1"/>
+                        <rect key="frame" x="0.0" y="164" width="375" height="2"/>
                         <color key="backgroundColor" name="black01_29cm"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="1" id="GYj-mz-xgj"/>
+                            <constraint firstAttribute="height" constant="2" id="GYj-mz-xgj"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:1 문의쓰기" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sK-aJ-3lr">
@@ -61,7 +61,7 @@
                 <constraint firstItem="jsH-6r-aOl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vOD-uj-ZK5"/>
                 <constraint firstItem="3sK-aJ-3lr" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="xdI-DJ-9Ox"/>
             </constraints>
-            <point key="canvasLocation" x="131.15942028985509" y="64.620535714285708"/>
+            <point key="canvasLocation" x="131.15942028985509" y="64.285714285714278"/>
         </collectionViewCell>
     </objects>
     <resources>
