@@ -14,8 +14,9 @@
 
 ### 📏📐 Development Envirionment
 
-| Framework | UIKit |
+| Envirionment | Tool |
 | --- | --- |
+| Framework | UIKit |
 | UI Configuration | Storyboard |
 | Library | Then, Alamofire, IQKeyboardManager |
 
@@ -29,7 +30,6 @@
 │   ├── Colors
 │   │      └── Colors.xcassets
 │   ├── Images
-│   ├── Utils
 │   ├── Fonts
 │   └── Storyboards
 ├── Source
@@ -114,4 +114,4 @@
 
 ## Code & MARK Syntax Convention
 
-- [위키 보러가기](https://github.com/SOPT-30th-Joint-Seminar-15/Client-iOS/wiki/%0830th-THE-SOPT-%ED%95%A9%EB%8F%99-%EC%84%B8%EB%AF%B8%EB%82%98-15%EC%A1%B0-iOS-%ED%8C%8C%ED%8A%B8's-Wiki)
+- [GitHub Wiki 보러가기](https://github.com/SOPT-30th-Joint-Seminar-15/Client-iOS/wiki/%0830th-THE-SOPT-%ED%95%A9%EB%8F%99-%EC%84%B8%EB%AF%B8%EB%82%98-15%EC%A1%B0-iOS-%ED%8C%8C%ED%8A%B8's-Wiki)
