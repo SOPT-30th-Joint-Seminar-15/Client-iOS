@@ -54,11 +54,6 @@
 │   │   └── DTO
 │   │   └── Network
 │   │   └── Result
-│   ├── Models
-│   ├── Controllers
-│   │── Views
-│   │   └── Cells
-│   │   └── SubViews
 └───
 ```
 
