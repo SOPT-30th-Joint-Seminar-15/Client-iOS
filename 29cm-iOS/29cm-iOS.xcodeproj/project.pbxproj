@@ -30,6 +30,8 @@
 		F68FE32128329DBD00FA0254 /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE32028329DBD00FA0254 /* NavigationBarView.xib */; };
 		F68FE3312833BC3300FA0254 /* SelectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE3302833BC3300FA0254 /* SelectButtonView.swift */; };
 		F68FE3332833BC3C00FA0254 /* SelectButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE3322833BC3C00FA0254 /* SelectButtonView.xib */; };
+		F68FE3362833BFD600FA0254 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE3342833BFD600FA0254 /* TitleCollectionViewCell.swift */; };
+		F68FE3372833BFD600FA0254 /* TitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE3352833BFD600FA0254 /* TitleCollectionViewCell.xib */; };
 		F6CE8FC8282F9471005A5C0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FC7282F9471005A5C0D /* AppDelegate.swift */; };
 		F6CE8FCA282F9471005A5C0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FC9282F9471005A5C0D /* SceneDelegate.swift */; };
 		F6CE8FD1282F9473005A5C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6CE8FD0282F9473005A5C0D /* Assets.xcassets */; };
@@ -79,6 +81,8 @@
 		F68FE32028329DBD00FA0254 /* NavigationBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
 		F68FE3302833BC3300FA0254 /* SelectButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectButtonView.swift; sourceTree = "<group>"; };
 		F68FE3322833BC3C00FA0254 /* SelectButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectButtonView.xib; sourceTree = "<group>"; };
+		F68FE3342833BFD600FA0254 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		F68FE3352833BFD600FA0254 /* TitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCollectionViewCell.xib; sourceTree = "<group>"; };
 		F6CE8FC4282F9471005A5C0D /* 29cm-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29cm-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6CE8FC7282F9471005A5C0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6CE8FC9282F9471005A5C0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +163,15 @@
 				086B72B0283363E100D4BC00 /* Quicksand-Light.ttf */,
 			);
 			path = Quicksand;
+			sourceTree = "<group>";
+		};
+		F68FE32F2833BBC800FA0254 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F68FE3342833BFD600FA0254 /* TitleCollectionViewCell.swift */,
+				F68FE3352833BFD600FA0254 /* TitleCollectionViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		F6CE8FBB282F9471005A5C0D = {
@@ -284,6 +297,7 @@
 		F6CE90022830FE08005A5C0D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F68FE32F2833BBC800FA0254 /* Cells */,
 				F6CE8FED2830FCC4005A5C0D /* NeulView.storyboard */,
 				F6CE8FE72830FBF8005A5C0D /* HeeView.storyboard */,
 			);
@@ -435,6 +449,7 @@
 				086B72B9283363E100D4BC00 /* SpoqaHanSansNeo-Bold.otf in Resources */,
 				086B72BB283363E100D4BC00 /* SpoqaHanSansNeo-Regular.otf in Resources */,
 				086B72B2283363E100D4BC00 /* NotoSansKR-Bold.otf in Resources */,
+				F68FE3372833BFD600FA0254 /* TitleCollectionViewCell.xib in Resources */,
 				086B72B1283363E100D4BC00 /* NotoSansKR-Light.otf in Resources */,
 				F6CE8FEE2830FCC4005A5C0D /* NeulView.storyboard in Resources */,
 				F68FE3332833BC3C00FA0254 /* SelectButtonView.xib in Resources */,
@@ -464,6 +479,7 @@
 				F6CE8FEA2830FC26005A5C0D /* HeeViewController.swift in Sources */,
 				F6CE8FF02830FCCD005A5C0D /* NeulViewController.swift in Sources */,
 				086B72942832A50C00D4BC00 /* Font.swift in Sources */,
+				F68FE3362833BFD600FA0254 /* TitleCollectionViewCell.swift in Sources */,
 				F68FE3312833BC3300FA0254 /* SelectButtonView.swift in Sources */,
 				F6CE8FC8282F9471005A5C0D /* AppDelegate.swift in Sources */,
 				F6CE9033283115AD005A5C0D /* BaseViewController.swift in Sources */,

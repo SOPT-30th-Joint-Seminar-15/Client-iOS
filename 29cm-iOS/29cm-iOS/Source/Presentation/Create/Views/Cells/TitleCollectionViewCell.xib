@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansKR-Medium.otf">
+            <string>NotoSansKR-Medium</string>
+        </array>
+        <array key="NotoSansKR-Regular.otf">
+            <string>NotoSansKR-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TitleCollectionViewCell" customModule="_9cm_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsH-6r-aOl">
+                        <rect key="frame" x="0.0" y="165" width="375" height="1"/>
+                        <color key="backgroundColor" name="black01_29cm"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="GYj-mz-xgj"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:1 문의쓰기" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sK-aJ-3lr">
+                        <rect key="frame" x="139" y="0.0" width="97" height="27"/>
+                        <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="18"/>
+                        <color key="textColor" name="black01_29cm"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjq-99-cas">
+                        <rect key="frame" x="19" y="49" width="340.5" height="75.5"/>
+                        <string key="text">산업안전보건법 제 41조 시행령에 근거하여 2018년 10월 18
+일 부터 산업안전보건법에 따라 고객응대근로자 보호조치를 시행
+하고 있습니다.
+고객응대근로자에게 폭언, 폭행 등을 하지 말아주세요.</string>
+                        <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="13"/>
+                        <color key="textColor" name="grey01_29cm"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="white_29cm"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jsH-6r-aOl" secondAttribute="bottom" id="5zf-7n-AFV"/>
+                <constraint firstItem="3sK-aJ-3lr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6G2-P5-JcL"/>
+                <constraint firstItem="Wjq-99-cas" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="19" id="LIA-gI-fA1"/>
+                <constraint firstAttribute="trailing" secondItem="jsH-6r-aOl" secondAttribute="trailing" id="ehl-1j-2L5"/>
+                <constraint firstItem="Wjq-99-cas" firstAttribute="top" secondItem="3sK-aJ-3lr" secondAttribute="bottom" constant="22" id="lGR-ug-iJB"/>
+                <constraint firstItem="jsH-6r-aOl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vOD-uj-ZK5"/>
+                <constraint firstItem="3sK-aJ-3lr" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="xdI-DJ-9Ox"/>
+            </constraints>
+            <point key="canvasLocation" x="131.15942028985509" y="64.620535714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="black01_29cm">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grey01_29cm">
+            <color red="0.37254901960784315" green="0.37254901960784315" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white_29cm">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
