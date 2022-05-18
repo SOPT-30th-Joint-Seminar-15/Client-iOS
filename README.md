@@ -6,7 +6,7 @@
 
 - 국내 유명 온라인 셀렉트숍 29cm의 **iOS Application Redesign Project**
 
-## Contributters
+## Contributors
 
 - 추가 예정 . . .
 
