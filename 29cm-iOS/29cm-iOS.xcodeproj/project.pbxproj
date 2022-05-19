@@ -32,12 +32,8 @@
 		F68FE3332833BC3C00FA0254 /* SelectButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE3322833BC3C00FA0254 /* SelectButtonView.xib */; };
 		F68FE3362833BFD600FA0254 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE3342833BFD600FA0254 /* TitleCollectionViewCell.swift */; };
 		F68FE3372833BFD600FA0254 /* TitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE3352833BFD600FA0254 /* TitleCollectionViewCell.xib */; };
-		F68FE33A2833C38800FA0254 /* PurchaseCheckCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE3382833C38800FA0254 /* PurchaseCheckCollectionViewCell.swift */; };
-		F68FE33B2833C38800FA0254 /* PurchaseCheckCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE3392833C38800FA0254 /* PurchaseCheckCollectionViewCell.xib */; };
-		F68FE33F2833C63A00FA0254 /* GeneralCheckCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE33D2833C63A00FA0254 /* GeneralCheckCollectionViewCell.swift */; };
-		F68FE3402833C63A00FA0254 /* GeneralCheckCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE33E2833C63A00FA0254 /* GeneralCheckCollectionViewCell.xib */; };
-		F68FE3432833C82B00FA0254 /* EtcCheckCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE3412833C82B00FA0254 /* EtcCheckCollectionViewCell.swift */; };
-		F68FE3442833C82C00FA0254 /* EtcCheckCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE3422833C82B00FA0254 /* EtcCheckCollectionViewCell.xib */; };
+		F68FE37A283614AF00FA0254 /* CheckListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE378283614AF00FA0254 /* CheckListCollectionViewCell.xib */; };
+		F68FE37C2836169100FA0254 /* CheckListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE37B2836169100FA0254 /* CheckListCollectionViewCell.swift */; };
 		F6CE8FC8282F9471005A5C0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FC7282F9471005A5C0D /* AppDelegate.swift */; };
 		F6CE8FCA282F9471005A5C0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FC9282F9471005A5C0D /* SceneDelegate.swift */; };
 		F6CE8FD1282F9473005A5C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6CE8FD0282F9473005A5C0D /* Assets.xcassets */; };
@@ -89,12 +85,8 @@
 		F68FE3322833BC3C00FA0254 /* SelectButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectButtonView.xib; sourceTree = "<group>"; };
 		F68FE3342833BFD600FA0254 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 		F68FE3352833BFD600FA0254 /* TitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCollectionViewCell.xib; sourceTree = "<group>"; };
-		F68FE3382833C38800FA0254 /* PurchaseCheckCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseCheckCollectionViewCell.swift; sourceTree = "<group>"; };
-		F68FE3392833C38800FA0254 /* PurchaseCheckCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseCheckCollectionViewCell.xib; sourceTree = "<group>"; };
-		F68FE33D2833C63A00FA0254 /* GeneralCheckCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralCheckCollectionViewCell.swift; sourceTree = "<group>"; };
-		F68FE33E2833C63A00FA0254 /* GeneralCheckCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralCheckCollectionViewCell.xib; sourceTree = "<group>"; };
-		F68FE3412833C82B00FA0254 /* EtcCheckCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtcCheckCollectionViewCell.swift; sourceTree = "<group>"; };
-		F68FE3422833C82B00FA0254 /* EtcCheckCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EtcCheckCollectionViewCell.xib; sourceTree = "<group>"; };
+		F68FE378283614AF00FA0254 /* CheckListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckListCollectionViewCell.xib; sourceTree = "<group>"; };
+		F68FE37B2836169100FA0254 /* CheckListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListCollectionViewCell.swift; sourceTree = "<group>"; };
 		F6CE8FC4282F9471005A5C0D /* 29cm-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29cm-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6CE8FC7282F9471005A5C0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6CE8FC9282F9471005A5C0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -190,12 +182,8 @@
 			children = (
 				F68FE3342833BFD600FA0254 /* TitleCollectionViewCell.swift */,
 				F68FE3352833BFD600FA0254 /* TitleCollectionViewCell.xib */,
-				F68FE3382833C38800FA0254 /* PurchaseCheckCollectionViewCell.swift */,
-				F68FE3392833C38800FA0254 /* PurchaseCheckCollectionViewCell.xib */,
-				F68FE33D2833C63A00FA0254 /* GeneralCheckCollectionViewCell.swift */,
-				F68FE33E2833C63A00FA0254 /* GeneralCheckCollectionViewCell.xib */,
-				F68FE3412833C82B00FA0254 /* EtcCheckCollectionViewCell.swift */,
-				F68FE3422833C82B00FA0254 /* EtcCheckCollectionViewCell.xib */,
+				F68FE378283614AF00FA0254 /* CheckListCollectionViewCell.xib */,
+				F68FE37B2836169100FA0254 /* CheckListCollectionViewCell.swift */,
 			);
 			path = Hee;
 			sourceTree = "<group>";
@@ -449,7 +437,6 @@
 			);
 			mainGroup = F6CE8FBB282F9471005A5C0D;
 			packageReferences = (
-				F6CE902E283113FF005A5C0D /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = F6CE8FC5282F9471005A5C0D /* Products */;
 			projectDirPath = "";
@@ -465,15 +452,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F68FE3442833C82C00FA0254 /* EtcCheckCollectionViewCell.xib in Resources */,
 				086B72B3283363E100D4BC00 /* NotoSansKR-Thin.otf in Resources */,
-				F68FE3402833C63A00FA0254 /* GeneralCheckCollectionViewCell.xib in Resources */,
 				086B72BA283363E100D4BC00 /* SpoqaHanSansNeo-Medium.otf in Resources */,
 				086B72B7283363E100D4BC00 /* SpoqaHanSansNeo-Thin.otf in Resources */,
 				F6CE8FF42830FD18005A5C0D /* ReadView.storyboard in Resources */,
 				4D1F58202832469300EBEA05 /* Images.xcassets in Resources */,
 				086B72B4283363E100D4BC00 /* NotoSansKR-Black.otf in Resources */,
 				086B72B8283363E100D4BC00 /* SpoqaHanSansNeo-Light.otf in Resources */,
+				F68FE37A283614AF00FA0254 /* CheckListCollectionViewCell.xib in Resources */,
 				086B72B9283363E100D4BC00 /* SpoqaHanSansNeo-Bold.otf in Resources */,
 				086B72BB283363E100D4BC00 /* SpoqaHanSansNeo-Regular.otf in Resources */,
 				086B72B2283363E100D4BC00 /* NotoSansKR-Bold.otf in Resources */,
@@ -487,7 +473,6 @@
 				086B72C0283363E100D4BC00 /* Quicksand-Light.ttf in Resources */,
 				F6CE8FD1282F9473005A5C0D /* Assets.xcassets in Resources */,
 				F68FE32128329DBD00FA0254 /* NavigationBarView.xib in Resources */,
-				F68FE33B2833C38800FA0254 /* PurchaseCheckCollectionViewCell.xib in Resources */,
 				086B72B5283363E100D4BC00 /* NotoSansKR-Medium.otf in Resources */,
 				086B72BD283363E100D4BC00 /* Quicksand-Medium.ttf in Resources */,
 				086B72B6283363E100D4BC00 /* NotoSansKR-Regular.otf in Resources */,
@@ -505,7 +490,6 @@
 			files = (
 				F6CE901A28310107005A5C0D /* Reusable.swift in Sources */,
 				F6CE90012830FDFD005A5C0D /* HeeDataModel.swift in Sources */,
-				F68FE33F2833C63A00FA0254 /* GeneralCheckCollectionViewCell.swift in Sources */,
 				F6CE8FEA2830FC26005A5C0D /* HeeViewController.swift in Sources */,
 				F6CE8FF02830FCCD005A5C0D /* NeulViewController.swift in Sources */,
 				086B72942832A50C00D4BC00 /* Font.swift in Sources */,
@@ -518,13 +502,12 @@
 				F6CE8FF22830FD11005A5C0D /* ReadViewController.swift in Sources */,
 				F6CE902428310DE8005A5C0D /* Adjusted+.swift in Sources */,
 				F6CE8FFF2830FDF7005A5C0D /* NeulDataModel.swift in Sources */,
+				F68FE37C2836169100FA0254 /* CheckListCollectionViewCell.swift in Sources */,
 				F6CE902D2831120C005A5C0D /* CALayer+.swift in Sources */,
 				F6CE902628310F69005A5C0D /* UIViewController+.swift in Sources */,
 				4D1F581E2832335400EBEA05 /* Image.swift in Sources */,
-				F68FE3432833C82B00FA0254 /* EtcCheckCollectionViewCell.swift in Sources */,
 				F68FE31F28329CFF00FA0254 /* NavigationBarView.swift in Sources */,
 				F6CE8FCA282F9471005A5C0D /* SceneDelegate.swift in Sources */,
-				F68FE33A2833C38800FA0254 /* PurchaseCheckCollectionViewCell.swift in Sources */,
 				F6CE8FFA2830FDA5005A5C0D /* ReadDataModel.swift in Sources */,
 				F6CE900A28310087005A5C0D /* Const.swift in Sources */,
 				F6CE901C28310114005A5C0D /* Color.swift in Sources */,
