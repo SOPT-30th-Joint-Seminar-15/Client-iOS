@@ -17,10 +17,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CheckListCollectionViewCell" customModule="_9cm_iOS" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="666"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="637"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="666"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="637"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구매관련문의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OI-Ec-OL4">
@@ -188,12 +188,66 @@
                             </view>
                         </subviews>
                     </stackView>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ifA-3U-iKY" userLabel="Number Stack View">
-                        <rect key="frame" x="0.0" y="418" width="375" height="238"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="238" id="m4a-LC-eRk"/>
-                        </constraints>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="NcR-vV-i3u">
+                        <rect key="frame" x="19" y="431" width="333" height="186"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주문번호" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWv-V8-jE3">
+                                <rect key="frame" x="0.0" y="0.0" width="55.5" height="22"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="15"/>
+                                <color key="textColor" name="black02_29cm"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NUd-gB-ouV">
+                                <rect key="frame" x="0.0" y="38" width="333" height="34"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QTq-lH-OzT">
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="248" id="cRV-Vt-JIE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoD-Ae-GNw">
+                                        <rect key="frame" x="258" y="0.0" width="75" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="Ggd-bU-GK9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="11"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="주문번호">
+                                            <color key="titleColor" name="black02_29cm"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상품명" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhb-WR-Ck2">
+                                <rect key="frame" x="0.0" y="88" width="41.5" height="22"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="15"/>
+                                <color key="textColor" name="black02_29cm"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주문일자" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sl6-0I-1hr">
+                                <rect key="frame" x="0.0" y="126" width="55.5" height="22"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="15"/>
+                                <color key="textColor" name="black02_29cm"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결제방법" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mB-Z6-OtX">
+                                <rect key="frame" x="0.0" y="164" width="55.5" height="22"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="15"/>
+                                <color key="textColor" name="black02_29cm"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                     </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdI-Lk-Qlm">
+                        <rect key="frame" x="0.0" y="636" width="375" height="1"/>
+                        <color key="backgroundColor" name="line_grey_29cm"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="7tl-Wf-uAG"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -202,10 +256,12 @@
                 <constraint firstItem="dno-Wq-Fic" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3B5-Q5-Qv1"/>
                 <constraint firstItem="JUt-xc-Sbz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3IP-Qp-KqF"/>
                 <constraint firstItem="dnW-mB-pUf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="19" id="4ba-sQ-4Lk"/>
+                <constraint firstItem="OdI-Lk-Qlm" firstAttribute="top" secondItem="NcR-vV-i3u" secondAttribute="bottom" constant="19" id="4tB-M2-DPh"/>
                 <constraint firstItem="r99-oD-yTx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="19" id="5xL-or-fxR"/>
                 <constraint firstItem="qgl-4o-zKx" firstAttribute="top" secondItem="r99-oD-yTx" secondAttribute="bottom" constant="13" id="6gJ-oL-zmb"/>
+                <constraint firstAttribute="trailing" secondItem="OdI-Lk-Qlm" secondAttribute="trailing" id="6iY-6E-nxW"/>
                 <constraint firstItem="qgl-4o-zKx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="19" id="BQk-kP-kjX"/>
-                <constraint firstItem="ifA-3U-iKY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BaZ-y9-aF0"/>
+                <constraint firstItem="NcR-vV-i3u" firstAttribute="top" secondItem="Qwj-je-qKB" secondAttribute="bottom" constant="13" id="Bxz-Op-0yt"/>
                 <constraint firstItem="WTi-Qr-dSc" firstAttribute="top" secondItem="dno-Wq-Fic" secondAttribute="bottom" constant="15" id="Cdb-Zz-SLC"/>
                 <constraint firstAttribute="trailing" secondItem="JUt-xc-Sbz" secondAttribute="trailing" id="FII-Jl-j7H"/>
                 <constraint firstItem="Qwj-je-qKB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OoL-XS-5H1"/>
@@ -213,7 +269,6 @@
                 <constraint firstItem="ZS3-Cw-cV2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="19" id="PW6-t9-6Ij"/>
                 <constraint firstItem="JUt-xc-Sbz" firstAttribute="top" secondItem="qgl-4o-zKx" secondAttribute="bottom" constant="25" id="V6A-Yz-wid"/>
                 <constraint firstItem="dno-Wq-Fic" firstAttribute="top" secondItem="lDH-Jy-qRS" secondAttribute="bottom" constant="26" id="VSE-tt-2GW"/>
-                <constraint firstItem="ifA-3U-iKY" firstAttribute="top" secondItem="Qwj-je-qKB" secondAttribute="bottom" id="X3W-ov-zNX"/>
                 <constraint firstAttribute="trailing" secondItem="Qwj-je-qKB" secondAttribute="trailing" id="Xf5-mG-Sxt"/>
                 <constraint firstItem="lDH-Jy-qRS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="19" id="YJn-Gn-x5I"/>
                 <constraint firstItem="3co-wV-Xn5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="19" id="ddu-Ay-J0A"/>
@@ -226,8 +281,9 @@
                 <constraint firstItem="5OI-Ec-OL4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="14" id="kdL-ve-9hS"/>
                 <constraint firstAttribute="trailing" secondItem="dno-Wq-Fic" secondAttribute="trailing" id="mvj-Ql-1dh"/>
                 <constraint firstItem="Pki-36-zYK" firstAttribute="top" secondItem="JUt-xc-Sbz" secondAttribute="bottom" constant="13" id="qZS-LO-dJJ"/>
+                <constraint firstItem="OdI-Lk-Qlm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sAD-SP-mx0"/>
                 <constraint firstItem="r99-oD-yTx" firstAttribute="top" secondItem="dnW-mB-pUf" secondAttribute="bottom" constant="13" id="swx-iG-o37"/>
-                <constraint firstAttribute="trailing" secondItem="ifA-3U-iKY" secondAttribute="trailing" id="w3g-VL-IRU"/>
+                <constraint firstItem="NcR-vV-i3u" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="19" id="wjY-V1-Ei5"/>
                 <constraint firstItem="Qwj-je-qKB" firstAttribute="top" secondItem="3co-wV-Xn5" secondAttribute="bottom" constant="25" id="y0o-Hr-rzT"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="64.955357142857139"/>
