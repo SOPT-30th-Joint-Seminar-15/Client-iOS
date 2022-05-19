@@ -34,6 +34,7 @@
 		F68FE3372833BFD600FA0254 /* TitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE3352833BFD600FA0254 /* TitleCollectionViewCell.xib */; };
 		F68FE37A283614AF00FA0254 /* CheckListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE378283614AF00FA0254 /* CheckListCollectionViewCell.xib */; };
 		F68FE37C2836169100FA0254 /* CheckListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE37B2836169100FA0254 /* CheckListCollectionViewCell.swift */; };
+		F6C88BFC2836237D0012B62B /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F6C88BFB2836237D0012B62B /* Then */; };
 		F6CE8FC8282F9471005A5C0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FC7282F9471005A5C0D /* AppDelegate.swift */; };
 		F6CE8FCA282F9471005A5C0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FC9282F9471005A5C0D /* SceneDelegate.swift */; };
 		F6CE8FD1282F9473005A5C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6CE8FD0282F9473005A5C0D /* Assets.xcassets */; };
@@ -118,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6C88BFC2836237D0012B62B /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +409,7 @@
 			);
 			name = "29cm-iOS";
 			packageProductDependencies = (
+				F6C88BFB2836237D0012B62B /* Then */,
 			);
 			productName = "29cm-iOS";
 			productReference = F6CE8FC4282F9471005A5C0D /* 29cm-iOS.app */;
@@ -437,6 +440,7 @@
 			);
 			mainGroup = F6CE8FBB282F9471005A5C0D;
 			packageReferences = (
+				F6C88BFA2836237D0012B62B /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = F6CE8FC5282F9471005A5C0D /* Products */;
 			projectDirPath = "";
@@ -724,7 +728,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F6CE902E283113FF005A5C0D /* XCRemoteSwiftPackageReference "Then" */ = {
+		F6C88BFA2836237D0012B62B /* XCRemoteSwiftPackageReference "Then" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then.git";
 			requirement = {
@@ -733,6 +737,13 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+/* Begin XCSwiftPackageProductDependency section */
+		F6C88BFB2836237D0012B62B /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6C88BFA2836237D0012B62B /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6CE8FBC282F9471005A5C0D /* Project object */;
 }
