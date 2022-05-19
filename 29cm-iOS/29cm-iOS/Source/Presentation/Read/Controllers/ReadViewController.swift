@@ -9,6 +9,11 @@ import UIKit
 
 final class ReadViewController: BaseViewController {
 
+    @IBOutlet weak var navigationBar: NavigationBarView!
+    
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
