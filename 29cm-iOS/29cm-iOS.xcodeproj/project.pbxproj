@@ -30,8 +30,6 @@
 		F68FE32128329DBD00FA0254 /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE32028329DBD00FA0254 /* NavigationBarView.xib */; };
 		F68FE3312833BC3300FA0254 /* SelectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE3302833BC3300FA0254 /* SelectButtonView.swift */; };
 		F68FE3332833BC3C00FA0254 /* SelectButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE3322833BC3C00FA0254 /* SelectButtonView.xib */; };
-		F68FE3362833BFD600FA0254 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE3342833BFD600FA0254 /* TitleCollectionViewCell.swift */; };
-		F68FE3372833BFD600FA0254 /* TitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE3352833BFD600FA0254 /* TitleCollectionViewCell.xib */; };
 		F68FE37A283614AF00FA0254 /* CheckListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE378283614AF00FA0254 /* CheckListCollectionViewCell.xib */; };
 		F68FE37C2836169100FA0254 /* CheckListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE37B2836169100FA0254 /* CheckListCollectionViewCell.swift */; };
 		F6C88BFC2836237D0012B62B /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F6C88BFB2836237D0012B62B /* Then */; };
@@ -84,8 +82,6 @@
 		F68FE32028329DBD00FA0254 /* NavigationBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
 		F68FE3302833BC3300FA0254 /* SelectButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectButtonView.swift; sourceTree = "<group>"; };
 		F68FE3322833BC3C00FA0254 /* SelectButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectButtonView.xib; sourceTree = "<group>"; };
-		F68FE3342833BFD600FA0254 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
-		F68FE3352833BFD600FA0254 /* TitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCollectionViewCell.xib; sourceTree = "<group>"; };
 		F68FE378283614AF00FA0254 /* CheckListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckListCollectionViewCell.xib; sourceTree = "<group>"; };
 		F68FE37B2836169100FA0254 /* CheckListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListCollectionViewCell.swift; sourceTree = "<group>"; };
 		F6CE8FC4282F9471005A5C0D /* 29cm-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29cm-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,8 +178,6 @@
 		F68FE33C2833C39100FA0254 /* Hee */ = {
 			isa = PBXGroup;
 			children = (
-				F68FE3342833BFD600FA0254 /* TitleCollectionViewCell.swift */,
-				F68FE3352833BFD600FA0254 /* TitleCollectionViewCell.xib */,
 				F68FE378283614AF00FA0254 /* CheckListCollectionViewCell.xib */,
 				F68FE37B2836169100FA0254 /* CheckListCollectionViewCell.swift */,
 			);
@@ -467,7 +461,6 @@
 				086B72B9283363E100D4BC00 /* SpoqaHanSansNeo-Bold.otf in Resources */,
 				086B72BB283363E100D4BC00 /* SpoqaHanSansNeo-Regular.otf in Resources */,
 				086B72B2283363E100D4BC00 /* NotoSansKR-Bold.otf in Resources */,
-				F68FE3372833BFD600FA0254 /* TitleCollectionViewCell.xib in Resources */,
 				086B72B1283363E100D4BC00 /* NotoSansKR-Light.otf in Resources */,
 				F6CE8FEE2830FCC4005A5C0D /* NeulView.storyboard in Resources */,
 				F68FE3332833BC3C00FA0254 /* SelectButtonView.xib in Resources */,
@@ -497,7 +490,6 @@
 				F6CE8FEA2830FC26005A5C0D /* HeeViewController.swift in Sources */,
 				F6CE8FF02830FCCD005A5C0D /* NeulViewController.swift in Sources */,
 				086B72942832A50C00D4BC00 /* Font.swift in Sources */,
-				F68FE3362833BFD600FA0254 /* TitleCollectionViewCell.swift in Sources */,
 				F68FE3312833BC3300FA0254 /* SelectButtonView.swift in Sources */,
 				F6CE8FC8282F9471005A5C0D /* AppDelegate.swift in Sources */,
 				F6CE9033283115AD005A5C0D /* BaseViewController.swift in Sources */,
@@ -737,6 +729,7 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		F6C88BFB2836237D0012B62B /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
