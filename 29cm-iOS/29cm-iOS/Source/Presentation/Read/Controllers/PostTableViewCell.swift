@@ -7,12 +7,12 @@
 
 import UIKit
 
-class PostListTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var deleteButton: UIButton!
+class PostTableViewCell: UITableViewCell {
+    static let identifier = "PostTableViewCell"
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
        
     }
 

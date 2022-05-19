@@ -7,8 +7,8 @@
 
 import UIKit
 
-class TableViewInfoCell: UITableViewCell {
-
+class InfoTableViewCell: UITableViewCell {
+    static let identifier = "InfoTableViewCell"
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
