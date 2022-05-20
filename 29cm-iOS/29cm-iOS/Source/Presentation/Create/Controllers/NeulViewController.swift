@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Then
 
 final class NeulViewController: BaseViewController, UITextFieldDelegate {
 
@@ -16,6 +15,10 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
     @IBOutlet weak var inquiryNumberTextField: UITextField!
     @IBOutlet weak var inquiryNumberButton: UIButton!
     @IBOutlet weak var changeEmailButton: UIButton!
+    @IBOutlet var allInquiryButtons: [UIButton]!
+    @IBOutlet var allPurchaseButtons: [UIButton]!
+    @IBOutlet weak var orderDetailView: UIView!
+    @IBOutlet weak var orderDetailViewConst: NSLayoutConstraint!
     
     // MARK: - Properties
     let titleTextFieldPlaceHolder: String = "제목을 입력해주세요"
@@ -28,6 +31,30 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
         setUI()
     }
     
+    // MARK: - @IBAction Properties
+    @IBAction func inquiryTypeButtonDidTapped(_ sender: UIButton) {
+        if !sender.isSelected {
+            for i in 0..<allInquiryButtons.count {
+                allInquiryButtons[i].isSelected = false
+            }
+            if allPurchaseButtons.contains(sender) {
+                orderDetailView.isHidden = false
+                orderDetailViewConst.constant = 238.5
+            }
+            else {
+                orderDetailView.isHidden = true
+                orderDetailViewConst.constant = 0
+            }
+            sender.isSelected = true
+        }
+        else {
+            sender.isSelected = false
+            orderDetailView.isHidden = true
+            orderDetailViewConst.constant = 0
+            
+        }
+    }
+    
     // MARK: - Functions
     func setUI() {
         
@@ -35,10 +62,20 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
         
         if let inquiryTitleTextField = inquiryTitleTextField,
            let inquiryContentTextView = inquiryContentTextView,
-           let changeEmailButton = changeEmailButton {
+           let changeEmailButton = changeEmailButton,
+           let allInquiryButtons = allInquiryButtons,
+           let orderDetailView = orderDetailView {
             
             inquiryTitleTextField.delegate = self
             inquiryContentTextView.delegate = self
+            
+            for i in 0..<allInquiryButtons.count {
+                allInquiryButtons[i].setImage(Const.Image.icnButtonOff, for: .normal)
+                allInquiryButtons[i].setImage(Const.Image.icnButtonOn, for: .selected)
+            }
+            
+            orderDetailView.isHidden = true
+            orderDetailViewConst.constant = 0
             
             setBorder(textField: inquiryTitleTextField)
             setBorder(textView: inquiryContentTextView)
@@ -83,7 +120,6 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
             return true
         }
     }
-    
 }
 
 // MARK: - Extensions
