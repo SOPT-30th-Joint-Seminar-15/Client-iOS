@@ -453,11 +453,12 @@
                                                     <color key="titleColor" name="black02_29cm"/>
                                                 </state>
                                             </button>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="제목을 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2DE-eq-1Pg">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="제목을 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2DE-eq-1Pg">
                                                 <rect key="frame" x="20" y="1062.6666666666667" width="337" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="KUu-d7-0od"/>
                                                 </constraints>
+                                                <color key="textColor" name="black01_29cm"/>
                                                 <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="13"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -467,9 +468,9 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="132" id="hvM-1f-50E"/>
                                                 </constraints>
-                                                <color key="textColor" name="grey02_29cm"/>
+                                                <color key="textColor" name="black01_29cm"/>
                                                 <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="13"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puQ-Ox-zxf">
                                                 <rect key="frame" x="20" y="1256.6666666666667" width="90" height="27"/>
@@ -504,7 +505,7 @@
                                                 <rect key="frame" x="20" y="1406.6666666666667" width="304" height="126"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="7" id="nxb-Nv-EYc">
-                                                        <rect key="frame" x="0.0" y="0.0" width="301" height="18.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="18.666666666666668"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhP-jq-Ef0">
@@ -727,15 +728,20 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="377" height="1682"/>
+                    <connections>
+                        <outlet property="changeEmailButton" destination="xHG-0D-zX2" id="y4M-OI-FnL"/>
+                        <outlet property="inquiryContentTextView" destination="0NM-J8-0CM" id="thN-I5-wHY"/>
+                        <outlet property="inquiryTitleTextField" destination="2DE-eq-1Pg" id="MA7-0J-pHT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-0.80000000000000004" y="67.980295566502463"/>
         </scene>
-        <!--View Controller-->
+        <!--Neul View Controller-->
         <scene sceneID="Me0-bZ-IUn">
             <objects>
-                <viewController id="7Xq-Fa-CT7" sceneMemberID="viewController">
+                <viewController id="7Xq-Fa-CT7" customClass="NeulViewController" customModule="_9cm_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vuj-Oe-1hp">
                         <rect key="frame" x="0.0" y="0.0" width="377" height="238.66666666666666"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -826,6 +832,10 @@
                             <constraint firstItem="AAP-GK-U2D" firstAttribute="leading" secondItem="vuj-Oe-1hp" secondAttribute="leading" id="xak-0G-qhC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inquiryNumberButton" destination="20y-yO-Knr" id="c5k-WD-Zaj"/>
+                        <outlet property="inquiryNumberTextField" destination="BJH-HD-zoL" id="Rm0-x0-H8V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8p-Pv-wsx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
