@@ -115,10 +115,10 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
             textView.layer.borderWidth = 1
             textView.layer.borderColor = Const.Color.cmBoxGrey?.cgColor
         }
-        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-            textField.resignFirstResponder()
-            return true
-        }
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
 

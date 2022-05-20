@@ -28,23 +28,23 @@
             <objects>
                 <viewController storyboardIdentifier="NeulView" id="Y6W-OH-hqX" customClass="NeulViewController" customModule="_9cm_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="376" height="1682"/>
+                        <rect key="frame" x="0.0" y="0.0" width="498" height="1682"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PkQ-2t-tR1">
-                                <rect key="frame" x="0.0" y="44" width="376" height="1604"/>
+                                <rect key="frame" x="0.0" y="44" width="498" height="1604"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GB6-As-Ce8">
-                                        <rect key="frame" x="0.0" y="0.0" width="376" height="1589.6666666666667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="498" height="1589.6666666666667"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:1 문의쓰기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6h-fv-FIQ">
-                                                <rect key="frame" x="142" y="48" width="92.333333333333314" height="21"/>
+                                                <rect key="frame" x="203" y="48" width="92.333333333333314" height="21"/>
                                                 <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojn-8p-yrC">
-                                                <rect key="frame" x="19" y="91" width="342" height="60.666666666666657"/>
+                                                <rect key="frame" x="19" y="91" width="464" height="60.666666666666657"/>
                                                 <string key="text">산업안전보건법 제 41조 시행령에 근거하여 2018년 10월 18
 일 부터 산업안전보건법에 따라 고객응대근로자 보호조치를 시행
 하고 있습니다.
@@ -54,7 +54,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhn-7Q-Yjr">
-                                                <rect key="frame" x="0.0" y="169.66666666666666" width="376" height="4"/>
+                                                <rect key="frame" x="0.0" y="169.66666666666666" width="498" height="4"/>
                                                 <color key="backgroundColor" name="black01_29cm"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="4" id="lDL-EY-NUW"/>
@@ -208,7 +208,7 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ZK-d5-eDo">
-                                                <rect key="frame" x="0.0" y="352.33333333333331" width="376" height="1"/>
+                                                <rect key="frame" x="0.0" y="352.33333333333331" width="498" height="1"/>
                                                 <color key="backgroundColor" name="line_grey_29cm"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="yid-pO-xy1"/>
@@ -332,7 +332,7 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ifV-6Y-wt2">
-                                                <rect key="frame" x="0.0" y="494.33333333333337" width="376" height="1"/>
+                                                <rect key="frame" x="0.0" y="494.33333333333337" width="498" height="1"/>
                                                 <color key="backgroundColor" name="line_grey_29cm"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="qIc-yd-HL8"/>
@@ -413,14 +413,14 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpy-X4-I8H">
-                                                <rect key="frame" x="0.0" y="596.33333333333337" width="376" height="1"/>
+                                                <rect key="frame" x="0.0" y="596.33333333333337" width="498" height="1"/>
                                                 <color key="backgroundColor" name="line_grey_29cm"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="SjM-hw-6H1"/>
                                                 </constraints>
                                             </view>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4kj-ro-PcB">
-                                                <rect key="frame" x="0.0" y="597.66666666666663" width="376" height="238.66666666666663"/>
+                                                <rect key="frame" x="0.0" y="597.66666666666663" width="498" height="238.66666666666663"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="238.5" id="aQb-Kn-MnM"/>
                                                 </constraints>
@@ -505,16 +505,16 @@
                                                 </state>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="제목을 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2DE-eq-1Pg">
-                                                <rect key="frame" x="20" y="1042.6666666666667" width="336" height="44"/>
+                                                <rect key="frame" x="20" y="1042.6666666666667" width="458" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="KUu-d7-0od"/>
                                                 </constraints>
                                                 <color key="textColor" name="black01_29cm"/>
                                                 <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="13"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                             </textField>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="내용을 입력하세요." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0NM-J8-0CM">
-                                                <rect key="frame" x="20" y="1098.6666666666667" width="336" height="132"/>
+                                                <rect key="frame" x="20" y="1098.6666666666667" width="458" height="132"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="132" id="hvM-1f-50E"/>
@@ -537,7 +537,7 @@
                                                 </state>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8i-8P-PTo">
-                                                <rect key="frame" x="0.0" y="1279.6666666666667" width="376" height="1"/>
+                                                <rect key="frame" x="0.0" y="1279.6666666666667" width="498" height="1"/>
                                                 <color key="backgroundColor" name="line_grey_29cm"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="qpL-bf-MDt"/>
@@ -662,7 +662,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4K1-mI-Ab1">
-                                                <rect key="frame" x="0.0" y="1539.6666666666667" width="376" height="50"/>
+                                                <rect key="frame" x="0.0" y="1539.6666666666667" width="498" height="50"/>
                                                 <color key="backgroundColor" name="black02_29cm"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Ktu-LR-yW2"/>
@@ -759,7 +759,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="HJJ-uV-Z1F"/>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCx-IE-Hgt" customClass="NavigationBarView" customModule="_9cm_iOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="376" height="48"/>
+                                <rect key="frame" x="0.0" y="44" width="498" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="MYh-1H-8Xy"/>
@@ -778,7 +778,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TCx-IE-Hgt" secondAttribute="trailing" id="zi7-rE-zD4"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="376" height="1682"/>
+                    <size key="freeformSize" width="498" height="1682"/>
                     <connections>
                         <outlet property="changeEmailButton" destination="xHG-0D-zX2" id="y4M-OI-FnL"/>
                         <outlet property="inquiryContentTextView" destination="0NM-J8-0CM" id="thN-I5-wHY"/>
@@ -814,14 +814,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1.6000000000000001" y="67.980295566502463"/>
+            <point key="canvasLocation" x="-99.200000000000003" y="67.980295566502463"/>
         </scene>
         <!--Neul View Controller-->
         <scene sceneID="Me0-bZ-IUn">
             <objects>
                 <viewController id="7Xq-Fa-CT7" customClass="NeulViewController" customModule="_9cm_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vuj-Oe-1hp">
-                        <rect key="frame" x="0.0" y="0.0" width="376" height="238.66666666666666"/>
+                        <rect key="frame" x="0.0" y="0.0" width="498" height="238.66666666666666"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주문번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzj-Sz-Nmj">
@@ -887,7 +887,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAP-GK-U2D">
-                                <rect key="frame" x="0.0" y="234" width="376" height="1"/>
+                                <rect key="frame" x="0.0" y="234" width="498" height="1"/>
                                 <color key="backgroundColor" name="line_grey_29cm"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="FuK-87-rgI"/>
