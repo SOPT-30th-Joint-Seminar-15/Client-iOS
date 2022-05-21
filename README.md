@@ -8,7 +8,10 @@
 
 ## Contributors
 
-- 추가 예정 . . .
+| @jimin-kiim | @haneulKimaa | @EunHee-Jeong |
+| --- | --- | --- |
+| <img width="200" alt="image" src="https://user-images.githubusercontent.com/70689381/169638308-1c68d905-4ddc-40f1-8d7a-f58eb28ac2b9.png"> | <img width="200" alt="image" src="https://user-images.githubusercontent.com/70689381/169638323-77e9eae5-65c2-4faa-b158-020077017bbd.png"> | <img width="200" alt="image" src="https://user-images.githubusercontent.com/70689381/169638252-5cc5610b-3681-4f9a-9c7b-8c1caf5e71bf.png"> |
+| 숨겨진 고수 ㄷㄷ | 스승님 | 바지사장 |
 
 ## Project Setting
 
