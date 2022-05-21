@@ -10,6 +10,7 @@ import UIKit
 class PostTableViewCell: UITableViewCell {
     static let identifier = "PostTableViewCell"
     
+    @IBOutlet weak var postContentView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
