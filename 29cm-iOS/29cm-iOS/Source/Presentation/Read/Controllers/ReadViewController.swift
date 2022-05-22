@@ -9,15 +9,17 @@ import UIKit
 
 final class ReadViewController: BaseViewController {
 
+    // MARK: - @IBOutlet Properties
     @IBOutlet weak var navigationBar: NavigationBarView!
     @IBOutlet weak var tableView: UITableView!
     
-
+    //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNib()
     }
     
+    // MARK: - Functions
     private func registerNib() {
             let infoNib = UINib(nibName: InfoTableViewCell.identifier, bundle: nil)
             tableView.register(infoNib, forCellReuseIdentifier: InfoTableViewCell.identifier)
@@ -33,6 +35,7 @@ final class ReadViewController: BaseViewController {
 
 }
 
+// MARK: - Extensions
 extension ReadViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let width = UIScreen.main.bounds.width

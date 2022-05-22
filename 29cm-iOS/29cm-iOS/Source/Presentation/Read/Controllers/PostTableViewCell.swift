@@ -10,17 +10,12 @@ import UIKit
 final class PostTableViewCell: UITableViewCell {
     static let identifier = "PostTableViewCell"
     
+    // MARK: - @IBOutlet Properties
     @IBOutlet weak var postContentView: UIView!
     
+    //MARK: - View Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
        
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
+    }  
 }

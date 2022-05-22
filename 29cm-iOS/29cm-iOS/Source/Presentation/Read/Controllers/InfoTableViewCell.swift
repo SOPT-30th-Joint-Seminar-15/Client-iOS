@@ -9,6 +9,8 @@ import UIKit
 
 final class InfoTableViewCell: UITableViewCell {
     static let identifier = "InfoTableViewCell"
+    
+    //MARK: - View Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
     } 
