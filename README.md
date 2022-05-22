@@ -21,7 +21,7 @@
 | --- | --- |
 | Framework | UIKit |
 | UI Configuration | Storyboard |
-| Library | Then, Alamofire, IQKeyboardManager |
+| Library | Alamofire |
 
 ### 📏📐 Folder Structure
 
@@ -29,7 +29,7 @@
 ├── Info.plist
 ├── Resource
 │   ├── Assets
-│       └── AppIcon.xcassets
+│   │   └── AppIcon.xcassets
 │   ├── Colors
 │   │      └── Colors.xcassets
 │   ├── Images
