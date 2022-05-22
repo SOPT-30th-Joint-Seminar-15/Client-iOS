@@ -19,13 +19,13 @@ final class ReadViewController: BaseViewController {
         registerNib()
     }
     
-    // MARK: - Functions
+    // MARK: - Extensions
     private func registerNib() {
-            let infoNib = UINib(nibName: InfoTableViewCell.identifier, bundle: nil)
-            tableView.register(infoNib, forCellReuseIdentifier: InfoTableViewCell.identifier)
+            let infoNib = UINib(nibName: InfoTableViewCell.reuseIdentifier, bundle: nil)
+            tableView.register(infoNib, forCellReuseIdentifier: InfoTableViewCell.reuseIdentifier)
             
-            let postNib = UINib(nibName: PostTableViewCell.identifier, bundle: nil)
-            tableView.register(postNib, forCellReuseIdentifier: PostTableViewCell.identifier)
+            let postNib = UINib(nibName: PostTableViewCell.reuseIdentifier, bundle: nil)
+            tableView.register(postNib, forCellReuseIdentifier: PostTableViewCell.reuseIdentifier)
             
             tableView.delegate = self
             tableView.dataSource = self
@@ -75,14 +75,14 @@ extension ReadViewController: UITableViewDataSource {
         
         switch indexPath.section {
         case 0:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "InfoTableViewCell", for: indexPath) as? InfoTableViewCell else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: InfoTableViewCell.reuseIdentifier, for: indexPath) as? InfoTableViewCell else {
                 return UITableViewCell()
             }
             
             return cell
         case 1:
             
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell", for: indexPath) as? PostTableViewCell else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: PostTableViewCell.reuseIdentifier, for: indexPath) as? PostTableViewCell else {
                 return UITableViewCell()
             }
                         

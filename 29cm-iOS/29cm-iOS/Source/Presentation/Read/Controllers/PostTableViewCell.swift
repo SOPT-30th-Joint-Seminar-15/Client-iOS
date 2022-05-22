@@ -8,7 +8,6 @@
 import UIKit
 
 final class PostTableViewCell: UITableViewCell {
-    static let identifier = "PostTableViewCell"
     
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var postContentView: UIView!
