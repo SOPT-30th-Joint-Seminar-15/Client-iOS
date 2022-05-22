@@ -38,19 +38,16 @@ final class ReadViewController: BaseViewController {
 // MARK: - Extensions
 extension ReadViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let width = UIScreen.main.bounds.width
-
         var cellHeight: CGFloat
         switch indexPath.section {
         case 0:
-            cellHeight = width * (292/375)
+            cellHeight = 292.adjustedHeight
         case 1:
-            cellHeight = width * (108/375)
+            cellHeight = 108.adjustedHeight
         default:
             cellHeight = 0
         }
         return cellHeight
-
     }
 }
 
