@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PostTableViewCell: UITableViewCell {
+final class PostTableViewCell: UITableViewCell {
     static let identifier = "PostTableViewCell"
     
     @IBOutlet weak var postContentView: UIView!

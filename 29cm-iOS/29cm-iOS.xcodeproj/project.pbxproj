@@ -280,7 +280,6 @@
 				F6CE8FF12830FD11005A5C0D /* ReadViewController.swift */,
 				4DAA81E528360431004010B6 /* PostTableViewCell.swift */,
 				4DAA81E128360379004010B6 /* InfoTableViewCell.swift */,
-				4DB8D67A28363EA300D1DA80 /* DeleteButton.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -368,6 +367,7 @@
 			children = (
 				F6CE9032283115AD005A5C0D /* BaseViewController.swift */,
 				F68FE31E28329CFF00FA0254 /* NavigationBarView.swift */,
+				4DB8D67A28363EA300D1DA80 /* DeleteButton.swift */,
 				F68FE32028329DBD00FA0254 /* NavigationBarView.xib */,
 			);
 			path = Common;

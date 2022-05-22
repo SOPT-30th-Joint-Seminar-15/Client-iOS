@@ -12,13 +12,10 @@ final class ReadViewController: BaseViewController {
     @IBOutlet weak var navigationBar: NavigationBarView!
     @IBOutlet weak var tableView: UITableView!
     
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNib()
-        // Do any additional setup after loading the view.
     }
     
     private func registerNib() {
