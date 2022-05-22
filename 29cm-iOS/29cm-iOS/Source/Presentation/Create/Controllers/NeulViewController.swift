@@ -15,8 +15,8 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
     @IBOutlet weak var inquiryNumberTextField: UITextField!
     @IBOutlet weak var inquiryNumberButton: UIButton!
     @IBOutlet weak var changeEmailButton: UIButton!
-    @IBOutlet var allInquiryButtons: [UIButton]!
-    @IBOutlet var allPurchaseButtons: [UIButton]!
+    @IBOutlet var inquiryButtons: [UIButton]!
+    @IBOutlet var purchaseButtons: [UIButton]!
     @IBOutlet weak var orderDetailView: UIView!
     @IBOutlet weak var orderDetailViewConst: NSLayoutConstraint!
     
@@ -34,12 +34,12 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
     // MARK: - @IBAction Properties
     @IBAction func inquiryTypeButtonDidTapped(_ sender: UIButton) {
         if !sender.isSelected {
-            for i in 0..<allInquiryButtons.count {
-                allInquiryButtons[i].isSelected = false
+            for i in 0..<inquiryButtons.count {
+                inquiryButtons[i].isSelected = false
             }
-            if allPurchaseButtons.contains(sender) {
+            if purchaseButtons.contains(sender) {
                 orderDetailView.isHidden = false
-                orderDetailViewConst.constant = 238.5
+                orderDetailViewConst.constant = 238.5.adjustedHeight
             }
             else {
                 orderDetailView.isHidden = true
@@ -63,7 +63,7 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
         if let inquiryTitleTextField = inquiryTitleTextField,
            let inquiryContentTextView = inquiryContentTextView,
            let changeEmailButton = changeEmailButton,
-           let allInquiryButtons = allInquiryButtons,
+           let allInquiryButtons = inquiryButtons,
            let orderDetailView = orderDetailView {
             
             inquiryTitleTextField.delegate = self
@@ -77,9 +77,9 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
             orderDetailView.isHidden = true
             orderDetailViewConst.constant = 0
             
-            setBorder(textField: inquiryTitleTextField)
-            setBorder(textView: inquiryContentTextView)
-            setBorder(button: changeEmailButton)
+            setBorder(view: inquiryTitleTextField)
+            setBorder(view: inquiryContentTextView)
+            setBorder(view: changeEmailButton)
             inquiryTitleTextField.setLeftPadding(amount: 13)
             inquiryTitleTextField.setRightPadding(amount: 13)
             inquiryContentTextView.textContainerInset =  UIEdgeInsets(top: 14, left: 9, bottom: 0, right: 0)
@@ -97,8 +97,8 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
             
             inquiryNumberTextField.delegate = self
             
-            setBorder(button: inquiryNumberButton)
-            setBorder(textField: inquiryNumberTextField)
+            setBorder(view: inquiryNumberButton)
+            setBorder(view: inquiryNumberTextField)
             inquiryNumberTextField.setLeftPadding(amount: 13)
             inquiryNumberTextField.setRightPadding(amount: 13)
         }
