@@ -103,17 +103,8 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
             inquiryNumberTextField.setRightPadding(amount: 13)
         }
         
-        func setBorder(button: UIButton) {
-            button.layer.borderWidth = 1
-            button.layer.borderColor = Const.Color.cmBoxGrey?.cgColor
-        }
-        func setBorder(textField: UITextField) {
-            textField.layer.borderWidth = 1
-            textField.layer.borderColor = Const.Color.cmBoxGrey?.cgColor
-        }
-        func setBorder(textView: UITextView) {
-            textView.layer.borderWidth = 1
-            textView.layer.borderColor = Const.Color.cmBoxGrey?.cgColor
+        func setBorder(view: UIView) {
+            view.makeRoundedWithBorder(radius: 0, borderColor: Const.Color.cmBoxGrey!.cgColor)
         }
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
