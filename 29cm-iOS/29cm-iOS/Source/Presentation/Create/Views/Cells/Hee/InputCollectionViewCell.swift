@@ -14,6 +14,7 @@ final class InputCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var contentsTextView: UITextView!
     @IBOutlet weak var contentsEmptyLabel: UILabel!
+    @IBOutlet weak var emailSendButton: UIButton!
     
     // MARK: - View Life Cycle
     override func awakeFromNib() {
@@ -21,6 +22,14 @@ final class InputCollectionViewCell: UICollectionViewCell {
         
         setStyle()
         assignDelegation()
+    }
+    
+    // MARK: - @IBAction Properties
+    @IBAction func emailSendButtonDidTapped(_ sender: UIButton) {
+        emailSendButton.isSelected ?
+        emailSendButton.setImage(Const.Image.icnSelectboxOn, for: .selected) :
+        emailSendButton.setImage(Const.Image.icnSelectboxOff, for: .normal)
+        emailSendButton.isSelected.toggle()
     }
 }
 

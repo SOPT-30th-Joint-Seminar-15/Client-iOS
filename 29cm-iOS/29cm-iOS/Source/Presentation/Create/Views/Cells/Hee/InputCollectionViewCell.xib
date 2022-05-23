@@ -114,6 +114,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="19" height="22"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="icnSelectboxOff"/>
+                                <connections>
+                                    <action selector="emailSendButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="pKB-iK-DZ5"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일 받기" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MN3-65-Fbu">
                                 <rect key="frame" x="27" y="0.0" width="54" height="22"/>
@@ -218,6 +221,7 @@
                 <outlet property="contentsEmptyLabel" destination="A7T-aI-a7s" id="p62-Oq-7Wc"/>
                 <outlet property="contentsTextView" destination="uxj-fi-KsO" id="hua-Eh-nsP"/>
                 <outlet property="emailChangeButton" destination="cr7-WH-9uJ" id="oSZ-F2-YKq"/>
+                <outlet property="emailSendButton" destination="BZG-bP-lPz" id="18U-SO-fvZ"/>
                 <outlet property="titleTextField" destination="jV1-he-0EN" id="OEZ-vx-Jo9"/>
             </connections>
             <point key="canvasLocation" x="131.15942028985509" y="65.625"/>
