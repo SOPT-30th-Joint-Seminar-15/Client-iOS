@@ -23,7 +23,11 @@ final class CheckListCollectionViewCell: UICollectionViewCell {
 
 // MARK: - Extensions
 extension CheckListCollectionViewCell {
+    // TODO: - setStyle() → @IBInspectable 이용하는 것으로 변경
     private func setStyle() {
-        [numberTextField, numberButton].forEach { $0?.makeRoundedWithBorder(radius: 0, borderColor: Const.Color.cmBoxGrey!.cgColor) }
+        [numberTextField, numberButton].forEach {
+            $0?.makeRoundedWithBorder(radius: 0, borderColor: Const.Color.cmBoxGrey!.cgColor)
+        }
+    }
     }
 }
