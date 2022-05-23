@@ -33,6 +33,8 @@
 		F68FE37A283614AF00FA0254 /* CheckListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE378283614AF00FA0254 /* CheckListCollectionViewCell.xib */; };
 		F68FE37C2836169100FA0254 /* CheckListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE37B2836169100FA0254 /* CheckListCollectionViewCell.swift */; };
 		F6C88BFC2836237D0012B62B /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F6C88BFB2836237D0012B62B /* Then */; };
+		F6C88C03283758E00012B62B /* InputCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C88C01283758E00012B62B /* InputCollectionViewCell.swift */; };
+		F6C88C04283758E00012B62B /* InputCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6C88C02283758E00012B62B /* InputCollectionViewCell.xib */; };
 		F6CE8FC8282F9471005A5C0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FC7282F9471005A5C0D /* AppDelegate.swift */; };
 		F6CE8FCA282F9471005A5C0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FC9282F9471005A5C0D /* SceneDelegate.swift */; };
 		F6CE8FD1282F9473005A5C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6CE8FD0282F9473005A5C0D /* Assets.xcassets */; };
@@ -84,6 +86,8 @@
 		F68FE3322833BC3C00FA0254 /* SelectButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectButtonView.xib; sourceTree = "<group>"; };
 		F68FE378283614AF00FA0254 /* CheckListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckListCollectionViewCell.xib; sourceTree = "<group>"; };
 		F68FE37B2836169100FA0254 /* CheckListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListCollectionViewCell.swift; sourceTree = "<group>"; };
+		F6C88C01283758E00012B62B /* InputCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCollectionViewCell.swift; sourceTree = "<group>"; };
+		F6C88C02283758E00012B62B /* InputCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputCollectionViewCell.xib; sourceTree = "<group>"; };
 		F6CE8FC4282F9471005A5C0D /* 29cm-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29cm-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6CE8FC7282F9471005A5C0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6CE8FC9282F9471005A5C0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +184,8 @@
 			children = (
 				F68FE378283614AF00FA0254 /* CheckListCollectionViewCell.xib */,
 				F68FE37B2836169100FA0254 /* CheckListCollectionViewCell.swift */,
+				F6C88C01283758E00012B62B /* InputCollectionViewCell.swift */,
+				F6C88C02283758E00012B62B /* InputCollectionViewCell.xib */,
 			);
 			path = Hee;
 			sourceTree = "<group>";
@@ -461,6 +467,7 @@
 				086B72B9283363E100D4BC00 /* SpoqaHanSansNeo-Bold.otf in Resources */,
 				086B72BB283363E100D4BC00 /* SpoqaHanSansNeo-Regular.otf in Resources */,
 				086B72B2283363E100D4BC00 /* NotoSansKR-Bold.otf in Resources */,
+				F6C88C04283758E00012B62B /* InputCollectionViewCell.xib in Resources */,
 				086B72B1283363E100D4BC00 /* NotoSansKR-Light.otf in Resources */,
 				F6CE8FEE2830FCC4005A5C0D /* NeulView.storyboard in Resources */,
 				F68FE3332833BC3C00FA0254 /* SelectButtonView.xib in Resources */,
@@ -503,6 +510,7 @@
 				F6CE902628310F69005A5C0D /* UIViewController+.swift in Sources */,
 				4D1F581E2832335400EBEA05 /* Image.swift in Sources */,
 				F68FE31F28329CFF00FA0254 /* NavigationBarView.swift in Sources */,
+				F6C88C03283758E00012B62B /* InputCollectionViewCell.swift in Sources */,
 				F6CE8FCA282F9471005A5C0D /* SceneDelegate.swift in Sources */,
 				F6CE8FFA2830FDA5005A5C0D /* ReadDataModel.swift in Sources */,
 				F6CE900A28310087005A5C0D /* Const.swift in Sources */,

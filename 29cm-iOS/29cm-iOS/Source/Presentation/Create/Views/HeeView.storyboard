@@ -3,10 +3,17 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansKR-Bold.otf">
+            <string>NotoSansKR-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Hee View Controller-->
         <scene sceneID="s0d-6b-0kx">
@@ -23,13 +30,52 @@
                                     <constraint firstAttribute="height" constant="56" id="nkm-Yx-Mxh"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZGn-c4-yxa">
+                                <rect key="frame" x="0.0" y="100" width="375" height="628"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kdw-zo-RP8">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="omE-kA-NbF">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aM9-bh-as6">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xtd-Av-9Z0">
+                                <rect key="frame" x="0.0" y="728" width="375" height="50"/>
+                                <color key="backgroundColor" name="black02_29cm"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="u26-Gt-8bu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans KR" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="등록하기">
+                                    <color key="titleColor" name="white_29cm"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Xtd-Av-9Z0" secondAttribute="trailing" id="E3c-1o-2wh"/>
                             <constraint firstItem="4ei-mk-52N" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Egn-UM-9QI"/>
+                            <constraint firstItem="Xtd-Av-9Z0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Prc-ie-thF"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4ei-mk-52N" secondAttribute="trailing" id="QLV-nl-Cqh"/>
+                            <constraint firstItem="ZGn-c4-yxa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="axu-S5-VvR"/>
+                            <constraint firstItem="ZGn-c4-yxa" firstAttribute="top" secondItem="4ei-mk-52N" secondAttribute="bottom" id="eoa-PE-xVa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZGn-c4-yxa" secondAttribute="trailing" id="o0g-MZ-rue"/>
                             <constraint firstItem="4ei-mk-52N" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="okR-ev-hVK"/>
+                            <constraint firstItem="Xtd-Av-9Z0" firstAttribute="top" secondItem="ZGn-c4-yxa" secondAttribute="bottom" id="pvy-DP-kOw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Xtd-Av-9Z0" secondAttribute="bottom" id="rgw-oP-VJC"/>
                         </constraints>
                     </view>
                     <connections>
@@ -42,6 +88,12 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="black02_29cm">
+            <color red="0.18823529411764706" green="0.18823529411764706" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white_29cm">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
