@@ -20,6 +20,7 @@ final class InputCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         
         setStyle()
+        assignDelegation()
     }
 }
 
@@ -31,5 +32,35 @@ extension InputCollectionViewCell {
         [emailChangeButton, titleTextField, contentsTextView].forEach {
             $0?.makeRoundedWithBorder(radius: 0, borderColor: Const.Color.cmLineGrey!.cgColor)
         }
+    }
+    
+    private func assignDelegation() {
+        titleTextField.delegate = self
+        contentsTextView.delegate = self
+    }
+}
+
+extension InputCollectionViewCell: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
+
+extension InputCollectionViewCell: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        contentsEmptyLabel.isHidden = true
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty { contentsEmptyLabel.isHidden = false }
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
     }
 }
