@@ -19,7 +19,7 @@ final class ReadViewController: BaseViewController {
         registerNib()
     }
     
-    // MARK: - Extensions
+    // MARK: - Functions
     private func registerNib() {
             let infoNib = UINib(nibName: InfoTableViewCell.reuseIdentifier, bundle: nil)
             tableView.register(infoNib, forCellReuseIdentifier: InfoTableViewCell.reuseIdentifier)

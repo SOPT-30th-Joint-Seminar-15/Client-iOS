@@ -31,7 +31,7 @@
 		4DAA81E428360379004010B6 /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DAA81E228360379004010B6 /* InfoTableViewCell.xib */; };
 		4DAA81E728360431004010B6 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA81E528360431004010B6 /* PostTableViewCell.swift */; };
 		4DAA81E828360431004010B6 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DAA81E628360431004010B6 /* PostTableViewCell.xib */; };
-		4DB8D67B28363EA300D1DA80 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB8D67A28363EA300D1DA80 /* DeleteButton.swift */; };
+		4DB6A56D283C019E00370F10 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6A56C283C019E00370F10 /* UIButton+.swift */; };
 		BDA400142833C7F80046627A /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BDA400132833C7F80046627A /* IQKeyboardManagerSwift */; };
 		F68FE31F28329CFF00FA0254 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE31E28329CFF00FA0254 /* NavigationBarView.swift */; };
 		F68FE32128329DBD00FA0254 /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE32028329DBD00FA0254 /* NavigationBarView.xib */; };
@@ -85,7 +85,7 @@
 		4DAA81E228360379004010B6 /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
 		4DAA81E528360431004010B6 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		4DAA81E628360431004010B6 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
-		4DB8D67A28363EA300D1DA80 /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
+		4DB6A56C283C019E00370F10 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		F68FE31E28329CFF00FA0254 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		F68FE32028329DBD00FA0254 /* NavigationBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
 		F6CE8FC4282F9471005A5C0D /* 29cm-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29cm-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -353,6 +353,7 @@
 				F6CE902528310F69005A5C0D /* UIViewController+.swift */,
 				F6CE902C2831120C005A5C0D /* CALayer+.swift */,
 				4D54BEE2283BFB0C00A0425B /* UITableViewCell+.swift */,
+				4DB6A56C283C019E00370F10 /* UIButton+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -370,7 +371,6 @@
 			children = (
 				F6CE9032283115AD005A5C0D /* BaseViewController.swift */,
 				F68FE31E28329CFF00FA0254 /* NavigationBarView.swift */,
-				4DB8D67A28363EA300D1DA80 /* DeleteButton.swift */,
 				F68FE32028329DBD00FA0254 /* NavigationBarView.xib */,
 			);
 			path = Common;
@@ -483,8 +483,8 @@
 				086B72942832A50C00D4BC00 /* Font.swift in Sources */,
 				F6CE8FC8282F9471005A5C0D /* AppDelegate.swift in Sources */,
 				4DAA81E328360379004010B6 /* InfoTableViewCell.swift in Sources */,
-				4DB8D67B28363EA300D1DA80 /* DeleteButton.swift in Sources */,
 				F6CE9033283115AD005A5C0D /* BaseViewController.swift in Sources */,
+				4DB6A56D283C019E00370F10 /* UIButton+.swift in Sources */,
 				F6CE900C283100AB005A5C0D /* UIView+.swift in Sources */,
 				4DAA81E728360431004010B6 /* PostTableViewCell.swift in Sources */,
 				F6CE9016283100F4005A5C0D /* UITextField+.swift in Sources */,

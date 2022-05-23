@@ -56,7 +56,7 @@
                                         <color key="textColor" name="grey02_29cm"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NjN-lA-NgM" customClass="DeleteButton" customModule="_9cm_iOS" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NjN-lA-NgM">
                                         <rect key="frame" x="300" y="46" width="44" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <constraints>
@@ -152,11 +152,6 @@
             <point key="canvasLocation" x="207.24637681159422" y="56.584821428571423"/>
         </tableViewCell>
     </objects>
-    <designables>
-        <designable name="NjN-lA-NgM">
-            <size key="intrinsicContentSize" width="30" height="30"/>
-        </designable>
-    </designables>
     <resources>
         <namedColor name="black02_29cm">
             <color red="0.18823529411764706" green="0.18823529411764706" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
