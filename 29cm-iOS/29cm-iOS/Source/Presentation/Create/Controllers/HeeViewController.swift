@@ -21,7 +21,20 @@ final class HeeViewController: BaseViewController {
         registerNib()
     }
     
-    // MARK: - Functions
+    // MARK: - @IBAction Properties
+    @IBAction func registerButtonTapped(_ sender: UIButton) {
+        guard let completionPopUp = self.storyboard?.instantiateViewController(withIdentifier: CompletionPopUpViewController.reuseIdentifier) as? CompletionPopUpViewController
+        else { return }
+        completionPopUp.modalTransitionStyle = .crossDissolve
+        completionPopUp.modalPresentationStyle = .overFullScreen
+        self.present(completionPopUp, animated: true) {
+            // TODO: - 서버통신 시 처리
+        }
+    }
+}
+
+// MARK: - Extensions
+extension HeeViewController {
     private func assignDelegation() {
         createCollectionViewCell.delegate = self
         createCollectionViewCell.dataSource = self
@@ -38,8 +51,6 @@ final class HeeViewController: BaseViewController {
         )
     }
 }
-
-// MARK: - Extensions
 extension HeeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch indexPath.section {
