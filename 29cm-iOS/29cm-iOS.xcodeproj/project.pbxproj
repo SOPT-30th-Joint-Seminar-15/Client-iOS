@@ -26,7 +26,7 @@
 		086B72C0283363E100D4BC00 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72B0283363E100D4BC00 /* Quicksand-Light.ttf */; };
 		4D1F581E2832335400EBEA05 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F581D2832335400EBEA05 /* Image.swift */; };
 		4D1F58202832469300EBEA05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F581F2832469300EBEA05 /* Images.xcassets */; };
-		F66F774D283C6B5D004666BA /* CompletionPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66F774C283C6B5D004666BA /* CompletionPopUp.storyboard */; };
+		F66F774D283C6B5D004666BA /* CompletionPopUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66F774C283C6B5D004666BA /* CompletionPopUpView.storyboard */; };
 		F66F774F283C6B73004666BA /* CompletionPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66F774E283C6B73004666BA /* CompletionPopUpViewController.swift */; };
 		F68FE31F28329CFF00FA0254 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE31E28329CFF00FA0254 /* NavigationBarView.swift */; };
 		F68FE32128329DBD00FA0254 /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE32028329DBD00FA0254 /* NavigationBarView.xib */; };
@@ -80,7 +80,7 @@
 		086B72B0283363E100D4BC00 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
 		4D1F581D2832335400EBEA05 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		4D1F581F2832469300EBEA05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F66F774C283C6B5D004666BA /* CompletionPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompletionPopUp.storyboard; sourceTree = "<group>"; };
+		F66F774C283C6B5D004666BA /* CompletionPopUpView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompletionPopUpView.storyboard; sourceTree = "<group>"; };
 		F66F774E283C6B73004666BA /* CompletionPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionPopUpViewController.swift; sourceTree = "<group>"; };
 		F68FE31E28329CFF00FA0254 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		F68FE32028329DBD00FA0254 /* NavigationBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
@@ -316,7 +316,7 @@
 				F68FE32F2833BBC800FA0254 /* Cells */,
 				F6CE8FED2830FCC4005A5C0D /* NeulView.storyboard */,
 				F6CE8FE72830FBF8005A5C0D /* HeeView.storyboard */,
-				F66F774C283C6B5D004666BA /* CompletionPopUp.storyboard */,
+				F66F774C283C6B5D004666BA /* CompletionPopUpView.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -460,7 +460,7 @@
 				086B72B7283363E100D4BC00 /* SpoqaHanSansNeo-Thin.otf in Resources */,
 				F6CE8FF42830FD18005A5C0D /* ReadView.storyboard in Resources */,
 				4D1F58202832469300EBEA05 /* Images.xcassets in Resources */,
-				F66F774D283C6B5D004666BA /* CompletionPopUp.storyboard in Resources */,
+				F66F774D283C6B5D004666BA /* CompletionPopUpView.storyboard in Resources */,
 				086B72B4283363E100D4BC00 /* NotoSansKR-Black.otf in Resources */,
 				086B72B8283363E100D4BC00 /* SpoqaHanSansNeo-Light.otf in Resources */,
 				F68FE37A283614AF00FA0254 /* CheckListCollectionViewCell.xib in Resources */,
