@@ -15,7 +15,13 @@ enum ButtonType: Int, CaseIterable {
 final class CheckListCollectionViewCell: UICollectionViewCell {
     
     // MARK: - @IBOutlet Properties
-    @IBOutlet var checkButtons: [UIButton]!
+    @IBOutlet var checkButtons: [UIButton]! {
+        didSet {
+            for i in 0..<checkButtons.count {
+                checkButtons[i].setImage(Const.Image.icnButtonOn, for: .selected)
+            }
+        }
+    }
     @IBOutlet var purchaseButtons: [UIButton]!
     @IBOutlet weak var numberTextField: UITextField! {
         didSet { numberTextField.delegate = self }
@@ -32,9 +38,6 @@ final class CheckListCollectionViewCell: UICollectionViewCell {
 
     // MARK: - @IBAction Properties
     @IBAction func checkButtonDidTapped(_ sender: UIButton) {
-        for i in 0..<checkButtons.count {
-            checkButtons[i].setImage(Const.Image.icnButtonOn, for: .selected)
-        }
         let index = sender.tag
         switch index {
         case ButtonType.purchase.rawValue:
