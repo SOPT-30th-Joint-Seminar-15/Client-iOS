@@ -79,7 +79,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icnButtonOff"/>
                                                 <connections>
-                                                    <action selector="purchaseButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="FiA-9Q-3XY"/>
+                                                    <action selector="checkButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="faB-AE-xyH"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="배송문의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gko-CC-Mg6">
@@ -93,7 +93,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BFM-mM-Gux">
                                         <rect key="frame" x="117" y="0.0" width="78" height="19"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zs-FG-Bfg">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zs-FG-Bfg">
                                                 <rect key="frame" x="0.0" y="0.0" width="19" height="19"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="6zs-FG-Bfg" secondAttribute="height" multiplier="1:1" id="hEX-Hu-n85"/>
@@ -101,6 +101,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icnButtonOff"/>
+                                                <connections>
+                                                    <action selector="checkButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="qrn-ck-5AE"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주문문의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXd-sa-nAF">
                                                 <rect key="frame" x="27" y="0.0" width="51" height="19"/>
@@ -113,7 +116,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CIb-au-jFN">
                                         <rect key="frame" x="234" y="0.0" width="78" height="19"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5M-fv-c1y">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5M-fv-c1y">
                                                 <rect key="frame" x="0.0" y="0.0" width="19" height="19"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="a5M-fv-c1y" secondAttribute="height" multiplier="1:1" id="1HZ-V5-iza"/>
@@ -121,6 +124,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icnButtonOff"/>
+                                                <connections>
+                                                    <action selector="checkButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="4Gq-o6-I48"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="취소문의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ds-lr-9IH">
                                                 <rect key="frame" x="27" y="0.0" width="51" height="19"/>
@@ -146,6 +152,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icnButtonOff"/>
+                                                <connections>
+                                                    <action selector="checkButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="9xb-0s-Xg1"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="반품문의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NO0-Tj-DFv">
                                                 <rect key="frame" x="27" y="0.0" width="51" height="19"/>
@@ -166,6 +175,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icnButtonOff"/>
+                                                <connections>
+                                                    <action selector="checkButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="RRY-lG-Vqy"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="교환문의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bF7-os-HbH">
                                                 <rect key="frame" x="27" y="0.0" width="51" height="19"/>
@@ -186,6 +198,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icnButtonOff"/>
+                                                <connections>
+                                                    <action selector="checkButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Xlz-1X-Igl"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="환불문의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBl-qF-oaD">
                                                 <rect key="frame" x="27" y="0.0" width="51" height="19"/>
@@ -211,6 +226,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icnButtonOff"/>
+                                                <connections>
+                                                    <action selector="checkButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="7Ty-ag-C4Q"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사은품문의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGv-He-rDX">
                                                 <rect key="frame" x="27" y="0.0" width="51" height="19"/>
@@ -231,6 +249,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icnButtonOff"/>
+                                                <connections>
+                                                    <action selector="checkButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="cvf-b1-Vto"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="입금문의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdK-vP-A5c">
                                                 <rect key="frame" x="27" y="0.0" width="51" height="19"/>
@@ -274,7 +295,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="NcR-vV-i3u">
-                        <rect key="frame" x="19" y="525" width="375" height="191"/>
+                        <rect key="frame" x="19" y="525" width="333" height="174"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주문번호" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWv-V8-jE3">
                                 <rect key="frame" x="0.0" y="0.0" width="48" height="19"/>
@@ -324,13 +345,6 @@
                                 <color key="textColor" name="black02_29cm"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdI-Lk-Qlm" userLabel="FourthLineView">
-                                <rect key="frame" x="0.0" y="190" width="375" height="1"/>
-                                <color key="backgroundColor" name="line_grey_29cm"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="7tl-Wf-uAG"/>
-                                </constraints>
-                            </view>
                         </subviews>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sqA-eo-vGS" userLabel="GeneralStack">
@@ -350,6 +364,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icnButtonOff"/>
+                                                <connections>
+                                                    <action selector="checkButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="kVI-ae-BQl"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원정보문의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opn-hi-bmK">
                                                 <rect key="frame" x="27" y="0.0" width="85.5" height="19"/>
@@ -370,6 +387,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icnButtonOff"/>
+                                                <connections>
+                                                    <action selector="checkButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="E2Q-fE-KN2"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원제도문의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGX-GK-kWU">
                                                 <rect key="frame" x="27" y="0.0" width="85.5" height="19"/>
@@ -390,6 +410,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icnButtonOff"/>
+                                                <connections>
+                                                    <action selector="checkButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="MYb-si-a7r"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결제방법문의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7C-N4-982">
                                                 <rect key="frame" x="27" y="0.0" width="85.5" height="19"/>
@@ -415,6 +438,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icnButtonOff"/>
+                                                <connections>
+                                                    <action selector="checkButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="OOR-5G-cDO"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상품문의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sus-ew-gyB">
                                                 <rect key="frame" x="27" y="0.0" width="85.5" height="19"/>
@@ -435,6 +461,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icnButtonOff"/>
+                                                <connections>
+                                                    <action selector="checkButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="deL-Vm-lIb"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당첨문의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djZ-Mv-nje">
                                                 <rect key="frame" x="27" y="0.0" width="85.5" height="19"/>
@@ -455,6 +484,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icnButtonOff"/>
+                                                <connections>
+                                                    <action selector="checkButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="uly-Ff-1gZ"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쿠폰/마일리지문의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4S-ij-LKP">
                                                 <rect key="frame" x="27" y="0.0" width="85.5" height="19"/>
@@ -485,6 +517,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icnButtonOff"/>
+                                                <connections>
+                                                    <action selector="checkButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="hGd-NR-BK5"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시스템문의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvb-fw-M28">
                                                 <rect key="frame" x="27" y="0.0" width="51" height="19"/>
@@ -505,6 +540,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icnButtonOff"/>
+                                                <connections>
+                                                    <action selector="checkButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="YsY-mg-eO6"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기타문의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmC-ps-01a">
                                                 <rect key="frame" x="27" y="0.0" width="40.5" height="19"/>
@@ -525,6 +563,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icnButtonOff"/>
+                                                <connections>
+                                                    <action selector="checkButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="cc4-DD-Cy6"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="증빙서류문의" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mH-Uy-cAC">
                                                 <rect key="frame" x="27" y="0.0" width="61" height="19"/>
@@ -578,8 +619,33 @@
                 <outlet property="numberButton" destination="AoD-Ae-GNw" id="vqL-ZK-4AK"/>
                 <outlet property="numberStackView" destination="NcR-vV-i3u" id="q5U-gq-I67"/>
                 <outlet property="numberTextField" destination="QTq-lH-OzT" id="geM-Nh-Td0"/>
-                <outletCollection property="purchaseButtons" destination="a5M-fv-c1y" collectionClass="NSMutableArray" id="grn-oK-hBX"/>
-                <outletCollection property="otherButtons" destination="hVl-h2-atD" collectionClass="NSMutableArray" id="qwk-AL-v9s"/>
+                <outletCollection property="checkButtons" destination="y88-9e-t3h" collectionClass="NSMutableArray" id="UAg-Hl-1jE"/>
+                <outletCollection property="checkButtons" destination="6zs-FG-Bfg" collectionClass="NSMutableArray" id="xmb-HO-ght"/>
+                <outletCollection property="checkButtons" destination="a5M-fv-c1y" collectionClass="NSMutableArray" id="ruC-9w-myT"/>
+                <outletCollection property="checkButtons" destination="i3G-AI-FAu" collectionClass="NSMutableArray" id="04c-wt-mcC"/>
+                <outletCollection property="checkButtons" destination="NTR-Z7-K5u" collectionClass="NSMutableArray" id="Hzo-TR-lhv"/>
+                <outletCollection property="checkButtons" destination="xsq-RK-nFQ" collectionClass="NSMutableArray" id="USn-4a-gXk"/>
+                <outletCollection property="checkButtons" destination="rVM-Fr-NdL" collectionClass="NSMutableArray" id="Ebw-kj-7aJ"/>
+                <outletCollection property="checkButtons" destination="6tt-yJ-sJh" collectionClass="NSMutableArray" id="xwB-vk-KK3"/>
+                <outletCollection property="checkButtons" destination="lBX-hU-2AH" collectionClass="NSMutableArray" id="CB2-qv-qbo"/>
+                <outletCollection property="checkButtons" destination="vgm-JD-mYS" collectionClass="NSMutableArray" id="vHL-Ob-hJr"/>
+                <outletCollection property="checkButtons" destination="uPe-Dt-wkN" collectionClass="NSMutableArray" id="Rox-yV-yUv"/>
+                <outletCollection property="checkButtons" destination="6rD-ec-0gT" collectionClass="NSMutableArray" id="SeA-vG-DEP"/>
+                <outletCollection property="checkButtons" destination="SM9-nJ-aa9" collectionClass="NSMutableArray" id="XRp-ze-Rgp"/>
+                <outletCollection property="checkButtons" destination="cfg-I0-vNu" collectionClass="NSMutableArray" id="hhq-fR-M3z"/>
+                <outletCollection property="checkButtons" destination="1EK-gq-HSn" collectionClass="NSMutableArray" id="ZgS-Fi-dqq"/>
+                <outletCollection property="checkButtons" destination="661-os-2zO" collectionClass="NSMutableArray" id="y71-WV-dNk"/>
+                <outletCollection property="checkButtons" destination="hVl-h2-atD" collectionClass="NSMutableArray" id="gvB-MC-ec4"/>
+                <outletCollection property="purchaseButtons" destination="y88-9e-t3h" collectionClass="NSMutableArray" id="7m6-Ge-Xcv"/>
+                <outletCollection property="purchaseButtons" destination="6zs-FG-Bfg" collectionClass="NSMutableArray" id="rl2-yC-i5G"/>
+                <outletCollection property="purchaseButtons" destination="a5M-fv-c1y" collectionClass="NSMutableArray" id="7e7-0l-ooL"/>
+                <outletCollection property="purchaseButtons" destination="i3G-AI-FAu" collectionClass="NSMutableArray" id="WmC-WC-Nwr"/>
+                <outletCollection property="purchaseButtons" destination="NTR-Z7-K5u" collectionClass="NSMutableArray" id="RJr-P9-VfZ"/>
+                <outletCollection property="purchaseButtons" destination="xsq-RK-nFQ" collectionClass="NSMutableArray" id="f9u-dy-842"/>
+                <outletCollection property="purchaseButtons" destination="rVM-Fr-NdL" collectionClass="NSMutableArray" id="N75-6J-LfI"/>
+                <outletCollection property="purchaseButtons" destination="6tt-yJ-sJh" collectionClass="NSMutableArray" id="eDt-x4-M82"/>
+                <outletCollection property="purchaseButtons" destination="a5M-fv-c1y" collectionClass="NSMutableArray" id="ISn-BY-w4N"/>
+                <outletCollection property="checkButtons" destination="a5M-fv-c1y" collectionClass="NSMutableArray" id="ajV-6m-KSU"/>
             </connections>
             <point key="canvasLocation" x="131.15942028985509" y="63.950892857142854"/>
         </collectionViewCell>

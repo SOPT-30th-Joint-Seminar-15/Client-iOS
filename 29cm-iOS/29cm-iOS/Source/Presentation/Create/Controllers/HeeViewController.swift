@@ -11,13 +11,17 @@ final class HeeViewController: BaseViewController {
     
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var navigationBar: NavigationBarView!
-    @IBOutlet weak var createCollectionViewCell: UICollectionView!
+    @IBOutlet weak var createCollectionViewCell: UICollectionView! {
+        didSet {
+            createCollectionViewCell.delegate = self
+            createCollectionViewCell.dataSource = self
+        }
+    }
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        assignDelegation()
         registerNib()
     }
     
@@ -35,9 +39,10 @@ final class HeeViewController: BaseViewController {
 
 // MARK: - Extensions
 extension HeeViewController {
-    private func assignDelegation() {
-        createCollectionViewCell.delegate = self
-        createCollectionViewCell.dataSource = self
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        
+        if let touch = touches.first, touch.view == self.view { view.endEditing(true) }
     }
     
     private func registerNib() {

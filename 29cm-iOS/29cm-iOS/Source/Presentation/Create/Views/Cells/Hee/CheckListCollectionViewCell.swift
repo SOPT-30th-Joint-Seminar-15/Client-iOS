@@ -7,17 +7,50 @@
 
 import UIKit
 
+enum ButtonType: Int, CaseIterable {
+    case purchase
+    case others
+}
+
 final class CheckListCollectionViewCell: UICollectionViewCell {
     
     // MARK: - @IBOutlet Properties
-    @IBOutlet weak var numberTextField: UITextField!
+    @IBOutlet var checkButtons: [UIButton]!
+    @IBOutlet var purchaseButtons: [UIButton]!
+    @IBOutlet weak var numberTextField: UITextField! {
+        didSet { numberTextField.delegate = self }
+    }
     @IBOutlet weak var numberButton: UIButton!
+    @IBOutlet weak var numberStackView: UIStackView!
     
     // MARK: - View Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
         
         setStyle()
+    }
+
+    // MARK: - @IBAction Properties
+    @IBAction func checkButtonDidTapped(_ sender: UIButton) {
+        for i in 0..<checkButtons.count {
+            checkButtons[i].setImage(Const.Image.icnButtonOn, for: .selected)
+        }
+        let index = sender.tag
+        switch index {
+        case ButtonType.purchase.rawValue:
+            if !sender.isSelected {
+                for i in 0..<purchaseButtons.count { checkButtons[i].isSelected = false }
+                if purchaseButtons.contains(sender) { numberStackView.isHidden = false }
+            } else { numberStackView.isHidden = true }
+        case ButtonType.others.rawValue:
+            if !sender.isSelected {
+                for i in purchaseButtons.count..<checkButtons.count { checkButtons[i].isSelected = false }
+                if checkButtons.contains(sender) { numberStackView.isHidden = true }
+            } else { numberStackView.isHidden = false }
+        default:
+            numberStackView.isHidden = true
+        }
+        sender.isSelected.toggle()
     }
 }
 
@@ -29,5 +62,9 @@ extension CheckListCollectionViewCell {
             $0?.makeRoundedWithBorder(radius: 0, borderColor: Const.Color.cmBoxGrey!.cgColor)
         }
     }
+extension CheckListCollectionViewCell: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

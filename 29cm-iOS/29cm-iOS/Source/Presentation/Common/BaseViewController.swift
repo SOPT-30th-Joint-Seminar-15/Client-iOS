@@ -17,6 +17,7 @@ class BaseViewController: UIViewController, Reusable {
         setNavigation()
         setStyle()
         setTargets()
+        setupViews()
     }
     
     // MARK: - Functions
@@ -26,4 +27,7 @@ class BaseViewController: UIViewController, Reusable {
     }
     func setStyle() { }
     func setTargets() { }
+    func setupViews() {
+        self.hideKeyboardWhenTappedAround()
+    }
 }

@@ -11,8 +11,12 @@ final class InputCollectionViewCell: UICollectionViewCell {
     
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var emailChangeButton: UIButton!
-    @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var contentsTextView: UITextView!
+    @IBOutlet weak var titleTextField: UITextField! {
+        didSet { titleTextField.delegate = self }
+    }
+    @IBOutlet weak var contentsTextView: UITextView! {
+        didSet { contentsTextView.delegate = self }
+    }
     @IBOutlet weak var contentsEmptyLabel: UILabel!
     @IBOutlet weak var emailSendButton: UIButton!
     
@@ -21,7 +25,6 @@ final class InputCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         
         setStyle()
-        assignDelegation()
     }
     
     // MARK: - @IBAction Properties
@@ -38,14 +41,10 @@ extension InputCollectionViewCell {
     // TODO: - setStyle() → @IBInspectable 이용하는 것으로 변경
     private func setStyle() {
         titleTextField.setLeftPadding(amount: 5)
+        contentsTextView.textContainerInset = UIEdgeInsets(top: 14, left: 9, bottom: 0, right: 0)
         [emailChangeButton, titleTextField, contentsTextView].forEach {
             $0?.makeRoundedWithBorder(radius: 0, borderColor: Const.Color.cmLineGrey!.cgColor)
         }
-    }
-    
-    private func assignDelegation() {
-        titleTextField.delegate = self
-        contentsTextView.delegate = self
     }
 }
 
@@ -63,13 +62,5 @@ extension InputCollectionViewCell: UITextViewDelegate {
     
     func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty { contentsEmptyLabel.isHidden = false }
-    }
-    
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        if text == "\n" {
-            textView.resignFirstResponder()
-            return false
-        }
-        return true
     }
 }
