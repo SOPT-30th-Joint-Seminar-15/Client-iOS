@@ -82,7 +82,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="createCollectionViewCell" destination="ZGn-c4-yxa" id="bbI-0a-YVk"/>
+                        <outlet property="createCollectionView" destination="ZGn-c4-yxa" id="y23-7y-8V0"/>
                         <outlet property="navigationBar" destination="4ei-mk-52N" id="nQP-dx-HVZ"/>
                     </connections>
                 </viewController>

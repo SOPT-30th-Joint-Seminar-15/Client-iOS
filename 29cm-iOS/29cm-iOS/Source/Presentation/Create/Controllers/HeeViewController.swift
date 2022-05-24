@@ -11,10 +11,10 @@ final class HeeViewController: BaseViewController {
     
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var navigationBar: NavigationBarView!
-    @IBOutlet weak var createCollectionViewCell: UICollectionView! {
+    @IBOutlet weak var createCollectionView: UICollectionView! {
         didSet {
-            createCollectionViewCell.delegate = self
-            createCollectionViewCell.dataSource = self
+            createCollectionView.delegate = self
+            createCollectionView.dataSource = self
         }
     }
     
@@ -46,11 +46,11 @@ extension HeeViewController {
     }
     
     private func registerNib() {
-        createCollectionViewCell.register(
+        createCollectionView.register(
             UINib(nibName: CheckListCollectionViewCell.reuseIdentifier, bundle: nil),
             forCellWithReuseIdentifier: CheckListCollectionViewCell.reuseIdentifier
         )
-        createCollectionViewCell.register(
+        createCollectionView.register(
             UINib(nibName: InputCollectionViewCell.reuseIdentifier, bundle: nil),
             forCellWithReuseIdentifier: InputCollectionViewCell.reuseIdentifier
         )
