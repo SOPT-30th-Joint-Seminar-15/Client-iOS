@@ -93,7 +93,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BFM-mM-Gux">
                                         <rect key="frame" x="117" y="0.0" width="78" height="19"/>
                                         <subviews>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zs-FG-Bfg">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zs-FG-Bfg">
                                                 <rect key="frame" x="0.0" y="0.0" width="19" height="19"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="6zs-FG-Bfg" secondAttribute="height" multiplier="1:1" id="hEX-Hu-n85"/>
@@ -116,7 +116,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CIb-au-jFN">
                                         <rect key="frame" x="234" y="0.0" width="78" height="19"/>
                                         <subviews>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5M-fv-c1y">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5M-fv-c1y">
                                                 <rect key="frame" x="0.0" y="0.0" width="19" height="19"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="a5M-fv-c1y" secondAttribute="height" multiplier="1:1" id="1HZ-V5-iza"/>
