@@ -12,10 +12,16 @@ final class InputCollectionViewCell: UICollectionViewCell {
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var emailChangeButton: UIButton!
     @IBOutlet weak var titleTextField: UITextField! {
-        didSet { titleTextField.delegate = self }
+        didSet {
+            titleTextField.delegate = self
+            titleTextField.setLeftPadding(amount: 5)
+        }
     }
     @IBOutlet weak var contentsTextView: UITextView! {
-        didSet { contentsTextView.delegate = self }
+        didSet {
+            contentsTextView.delegate = self
+            contentsTextView.textContainerInset = UIEdgeInsets(top: 14, left: 9, bottom: 0, right: 0)
+        }
     }
     @IBOutlet weak var contentsEmptyLabel: UILabel!
     @IBOutlet weak var emailSendButton: UIButton!
@@ -40,8 +46,6 @@ final class InputCollectionViewCell: UICollectionViewCell {
 extension InputCollectionViewCell {
     // TODO: - setStyle() → @IBInspectable 이용하는 것으로 변경
     private func setStyle() {
-        titleTextField.setLeftPadding(amount: 5)
-        contentsTextView.textContainerInset = UIEdgeInsets(top: 14, left: 9, bottom: 0, right: 0)
         [emailChangeButton, titleTextField, contentsTextView].forEach {
             $0?.makeRoundedWithBorder(radius: 0, borderColor: Const.Color.cmLineGrey!.cgColor)
         }
