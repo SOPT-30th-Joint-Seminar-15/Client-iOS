@@ -7,12 +7,13 @@
 
 import UIKit
 
-enum ButtonType: Int, CaseIterable {
-    case purchase
-    case others
-}
-
 final class CheckListCollectionViewCell: UICollectionViewCell {
+    
+    // MARK: - Properties
+    enum ButtonType: Int, CaseIterable {
+        case purchase
+        case others
+    }
     
     // MARK: - @IBOutlet Properties
     @IBOutlet var checkButtons: [UIButton]! {
@@ -35,7 +36,7 @@ final class CheckListCollectionViewCell: UICollectionViewCell {
         
         setStyle()
     }
-
+    
     // MARK: - @IBAction Properties
     @IBAction func checkButtonDidTapped(_ sender: UIButton) {
         let index = sender.tag
@@ -65,6 +66,8 @@ extension CheckListCollectionViewCell {
             $0?.makeRoundedWithBorder(radius: 0, borderColor: Const.Color.cmBoxGrey!.cgColor)
         }
     }
+}
+
 extension CheckListCollectionViewCell: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
