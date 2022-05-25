@@ -26,15 +26,14 @@
 		086B72C0283363E100D4BC00 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72B0283363E100D4BC00 /* Quicksand-Light.ttf */; };
 		4D1F581E2832335400EBEA05 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F581D2832335400EBEA05 /* Image.swift */; };
 		4D1F58202832469300EBEA05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F581F2832469300EBEA05 /* Images.xcassets */; };
-		F66F774D283C6B5D004666BA /* CompletionPopUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66F774C283C6B5D004666BA /* CompletionPopUpView.storyboard */; };
-		F66F774F283C6B73004666BA /* CompletionPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66F774E283C6B73004666BA /* CompletionPopUpViewController.swift */; };
 		4D54BEE3283BFB0C00A0425B /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D54BEE2283BFB0C00A0425B /* UITableViewCell+.swift */; };
 		4DAA81E328360379004010B6 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA81E128360379004010B6 /* InfoTableViewCell.swift */; };
 		4DAA81E428360379004010B6 /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DAA81E228360379004010B6 /* InfoTableViewCell.xib */; };
 		4DAA81E728360431004010B6 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA81E528360431004010B6 /* PostTableViewCell.swift */; };
 		4DAA81E828360431004010B6 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DAA81E628360431004010B6 /* PostTableViewCell.xib */; };
 		4DB6A56D283C019E00370F10 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6A56C283C019E00370F10 /* UIButton+.swift */; };
-		BDA400142833C7F80046627A /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BDA400132833C7F80046627A /* IQKeyboardManagerSwift */; };
+		F66F774D283C6B5D004666BA /* CompletionPopUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66F774C283C6B5D004666BA /* CompletionPopUpView.storyboard */; };
+		F66F774F283C6B73004666BA /* CompletionPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66F774E283C6B73004666BA /* CompletionPopUpViewController.swift */; };
 		F68FE31F28329CFF00FA0254 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE31E28329CFF00FA0254 /* NavigationBarView.swift */; };
 		F68FE32128329DBD00FA0254 /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE32028329DBD00FA0254 /* NavigationBarView.xib */; };
 		F68FE37A283614AF00FA0254 /* CheckListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE378283614AF00FA0254 /* CheckListCollectionViewCell.xib */; };
@@ -87,14 +86,14 @@
 		086B72B0283363E100D4BC00 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
 		4D1F581D2832335400EBEA05 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		4D1F581F2832469300EBEA05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F66F774C283C6B5D004666BA /* CompletionPopUpView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompletionPopUpView.storyboard; sourceTree = "<group>"; };
-		F66F774E283C6B73004666BA /* CompletionPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionPopUpViewController.swift; sourceTree = "<group>"; };
 		4D54BEE2283BFB0C00A0425B /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
 		4DAA81E128360379004010B6 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		4DAA81E228360379004010B6 /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
 		4DAA81E528360431004010B6 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		4DAA81E628360431004010B6 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		4DB6A56C283C019E00370F10 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		F66F774C283C6B5D004666BA /* CompletionPopUpView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompletionPopUpView.storyboard; sourceTree = "<group>"; };
+		F66F774E283C6B73004666BA /* CompletionPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionPopUpViewController.swift; sourceTree = "<group>"; };
 		F68FE31E28329CFF00FA0254 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		F68FE32028329DBD00FA0254 /* NavigationBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
 		F68FE378283614AF00FA0254 /* CheckListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckListCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -133,7 +132,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDA400142833C7F80046627A /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +428,6 @@
 			);
 			name = "29cm-iOS";
 			packageProductDependencies = (
-				BDA400132833C7F80046627A /* IQKeyboardManagerSwift */,
 			);
 			productName = "29cm-iOS";
 			productReference = F6CE8FC4282F9471005A5C0D /* 29cm-iOS.app */;
@@ -461,8 +458,6 @@
 			);
 			mainGroup = F6CE8FBB282F9471005A5C0D;
 			packageReferences = (
-				F6CE902E283113FF005A5C0D /* XCRemoteSwiftPackageReference "Then" */,
-				BDA400122833C7F80046627A /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = F6CE8FC5282F9471005A5C0D /* Products */;
 			projectDirPath = "";
@@ -755,33 +750,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		BDA400122833C7F80046627A /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		F6CE902E283113FF005A5C0D /* XCRemoteSwiftPackageReference "Then" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/devxoul/Then.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		BDA400132833C7F80046627A /* IQKeyboardManagerSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BDA400122833C7F80046627A /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
-			productName = IQKeyboardManagerSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6CE8FBC282F9471005A5C0D /* Project object */;
 }
