@@ -155,6 +155,7 @@
             <viewLayoutGuide key="safeArea" id="oQw-ZZ-j5b"/>
             <connections>
                 <outlet property="postContentView" destination="AHI-qN-hVB" id="1NG-Th-TY3"/>
+                <outlet property="stackView" destination="Hsg-w1-BAH" id="iTa-GS-KoF"/>
             </connections>
             <point key="canvasLocation" x="279.71014492753625" y="28.459821428571427"/>
         </tableViewCell>

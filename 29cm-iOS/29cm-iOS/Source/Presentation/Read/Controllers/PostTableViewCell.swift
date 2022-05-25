@@ -19,6 +19,7 @@ final class PostTableViewCell: UITableViewCell {
     
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var postContentView: UIView!
+    @IBOutlet weak var stackView: UIStackView!
     
     //MARK: - View Life Cycle
     override func awakeFromNib() {
@@ -30,6 +31,10 @@ final class PostTableViewCell: UITableViewCell {
         super.touchesBegan(touches, with: event)
         postContentView.isHidden.toggle()
     }
+//    override func setSelected(_ selected: Bool, animated: Bool) {
+//       super.setSelected(selected, animated: animated)
+//        stackView.arrangedSubviews.last?.isHidden.toggle()
+//    }
     
     // MARK: - @IBAction Properties
     @IBAction func deleteButtonClicked(_ sender: Any) {
