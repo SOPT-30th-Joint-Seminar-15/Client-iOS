@@ -75,7 +75,7 @@ extension ReadViewController: UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: InfoTableViewCell.reuseIdentifier, for: indexPath) as? InfoTableViewCell else {
                 return UITableViewCell()
             }
-            
+            cell.delegate=self
             return cell
         case 1:
             
@@ -101,3 +101,9 @@ extension ReadViewController :PostTableViewCellDelegate {
     }
 }
 
+extension ReadViewController :InfoTableViewCellDelegate {
+    func createPostButtonClicked() {
+        guard let readView = UIStoryboard(name: "NeulView", bundle: nil).instantiateViewController(withIdentifier: NeulViewController.reuseIdentifier) as? NeulViewController else { return }
+        self.navigationController?.pushViewController(readView, animated: true)
+    }
+}

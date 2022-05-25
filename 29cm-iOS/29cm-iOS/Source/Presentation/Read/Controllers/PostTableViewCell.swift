@@ -7,12 +7,14 @@
 
 import UIKit
 
+// MARK: - Protocols
 protocol PostTableViewCellDelegate : AnyObject{
     func deleteButtonClicked()
 }
 
 final class PostTableViewCell: UITableViewCell {
     
+    // MARK: - Properties
     var delegate : PostTableViewCellDelegate?
     
     // MARK: - @IBOutlet Properties
@@ -21,10 +23,10 @@ final class PostTableViewCell: UITableViewCell {
     //MARK: - View Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
-       
-    }  
+    }
+    
+    // MARK: - @IBAction Properties
     @IBAction func deleteButtonClicked(_ sender: Any) {
-        print("Clicked")
         delegate?.deleteButtonClicked()
     }
 }

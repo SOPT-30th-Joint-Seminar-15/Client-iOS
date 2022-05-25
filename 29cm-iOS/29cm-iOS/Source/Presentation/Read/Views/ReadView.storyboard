@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dSq-dY-UXQ">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -13,6 +13,22 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="qfI-lb-vDP">
+            <objects>
+                <navigationController id="dSq-dY-UXQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4k4-hu-Sdq">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="gRY-gc-Bhg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iLz-Ox-GUo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-938" y="68"/>
+        </scene>
         <!--Read View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
@@ -22,14 +38,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIe-OQ-LcD" customClass="NavigationBarView" customModule="_9cm_iOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="56"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="5XF-US-Sxq"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="chs-fn-ErI">
-                                <rect key="frame" x="0.0" y="100" width="375" height="678"/>
+                                <rect key="frame" x="0.0" y="144" width="375" height="634"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="2r9-w3-0Xz">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
@@ -78,6 +94,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="chs-fn-ErI" secondAttribute="bottom" id="ump-mW-iHi"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="KRK-4G-DKx"/>
                     <connections>
                         <outlet property="navigationBar" destination="KIe-OQ-LcD" id="wzi-mW-lJj"/>
                         <outlet property="tableView" destination="chs-fn-ErI" id="dcq-NL-bRp"/>

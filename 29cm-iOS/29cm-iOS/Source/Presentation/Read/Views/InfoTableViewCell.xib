@@ -77,6 +77,9 @@
                         <state key="normal" title="1:1문의 쓰기">
                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
+                        <connections>
+                            <action selector="createPostButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xw8-aL-YkG"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
