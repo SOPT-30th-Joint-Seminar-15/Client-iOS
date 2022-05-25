@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ReadViewController: BaseViewController {
+class ReadViewController: BaseViewController {
 
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var navigationBar: NavigationBarView!
@@ -82,7 +82,7 @@ extension ReadViewController: UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PostTableViewCell.reuseIdentifier, for: indexPath) as? PostTableViewCell else {
                 return UITableViewCell()
             }
-                        
+            cell.delegate=self
             return cell
         default:
             return UITableViewCell()
@@ -91,3 +91,14 @@ extension ReadViewController: UITableViewDataSource {
         
     }
 }
+
+extension ReadViewController :PostTableViewCellDelegate {
+    func deleteButtonClicked() {
+        print("Clicked2")
+        guard let popUp = storyboard?.instantiateViewController(withIdentifier: "DeletePopUp") as? DeletePopUp else { return }
+        popUp.modalTransitionStyle = .crossDissolve
+        popUp.modalPresentationStyle = .overFullScreen
+        self.present(popUp,animated: true)
+    }
+}
+

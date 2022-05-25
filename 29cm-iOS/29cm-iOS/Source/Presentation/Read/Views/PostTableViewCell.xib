@@ -82,6 +82,9 @@
                                                 <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="deleteButtonClicked:" destination="dAR-pX-JkE" eventType="touchUpInside" id="B4t-DF-oBp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
