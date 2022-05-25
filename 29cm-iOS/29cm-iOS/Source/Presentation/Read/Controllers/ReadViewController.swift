@@ -13,6 +13,7 @@ class ReadViewController: BaseViewController {
     @IBOutlet weak var navigationBar: NavigationBarView!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var paginationView: UIView!
     //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,10 +30,11 @@ class ReadViewController: BaseViewController {
             
             tableView.delegate = self
             tableView.dataSource = self
-        tableView.estimatedRowHeight = 108
-        tableView.rowHeight = UITableView.automaticDimension
+            tableView.estimatedRowHeight = 108
+            tableView.rowHeight = UITableView.automaticDimension
+            tableView.tableFooterView = paginationView
+//            tableView.tableFooterView?.layoutIfNeeded()
         }
-
 }
 
 // MARK: - Extensions
@@ -43,7 +45,7 @@ extension ReadViewController: UITableViewDelegate {
         case 0:
             cellHeight = 292.adjustedHeight
         case 1:
-            cellHeight = 108.adjustedHeight
+            cellHeight = UITableView.automaticDimension
         default:
             cellHeight = 0
         }
@@ -65,7 +67,6 @@ extension ReadViewController: UITableViewDataSource {
         default:
             return 0
         }
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

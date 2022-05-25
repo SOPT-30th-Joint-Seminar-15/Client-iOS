@@ -25,6 +25,12 @@ final class PostTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
+    //MARK: - Functions
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        postContentView.isHidden.toggle()
+    }
+    
     // MARK: - @IBAction Properties
     @IBAction func deleteButtonClicked(_ sender: Any) {
         delegate?.deleteButtonClicked()

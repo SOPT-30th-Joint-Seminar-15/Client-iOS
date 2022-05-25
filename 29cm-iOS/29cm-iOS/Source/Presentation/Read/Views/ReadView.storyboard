@@ -97,6 +97,7 @@
                     <navigationItem key="navigationItem" id="KRK-4G-DKx"/>
                     <connections>
                         <outlet property="navigationBar" destination="KIe-OQ-LcD" id="wzi-mW-lJj"/>
+                        <outlet property="paginationView" destination="2r9-w3-0Xz" id="m4Y-sM-tE9"/>
                         <outlet property="tableView" destination="chs-fn-ErI" id="dcq-NL-bRp"/>
                     </connections>
                 </viewController>
