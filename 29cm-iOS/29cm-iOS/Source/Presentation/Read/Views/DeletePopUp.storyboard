@@ -89,7 +89,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="eoN-S0-lBh" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="D2A-Yo-MA4"/>
                             <constraint firstItem="eoN-S0-lBh" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="aWb-mJ-dac"/>

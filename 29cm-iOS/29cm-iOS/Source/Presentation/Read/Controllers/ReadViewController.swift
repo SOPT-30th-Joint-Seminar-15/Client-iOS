@@ -94,8 +94,7 @@ extension ReadViewController: UITableViewDataSource {
 
 extension ReadViewController :PostTableViewCellDelegate {
     func deleteButtonClicked() {
-        print("Clicked2")
-        guard let popUp = storyboard?.instantiateViewController(withIdentifier: "DeletePopUp") as? DeletePopUp else { return }
+        guard let popUp = UIStoryboard(name: "DeletePopUp", bundle: nil).instantiateViewController(withIdentifier: DeletePopUp.reuseIdentifier) as? DeletePopUp else { return }
         popUp.modalTransitionStyle = .crossDissolve
         popUp.modalPresentationStyle = .overFullScreen
         self.present(popUp,animated: true)

@@ -18,3 +18,5 @@ extension UIViewController {
     @objc
     func dismissKeyboard() { view.endEditing(true) }
 }
+
+extension UIViewController: Reusable {}
