@@ -24,6 +24,8 @@
 		086B72BE283363E100D4BC00 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72AE283363E100D4BC00 /* Quicksand-Regular.ttf */; };
 		086B72BF283363E100D4BC00 /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72AF283363E100D4BC00 /* Quicksand-SemiBold.ttf */; };
 		086B72C0283363E100D4BC00 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72B0283363E100D4BC00 /* Quicksand-Light.ttf */; };
+		4D1CB91B283DD15E00EEBF11 /* DeletePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1CB91A283DD15E00EEBF11 /* DeletePopUp.storyboard */; };
+		4D1CB91D283DD17C00EEBF11 /* DeletePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CB91C283DD17C00EEBF11 /* DeletePopUp.swift */; };
 		4D1F581E2832335400EBEA05 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F581D2832335400EBEA05 /* Image.swift */; };
 		4D1F58202832469300EBEA05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F581F2832469300EBEA05 /* Images.xcassets */; };
 		4D54BEE3283BFB0C00A0425B /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D54BEE2283BFB0C00A0425B /* UITableViewCell+.swift */; };
@@ -78,6 +80,8 @@
 		086B72AE283363E100D4BC00 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 		086B72AF283363E100D4BC00 /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
 		086B72B0283363E100D4BC00 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
+		4D1CB91A283DD15E00EEBF11 /* DeletePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeletePopUp.storyboard; sourceTree = "<group>"; };
+		4D1CB91C283DD17C00EEBF11 /* DeletePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePopUp.swift; sourceTree = "<group>"; };
 		4D1F581D2832335400EBEA05 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		4D1F581F2832469300EBEA05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4D54BEE2283BFB0C00A0425B /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
@@ -269,6 +273,7 @@
 		F6CE8FF72830FD6F005A5C0D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4D1CB91A283DD15E00EEBF11 /* DeletePopUp.storyboard */,
 				F6CE8FF32830FD18005A5C0D /* ReadView.storyboard */,
 				4DAA81E228360379004010B6 /* InfoTableViewCell.xib */,
 				4DAA81E628360431004010B6 /* PostTableViewCell.xib */,
@@ -282,6 +287,7 @@
 				F6CE8FF12830FD11005A5C0D /* ReadViewController.swift */,
 				4DAA81E528360431004010B6 /* PostTableViewCell.swift */,
 				4DAA81E128360379004010B6 /* InfoTableViewCell.swift */,
+				4D1CB91C283DD17C00EEBF11 /* DeletePopUp.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -447,6 +453,7 @@
 				F6CE8FF42830FD18005A5C0D /* ReadView.storyboard in Resources */,
 				4D1F58202832469300EBEA05 /* Images.xcassets in Resources */,
 				086B72B4283363E100D4BC00 /* NotoSansKR-Black.otf in Resources */,
+				4D1CB91B283DD15E00EEBF11 /* DeletePopUp.storyboard in Resources */,
 				086B72B8283363E100D4BC00 /* SpoqaHanSansNeo-Light.otf in Resources */,
 				086B72B9283363E100D4BC00 /* SpoqaHanSansNeo-Bold.otf in Resources */,
 				086B72BB283363E100D4BC00 /* SpoqaHanSansNeo-Regular.otf in Resources */,
@@ -493,6 +500,7 @@
 				F6CE8FFF2830FDF7005A5C0D /* NeulDataModel.swift in Sources */,
 				F6CE902D2831120C005A5C0D /* CALayer+.swift in Sources */,
 				F6CE902628310F69005A5C0D /* UIViewController+.swift in Sources */,
+				4D1CB91D283DD17C00EEBF11 /* DeletePopUp.swift in Sources */,
 				4D1F581E2832335400EBEA05 /* Image.swift in Sources */,
 				F68FE31F28329CFF00FA0254 /* NavigationBarView.swift in Sources */,
 				F6CE8FCA282F9471005A5C0D /* SceneDelegate.swift in Sources */,
