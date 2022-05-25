@@ -9,21 +9,85 @@ import UIKit
 
 final class ReadViewController: BaseViewController {
 
+    // MARK: - @IBOutlet Properties
+    @IBOutlet weak var navigationBar: NavigationBarView!
+    @IBOutlet weak var tableView: UITableView!
+    
+    //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        registerNib()
     }
     
+    // MARK: - Functions
+    private func registerNib() {
+            let infoNib = UINib(nibName: InfoTableViewCell.reuseIdentifier, bundle: nil)
+            tableView.register(infoNib, forCellReuseIdentifier: InfoTableViewCell.reuseIdentifier)
+            
+            let postNib = UINib(nibName: PostTableViewCell.reuseIdentifier, bundle: nil)
+            tableView.register(postNib, forCellReuseIdentifier: PostTableViewCell.reuseIdentifier)
+            
+            tableView.delegate = self
+            tableView.dataSource = self
+        tableView.estimatedRowHeight = 108
+        tableView.rowHeight = UITableView.automaticDimension
+        }
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+// MARK: - Extensions
+extension ReadViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        var cellHeight: CGFloat
+        switch indexPath.section {
+        case 0:
+            cellHeight = 292.adjustedHeight
+        case 1:
+            cellHeight = 108.adjustedHeight
+        default:
+            cellHeight = 0
+        }
+        return cellHeight
     }
-    */
+}
 
+extension ReadViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        switch section {
+        case 0:
+            return 1
+        case 1:
+            return 1
+        default:
+            return 0
+        }
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        switch indexPath.section {
+        case 0:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: InfoTableViewCell.reuseIdentifier, for: indexPath) as? InfoTableViewCell else {
+                return UITableViewCell()
+            }
+            
+            return cell
+        case 1:
+            
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: PostTableViewCell.reuseIdentifier, for: indexPath) as? PostTableViewCell else {
+                return UITableViewCell()
+            }
+                        
+            return cell
+        default:
+            return UITableViewCell()
+            
+        }
+        
+    }
 }
