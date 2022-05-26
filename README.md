@@ -54,9 +54,10 @@
 │   │        └── Models
 │   │        └── Controllers
 │   ├── Service
-│   │   └── DTO
 │   │   └── Network
 │   │   └── Result
+│   │   └── Mock
+│   │   └── Model
 └───
 ```
 
