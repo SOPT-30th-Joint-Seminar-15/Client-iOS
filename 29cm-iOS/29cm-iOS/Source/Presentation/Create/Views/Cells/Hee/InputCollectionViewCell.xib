@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansKR-Medium.otf">
+            <string>NotoSansKR-Medium</string>
+        </array>
+        <array key="NotoSansKR-Regular.otf">
+            <string>NotoSansKR-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="InputCollectionViewCell" id="gTV-IL-0wX" customClass="InputCollectionViewCell" customModule="_9cm_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="R3b-Aq-eFP">
+                        <rect key="frame" x="19" y="24" width="229" height="99"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3bO-Xu-aqv">
+                                <rect key="frame" x="0.0" y="0.0" width="75" height="19"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성명" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjl-gY-mnm">
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="19"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="13"/>
+                                        <color key="textColor" name="black02_29cm"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김주연" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIR-Lf-JLm">
+                                        <rect key="frame" x="39" y="0.0" width="36" height="19"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="13"/>
+                                        <color key="textColor" name="black02_29cm"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="a38-LF-yKY">
+                                <rect key="frame" x="0.0" y="40" width="229" height="19"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이디" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydj-aE-1Uv">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="19"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="13"/>
+                                        <color key="textColor" name="black02_29cm"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tina1705@naver.com [YELLOW]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2m-g5-yn9">
+                                        <rect key="frame" x="40" y="0.0" width="189" height="19"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="13"/>
+                                        <color key="textColor" name="black02_29cm"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="lJp-Tk-UKn">
+                                <rect key="frame" x="0.0" y="80" width="168" height="19"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjN-4k-6oC">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="19"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="13"/>
+                                        <color key="textColor" name="black02_29cm"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tina1705@naver.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj1-hp-rci">
+                                        <rect key="frame" x="40" y="0.0" width="128" height="19"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="13"/>
+                                        <color key="textColor" name="black02_29cm"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cr7-WH-9uJ">
+                        <rect key="frame" x="59" y="132" width="108" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="108" id="aSI-v6-Pm0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="11"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="이메일 변경하기">
+                            <color key="titleColor" name="black02_29cm"/>
+                        </state>
+                    </button>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="제목을 입력하세요." textAlignment="natural" minimumFontSize="13" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jV1-he-0EN">
+                        <rect key="frame" x="20" y="178" width="335" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="335" id="VXP-fT-hQY"/>
+                        </constraints>
+                        <color key="textColor" name="black02_29cm"/>
+                        <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                <color key="value" systemColor="systemGray2Color"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="clu-kl-PsK">
+                        <rect key="frame" x="20" y="366" width="81" height="22"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZG-bP-lPz">
+                                <rect key="frame" x="0.0" y="0.0" width="19" height="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="icnSelectboxOff"/>
+                                <connections>
+                                    <action selector="emailSendButtonDidTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="pKB-iK-DZ5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일 받기" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MN3-65-Fbu">
+                                <rect key="frame" x="27" y="0.0" width="54" height="22"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="11"/>
+                                <color key="textColor" name="black02_29cm"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="znV-X0-df3">
+                        <rect key="frame" x="0.0" y="408" width="375" height="1"/>
+                        <color key="backgroundColor" name="line_grey_29cm"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Fx5-2M-Ehc"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btnPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="y3V-WM-OAn">
+                        <rect key="frame" x="20" y="426" width="74" height="74"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="y3V-WM-OAn" secondAttribute="height" multiplier="1:1" id="cDx-ro-sPN"/>
+                            <constraint firstAttribute="width" constant="74" id="naJ-2h-3v9"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Jy2-sp-Obd">
+                        <rect key="frame" x="20" y="515" width="303" height="108"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• 상품 불량 및 오배송의 경우, 해당 제품 사진을 등록 부탁드립니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHr-wQ-ice">
+                                <rect key="frame" x="0.0" y="0.0" width="303" height="16"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="11"/>
+                                <color key="textColor" name="grey02_29cm"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0i-Tm-Vpw">
+                                <rect key="frame" x="0.0" y="20" width="303" height="32"/>
+                                <string key="text">• 파일명은 영문만 가능하며, 파일당 최대 10MB 의 
+  용량 제한이 있습니다.</string>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="11"/>
+                                <color key="textColor" name="red_29cm"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfD-91-433">
+                                <rect key="frame" x="0.0" y="56" width="303" height="32"/>
+                                <string key="text">• 가로사이즈가 450pixel을 초과하는 경우 자동으로 
+450픽셀로 조정됩니다.</string>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="11"/>
+                                <color key="textColor" name="grey02_29cm"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• 첨부파일은 최대 2개까지 등록가능합니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkL-2J-imQ">
+                                <rect key="frame" x="0.0" y="92" width="303" height="16"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="11"/>
+                                <color key="textColor" name="grey02_29cm"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uxj-fi-KsO">
+                        <rect key="frame" x="20" y="224" width="335" height="132"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="132" id="2At-za-Xcl"/>
+                            <constraint firstAttribute="width" constant="335" id="APT-ex-lIH"/>
+                        </constraints>
+                        <inset key="scrollIndicatorInsets" minX="9" minY="14" maxX="0.0" maxY="0.0"/>
+                        <color key="textColor" name="black02_29cm"/>
+                        <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="yes" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내용을 입력하세요." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7T-aI-a7s">
+                        <rect key="frame" x="32" y="232" width="103" height="19"/>
+                        <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="13"/>
+                        <color key="textColor" name="grey02_29cm"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hno-Nu-pqs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                        <color key="backgroundColor" name="line_grey_29cm"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="VDF-oN-KYC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="white_29cm"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Hno-Nu-pqs" secondAttribute="trailing" id="7ay-Mz-4MH"/>
+                <constraint firstItem="R3b-Aq-eFP" firstAttribute="top" secondItem="Hno-Nu-pqs" secondAttribute="bottom" constant="23" id="A9F-CR-Rg9"/>
+                <constraint firstItem="Jy2-sp-Obd" firstAttribute="top" secondItem="y3V-WM-OAn" secondAttribute="bottom" constant="15" id="FUq-6Q-YMc"/>
+                <constraint firstItem="jV1-he-0EN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="IE3-ec-9W5"/>
+                <constraint firstItem="A7T-aI-a7s" firstAttribute="top" secondItem="uxj-fi-KsO" secondAttribute="top" constant="8" id="Kvg-bF-TJk"/>
+                <constraint firstItem="A7T-aI-a7s" firstAttribute="leading" secondItem="uxj-fi-KsO" secondAttribute="leading" constant="12" id="MgK-hU-dUF"/>
+                <constraint firstItem="jV1-he-0EN" firstAttribute="top" secondItem="cr7-WH-9uJ" secondAttribute="bottom" constant="18" id="PU2-aV-d3m"/>
+                <constraint firstItem="clu-kl-PsK" firstAttribute="top" secondItem="uxj-fi-KsO" secondAttribute="bottom" constant="10" id="PzR-BG-Pqu"/>
+                <constraint firstItem="znV-X0-df3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Qcn-p4-6gH"/>
+                <constraint firstItem="znV-X0-df3" firstAttribute="top" secondItem="clu-kl-PsK" secondAttribute="bottom" constant="20" id="T3u-01-MS8"/>
+                <constraint firstItem="y3V-WM-OAn" firstAttribute="top" secondItem="znV-X0-df3" secondAttribute="bottom" constant="17" id="VKN-1V-r2k"/>
+                <constraint firstItem="Jy2-sp-Obd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Xoj-I5-bK7"/>
+                <constraint firstAttribute="trailing" secondItem="jV1-he-0EN" secondAttribute="trailing" constant="20" id="cNV-JT-kns"/>
+                <constraint firstItem="Hno-Nu-pqs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ktH-EX-TxP"/>
+                <constraint firstItem="y3V-WM-OAn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="lvf-NO-2jP"/>
+                <constraint firstItem="uxj-fi-KsO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="pGa-zD-cye"/>
+                <constraint firstItem="clu-kl-PsK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="pT7-LW-3Xd"/>
+                <constraint firstItem="uxj-fi-KsO" firstAttribute="top" secondItem="jV1-he-0EN" secondAttribute="bottom" constant="12" id="rAj-c0-TCJ"/>
+                <constraint firstItem="R3b-Aq-eFP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="19" id="uMr-Zf-hcD"/>
+                <constraint firstItem="cr7-WH-9uJ" firstAttribute="top" secondItem="R3b-Aq-eFP" secondAttribute="bottom" constant="9" id="uw5-5S-plV"/>
+                <constraint firstAttribute="trailing" secondItem="znV-X0-df3" secondAttribute="trailing" id="w2D-Yj-oqL"/>
+                <constraint firstItem="cr7-WH-9uJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="59" id="zZh-IR-H2f"/>
+                <constraint firstItem="Hno-Nu-pqs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zwN-IZ-Wpa"/>
+            </constraints>
+            <connections>
+                <outlet property="contentsEmptyLabel" destination="A7T-aI-a7s" id="p62-Oq-7Wc"/>
+                <outlet property="contentsTextView" destination="uxj-fi-KsO" id="hua-Eh-nsP"/>
+                <outlet property="emailChangeButton" destination="cr7-WH-9uJ" id="oSZ-F2-YKq"/>
+                <outlet property="emailSendButton" destination="BZG-bP-lPz" id="18U-SO-fvZ"/>
+                <outlet property="titleTextField" destination="jV1-he-0EN" id="OEZ-vx-Jo9"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="65.625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btnPhoto" width="74" height="74"/>
+        <image name="icnSelectboxOff" width="19" height="19"/>
+        <namedColor name="black02_29cm">
+            <color red="0.18823529411764706" green="0.18823529411764706" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grey02_29cm">
+            <color red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="line_grey_29cm">
+            <color red="0.89411764705882357" green="0.89411764705882357" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="red_29cm">
+            <color red="0.92156862745098034" green="0.36078431372549019" blue="0.17647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white_29cm">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIViewController, Reusable {
 
     // MARK: - View Life Cycle
     override func viewDidLoad() {
@@ -17,6 +17,7 @@ class BaseViewController: UIViewController {
         setNavigation()
         setStyle()
         setTargets()
+        setupViews()
     }
     
     // MARK: - Functions
@@ -26,4 +27,7 @@ class BaseViewController: UIViewController {
     }
     func setStyle() { }
     func setTargets() { }
+    func setupViews() {
+        self.hideKeyboardWhenTappedAround()
+    }
 }

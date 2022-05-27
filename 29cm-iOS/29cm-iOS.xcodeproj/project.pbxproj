@@ -32,9 +32,15 @@
 		4DAA81E728360431004010B6 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA81E528360431004010B6 /* PostTableViewCell.swift */; };
 		4DAA81E828360431004010B6 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DAA81E628360431004010B6 /* PostTableViewCell.xib */; };
 		4DB6A56D283C019E00370F10 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6A56C283C019E00370F10 /* UIButton+.swift */; };
-		BDA400142833C7F80046627A /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BDA400132833C7F80046627A /* IQKeyboardManagerSwift */; };
+		F66F774D283C6B5D004666BA /* CompletionPopUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66F774C283C6B5D004666BA /* CompletionPopUpView.storyboard */; };
+		F66F774F283C6B73004666BA /* CompletionPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66F774E283C6B73004666BA /* CompletionPopUpViewController.swift */; };
 		F68FE31F28329CFF00FA0254 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE31E28329CFF00FA0254 /* NavigationBarView.swift */; };
 		F68FE32128329DBD00FA0254 /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE32028329DBD00FA0254 /* NavigationBarView.xib */; };
+		F68FE37A283614AF00FA0254 /* CheckListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE378283614AF00FA0254 /* CheckListCollectionViewCell.xib */; };
+		F68FE37C2836169100FA0254 /* CheckListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE37B2836169100FA0254 /* CheckListCollectionViewCell.swift */; };
+		F6C88C03283758E00012B62B /* InputCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C88C01283758E00012B62B /* InputCollectionViewCell.swift */; };
+		F6C88C04283758E00012B62B /* InputCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6C88C02283758E00012B62B /* InputCollectionViewCell.xib */; };
+		F6C88C0B283B4AA10012B62B /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C88C0A283B4AA10012B62B /* UICollectionView+.swift */; };
 		F6CE8FC8282F9471005A5C0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FC7282F9471005A5C0D /* AppDelegate.swift */; };
 		F6CE8FCA282F9471005A5C0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FC9282F9471005A5C0D /* SceneDelegate.swift */; };
 		F6CE8FD1282F9473005A5C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6CE8FD0282F9473005A5C0D /* Assets.xcassets */; };
@@ -86,8 +92,15 @@
 		4DAA81E528360431004010B6 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		4DAA81E628360431004010B6 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		4DB6A56C283C019E00370F10 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		F66F774C283C6B5D004666BA /* CompletionPopUpView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompletionPopUpView.storyboard; sourceTree = "<group>"; };
+		F66F774E283C6B73004666BA /* CompletionPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionPopUpViewController.swift; sourceTree = "<group>"; };
 		F68FE31E28329CFF00FA0254 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		F68FE32028329DBD00FA0254 /* NavigationBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
+		F68FE378283614AF00FA0254 /* CheckListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckListCollectionViewCell.xib; sourceTree = "<group>"; };
+		F68FE37B2836169100FA0254 /* CheckListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListCollectionViewCell.swift; sourceTree = "<group>"; };
+		F6C88C01283758E00012B62B /* InputCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCollectionViewCell.swift; sourceTree = "<group>"; };
+		F6C88C02283758E00012B62B /* InputCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputCollectionViewCell.xib; sourceTree = "<group>"; };
+		F6C88C0A283B4AA10012B62B /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
 		F6CE8FC4282F9471005A5C0D /* 29cm-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29cm-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6CE8FC7282F9471005A5C0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6CE8FC9282F9471005A5C0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,7 +132,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDA400142833C7F80046627A /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +181,25 @@
 				086B72B0283363E100D4BC00 /* Quicksand-Light.ttf */,
 			);
 			path = Quicksand;
+			sourceTree = "<group>";
+		};
+		F68FE32F2833BBC800FA0254 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F68FE33C2833C39100FA0254 /* Hee */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F68FE33C2833C39100FA0254 /* Hee */ = {
+			isa = PBXGroup;
+			children = (
+				F68FE378283614AF00FA0254 /* CheckListCollectionViewCell.xib */,
+				F68FE37B2836169100FA0254 /* CheckListCollectionViewCell.swift */,
+				F6C88C01283758E00012B62B /* InputCollectionViewCell.swift */,
+				F6C88C02283758E00012B62B /* InputCollectionViewCell.xib */,
+			);
+			path = Hee;
 			sourceTree = "<group>";
 		};
 		F6CE8FBB282F9471005A5C0D = {
@@ -298,8 +329,10 @@
 		F6CE90022830FE08005A5C0D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F68FE32F2833BBC800FA0254 /* Cells */,
 				F6CE8FED2830FCC4005A5C0D /* NeulView.storyboard */,
 				F6CE8FE72830FBF8005A5C0D /* HeeView.storyboard */,
+				F66F774C283C6B5D004666BA /* CompletionPopUpView.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,6 +340,7 @@
 		F6CE90032830FE2D005A5C0D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F66F774E283C6B73004666BA /* CompletionPopUpViewController.swift */,
 				F6CE8FEF2830FCCD005A5C0D /* NeulViewController.swift */,
 				F6CE8FE92830FC26005A5C0D /* HeeViewController.swift */,
 			);
@@ -352,6 +386,7 @@
 				F6CE902328310DE7005A5C0D /* Adjusted+.swift */,
 				F6CE902528310F69005A5C0D /* UIViewController+.swift */,
 				F6CE902C2831120C005A5C0D /* CALayer+.swift */,
+				F6C88C0A283B4AA10012B62B /* UICollectionView+.swift */,
 				4D54BEE2283BFB0C00A0425B /* UITableViewCell+.swift */,
 				4DB6A56C283C019E00370F10 /* UIButton+.swift */,
 			);
@@ -393,7 +428,6 @@
 			);
 			name = "29cm-iOS";
 			packageProductDependencies = (
-				BDA400132833C7F80046627A /* IQKeyboardManagerSwift */,
 			);
 			productName = "29cm-iOS";
 			productReference = F6CE8FC4282F9471005A5C0D /* 29cm-iOS.app */;
@@ -424,8 +458,6 @@
 			);
 			mainGroup = F6CE8FBB282F9471005A5C0D;
 			packageReferences = (
-				F6CE902E283113FF005A5C0D /* XCRemoteSwiftPackageReference "Then" */,
-				BDA400122833C7F80046627A /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = F6CE8FC5282F9471005A5C0D /* Products */;
 			projectDirPath = "";
@@ -446,11 +478,14 @@
 				086B72B7283363E100D4BC00 /* SpoqaHanSansNeo-Thin.otf in Resources */,
 				F6CE8FF42830FD18005A5C0D /* ReadView.storyboard in Resources */,
 				4D1F58202832469300EBEA05 /* Images.xcassets in Resources */,
+				F66F774D283C6B5D004666BA /* CompletionPopUpView.storyboard in Resources */,
 				086B72B4283363E100D4BC00 /* NotoSansKR-Black.otf in Resources */,
 				086B72B8283363E100D4BC00 /* SpoqaHanSansNeo-Light.otf in Resources */,
+				F68FE37A283614AF00FA0254 /* CheckListCollectionViewCell.xib in Resources */,
 				086B72B9283363E100D4BC00 /* SpoqaHanSansNeo-Bold.otf in Resources */,
 				086B72BB283363E100D4BC00 /* SpoqaHanSansNeo-Regular.otf in Resources */,
 				086B72B2283363E100D4BC00 /* NotoSansKR-Bold.otf in Resources */,
+				F6C88C04283758E00012B62B /* InputCollectionViewCell.xib in Resources */,
 				086B72B1283363E100D4BC00 /* NotoSansKR-Light.otf in Resources */,
 				F6CE8FEE2830FCC4005A5C0D /* NeulView.storyboard in Resources */,
 				086B72BF283363E100D4BC00 /* Quicksand-SemiBold.ttf in Resources */,
@@ -479,6 +514,7 @@
 				F6CE901A28310107005A5C0D /* Reusable.swift in Sources */,
 				F6CE90012830FDFD005A5C0D /* HeeDataModel.swift in Sources */,
 				F6CE8FEA2830FC26005A5C0D /* HeeViewController.swift in Sources */,
+				F66F774F283C6B73004666BA /* CompletionPopUpViewController.swift in Sources */,
 				F6CE8FF02830FCCD005A5C0D /* NeulViewController.swift in Sources */,
 				086B72942832A50C00D4BC00 /* Font.swift in Sources */,
 				F6CE8FC8282F9471005A5C0D /* AppDelegate.swift in Sources */,
@@ -488,13 +524,16 @@
 				F6CE900C283100AB005A5C0D /* UIView+.swift in Sources */,
 				4DAA81E728360431004010B6 /* PostTableViewCell.swift in Sources */,
 				F6CE9016283100F4005A5C0D /* UITextField+.swift in Sources */,
+				F6C88C0B283B4AA10012B62B /* UICollectionView+.swift in Sources */,
 				F6CE8FF22830FD11005A5C0D /* ReadViewController.swift in Sources */,
 				F6CE902428310DE8005A5C0D /* Adjusted+.swift in Sources */,
 				F6CE8FFF2830FDF7005A5C0D /* NeulDataModel.swift in Sources */,
+				F68FE37C2836169100FA0254 /* CheckListCollectionViewCell.swift in Sources */,
 				F6CE902D2831120C005A5C0D /* CALayer+.swift in Sources */,
 				F6CE902628310F69005A5C0D /* UIViewController+.swift in Sources */,
 				4D1F581E2832335400EBEA05 /* Image.swift in Sources */,
 				F68FE31F28329CFF00FA0254 /* NavigationBarView.swift in Sources */,
+				F6C88C03283758E00012B62B /* InputCollectionViewCell.swift in Sources */,
 				F6CE8FCA282F9471005A5C0D /* SceneDelegate.swift in Sources */,
 				F6CE8FFA2830FDA5005A5C0D /* ReadDataModel.swift in Sources */,
 				4D54BEE3283BFB0C00A0425B /* UITableViewCell+.swift in Sources */,
@@ -711,33 +750,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		BDA400122833C7F80046627A /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		F6CE902E283113FF005A5C0D /* XCRemoteSwiftPackageReference "Then" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/devxoul/Then.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		BDA400132833C7F80046627A /* IQKeyboardManagerSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BDA400122833C7F80046627A /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
-			productName = IQKeyboardManagerSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6CE8FBC282F9471005A5C0D /* Project object */;
 }
