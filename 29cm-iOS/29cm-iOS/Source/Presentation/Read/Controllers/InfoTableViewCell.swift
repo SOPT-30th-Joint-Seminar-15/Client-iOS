@@ -7,11 +7,6 @@
 
 import UIKit
 
-// MARK: - Protocols
-protocol InfoTableViewCellDelegate : AnyObject{
-    func createPostButtonClicked()
-}
-
 final class InfoTableViewCell: UITableViewCell {
     
     // MARK: - Properties

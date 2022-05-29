@@ -7,11 +7,6 @@
 
 import UIKit
 
-// MARK: - Protocols
-protocol PostTableViewCellDelegate : AnyObject{
-    func deleteButtonClicked()
-}
-
 final class PostTableViewCell: UITableViewCell {
     
     // MARK: - Properties
