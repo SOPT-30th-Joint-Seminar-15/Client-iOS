@@ -21,10 +21,10 @@ class DeletePopUp: UIViewController {
         }
     }
     
-    @IBAction func cancelButtonClicked(_ sender: Any) {
+    @IBAction func cancelButtonClicked(_ sender: UIButton) {
         dismiss(animated: true)
     }
-    @IBAction func confirmButtonClicked(_ sender: Any) {
+    @IBAction func confirmButtonClicked(_ sender: UIButton) {
         dismiss(animated: true)
         
     }

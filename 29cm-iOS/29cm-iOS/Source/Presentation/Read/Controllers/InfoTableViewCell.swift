@@ -23,7 +23,7 @@ final class InfoTableViewCell: UITableViewCell {
     }
     
     // MARK: - @IBAction Properties
-    @IBAction func createPostButtonClicked(_ sender: Any) {
+    @IBAction func createPostButtonClicked(_ sender: UIButton) {
         delegate?.createPostButtonClicked()
     }
     
