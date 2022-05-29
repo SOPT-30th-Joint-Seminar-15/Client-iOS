@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DeletePopUp: UIViewController {
+final class DeletePopUp: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

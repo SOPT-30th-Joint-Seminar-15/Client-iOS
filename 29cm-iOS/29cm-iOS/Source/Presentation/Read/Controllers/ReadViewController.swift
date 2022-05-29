@@ -7,13 +7,13 @@
 
 import UIKit
 
-class ReadViewController: BaseViewController {
+final class ReadViewController: BaseViewController {
 
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var navigationBar: NavigationBarView!
-    @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var readTableView: UITableView!
     @IBOutlet weak var paginationView: UIView!
+    
     //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,17 +23,17 @@ class ReadViewController: BaseViewController {
     // MARK: - Functions
     private func registerNib() {
             let infoNib = UINib(nibName: InfoTableViewCell.reuseIdentifier, bundle: nil)
-            tableView.register(infoNib, forCellReuseIdentifier: InfoTableViewCell.reuseIdentifier)
+        readTableView.register(infoNib, forCellReuseIdentifier: InfoTableViewCell.reuseIdentifier)
             
             let postNib = UINib(nibName: PostTableViewCell.reuseIdentifier, bundle: nil)
-            tableView.register(postNib, forCellReuseIdentifier: PostTableViewCell.reuseIdentifier)
+        readTableView.register(postNib, forCellReuseIdentifier: PostTableViewCell.reuseIdentifier)
             
-            tableView.delegate = self
-            tableView.dataSource = self
-            tableView.estimatedRowHeight = 108
-            tableView.rowHeight = UITableView.automaticDimension
-            tableView.tableFooterView = paginationView
-//            tableView.tableFooterView?.layoutIfNeeded()
+        readTableView.delegate = self
+        readTableView.dataSource = self
+        readTableView.estimatedRowHeight = 108
+        readTableView.rowHeight = UITableView.automaticDimension
+        readTableView.tableFooterView = paginationView
+//            readTableView.tableFooterView?.layoutIfNeeded()
         }
 }
 
@@ -46,6 +46,8 @@ extension ReadViewController: UITableViewDelegate {
             cellHeight = 292.adjustedHeight
         case 1:
             cellHeight = UITableView.automaticDimension
+//            108.adjustedHeight
+           
         default:
             cellHeight = 0
         }
@@ -87,7 +89,6 @@ extension ReadViewController: UITableViewDataSource {
             return cell
         default:
             return UITableViewCell()
-            
         }
         
     }
