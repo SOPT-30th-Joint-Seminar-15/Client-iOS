@@ -55,9 +55,11 @@
 │   │        └── Controllers
 │   ├── Service
 │   │   └── Network
-│   │   └── Result
+│   │        └── DTO
+│   │             └── Read
+│   │             └── Create
 │   │   └── Mock
-│   │   └── Model
+│   │        └── MockParser
 └───
 ```
 
