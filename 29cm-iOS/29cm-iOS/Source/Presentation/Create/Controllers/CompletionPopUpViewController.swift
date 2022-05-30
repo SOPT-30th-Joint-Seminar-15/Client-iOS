@@ -27,8 +27,6 @@ final class CompletionPopUpViewController: BaseViewController {
             blur: 4,
             spread: 0
         )
-        completionPopUp.makeRoundedWithBorder(radius: 0, borderColor: Const.Color.cmBlack01!.cgColor)
-        completionButton.makeRoundedWithBorder(radius: 0, borderColor: Const.Color.cmLineGrey!.cgColor)
     }
     
     // MARK: - @IBAction Properties
