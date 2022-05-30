@@ -32,6 +32,7 @@
 		4DAA81E728360431004010B6 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA81E528360431004010B6 /* PostTableViewCell.swift */; };
 		4DAA81E828360431004010B6 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DAA81E628360431004010B6 /* PostTableViewCell.xib */; };
 		4DB6A56D283C019E00370F10 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6A56C283C019E00370F10 /* UIButton+.swift */; };
+		F617EB442844C812007312B9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F617EB432844C812007312B9 /* Alamofire */; };
 		F66F774D283C6B5D004666BA /* CompletionPopUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66F774C283C6B5D004666BA /* CompletionPopUpView.storyboard */; };
 		F66F774F283C6B73004666BA /* CompletionPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66F774E283C6B73004666BA /* CompletionPopUpViewController.swift */; };
 		F68FE31F28329CFF00FA0254 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE31E28329CFF00FA0254 /* NavigationBarView.swift */; };
@@ -132,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F617EB442844C812007312B9 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +430,7 @@
 			);
 			name = "29cm-iOS";
 			packageProductDependencies = (
+				F617EB432844C812007312B9 /* Alamofire */,
 			);
 			productName = "29cm-iOS";
 			productReference = F6CE8FC4282F9471005A5C0D /* 29cm-iOS.app */;
@@ -458,6 +461,7 @@
 			);
 			mainGroup = F6CE8FBB282F9471005A5C0D;
 			packageReferences = (
+				F617EB422844C812007312B9 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = F6CE8FC5282F9471005A5C0D /* Products */;
 			projectDirPath = "";
@@ -750,6 +754,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F617EB422844C812007312B9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F617EB432844C812007312B9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F617EB422844C812007312B9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6CE8FBC282F9471005A5C0D /* Project object */;
 }
