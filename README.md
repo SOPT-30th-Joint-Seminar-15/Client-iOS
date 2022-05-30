@@ -47,11 +47,9 @@
 │   │   └── Common
 │   │   └── Create
 │   │        └── Views
-│   │        └── Models
 │   │        └── Controllers
 │   │   └── Read
 │   │        └── Views
-│   │        └── Models
 │   │        └── Controllers
 │   ├── Service
 │   │   └── Network

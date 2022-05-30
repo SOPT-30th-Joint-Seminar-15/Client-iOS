@@ -57,9 +57,6 @@
 		F6CE8FF02830FCCD005A5C0D /* NeulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FEF2830FCCD005A5C0D /* NeulViewController.swift */; };
 		F6CE8FF22830FD11005A5C0D /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FF12830FD11005A5C0D /* ReadViewController.swift */; };
 		F6CE8FF42830FD18005A5C0D /* ReadView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6CE8FF32830FD18005A5C0D /* ReadView.storyboard */; };
-		F6CE8FFA2830FDA5005A5C0D /* ReadDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FF92830FDA5005A5C0D /* ReadDataModel.swift */; };
-		F6CE8FFF2830FDF7005A5C0D /* NeulDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE8FFE2830FDF7005A5C0D /* NeulDataModel.swift */; };
-		F6CE90012830FDFD005A5C0D /* HeeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE90002830FDFD005A5C0D /* HeeDataModel.swift */; };
 		F6CE900A28310087005A5C0D /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE900928310086005A5C0D /* Const.swift */; };
 		F6CE900C283100AB005A5C0D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE900B283100AB005A5C0D /* UIView+.swift */; };
 		F6CE9016283100F4005A5C0D /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE9015283100F4005A5C0D /* UITextField+.swift */; };
@@ -125,9 +122,6 @@
 		F6CE8FEF2830FCCD005A5C0D /* NeulViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeulViewController.swift; sourceTree = "<group>"; };
 		F6CE8FF12830FD11005A5C0D /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
 		F6CE8FF32830FD18005A5C0D /* ReadView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReadView.storyboard; sourceTree = "<group>"; };
-		F6CE8FF92830FDA5005A5C0D /* ReadDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadDataModel.swift; sourceTree = "<group>"; };
-		F6CE8FFE2830FDF7005A5C0D /* NeulDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeulDataModel.swift; sourceTree = "<group>"; };
-		F6CE90002830FDFD005A5C0D /* HeeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeeDataModel.swift; sourceTree = "<group>"; };
 		F6CE900928310086005A5C0D /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		F6CE900B283100AB005A5C0D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		F6CE9015283100F4005A5C0D /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
@@ -350,7 +344,6 @@
 			children = (
 				F6CE8FF82830FD72005A5C0D /* Controllers */,
 				F6CE8FF72830FD6F005A5C0D /* Views */,
-				F6CE8FF62830FD55005A5C0D /* Models */,
 			);
 			path = Read;
 			sourceTree = "<group>";
@@ -360,17 +353,8 @@
 			children = (
 				F6CE90032830FE2D005A5C0D /* Controllers */,
 				F6CE90022830FE08005A5C0D /* Views */,
-				F6CE8FFB2830FDAB005A5C0D /* Models */,
 			);
 			path = Create;
-			sourceTree = "<group>";
-		};
-		F6CE8FF62830FD55005A5C0D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				F6CE8FF92830FDA5005A5C0D /* ReadDataModel.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		F6CE8FF72830FD6F005A5C0D /* Views */ = {
@@ -391,15 +375,6 @@
 				4DAA81E128360379004010B6 /* InfoTableViewCell.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		F6CE8FFB2830FDAB005A5C0D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				F6CE90002830FDFD005A5C0D /* HeeDataModel.swift */,
-				F6CE8FFE2830FDF7005A5C0D /* NeulDataModel.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		F6CE90022830FE08005A5C0D /* Views */ = {
@@ -590,7 +565,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6CE901A28310107005A5C0D /* Reusable.swift in Sources */,
-				F6CE90012830FDFD005A5C0D /* HeeDataModel.swift in Sources */,
 				F6CE8FEA2830FC26005A5C0D /* HeeViewController.swift in Sources */,
 				F66F774F283C6B73004666BA /* CompletionPopUpViewController.swift in Sources */,
 				F617EB4B2844C8D5007312B9 /* MockParser.swift in Sources */,
@@ -606,7 +580,6 @@
 				F6C88C0B283B4AA10012B62B /* UICollectionView+.swift in Sources */,
 				F6CE8FF22830FD11005A5C0D /* ReadViewController.swift in Sources */,
 				F6CE902428310DE8005A5C0D /* Adjusted+.swift in Sources */,
-				F6CE8FFF2830FDF7005A5C0D /* NeulDataModel.swift in Sources */,
 				F68FE37C2836169100FA0254 /* CheckListCollectionViewCell.swift in Sources */,
 				F6CE902D2831120C005A5C0D /* CALayer+.swift in Sources */,
 				F6CE902628310F69005A5C0D /* UIViewController+.swift in Sources */,
@@ -615,7 +588,6 @@
 				F617EB5A2844CCE0007312B9 /* NetworkResult.swift in Sources */,
 				F6C88C03283758E00012B62B /* InputCollectionViewCell.swift in Sources */,
 				F6CE8FCA282F9471005A5C0D /* SceneDelegate.swift in Sources */,
-				F6CE8FFA2830FDA5005A5C0D /* ReadDataModel.swift in Sources */,
 				F617EB582844CCD4007312B9 /* InquiryCreateDataModel.swift in Sources */,
 				F617EB552844CBA3007312B9 /* APIConstants.swift in Sources */,
 				4D54BEE3283BFB0C00A0425B /* UITableViewCell+.swift in Sources */,
