@@ -12,7 +12,7 @@ final class ReadViewController: BaseViewController {
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var navigationBar: NavigationBarView!
     @IBOutlet weak var readTableView: UITableView!
-    @IBOutlet weak var paginationView: UIView!
+//    @IBOutlet weak var paginationView: UIView!
     
     //MARK: - View Life Cycle
     override func viewDidLoad() {
@@ -27,13 +27,14 @@ final class ReadViewController: BaseViewController {
             
             let postNib = UINib(nibName: PostTableViewCell.reuseIdentifier, bundle: nil)
         readTableView.register(postNib, forCellReuseIdentifier: PostTableViewCell.reuseIdentifier)
+        
+        let pageNib = UINib(nibName: PagingTableViewCell.reuseIdentifier, bundle: nil)
+    readTableView.register(pageNib, forCellReuseIdentifier: PagingTableViewCell.reuseIdentifier)
             
         readTableView.delegate = self
         readTableView.dataSource = self
         readTableView.estimatedRowHeight = 108
         readTableView.rowHeight = UITableView.automaticDimension
-        readTableView.tableFooterView = paginationView
-//            readTableView.tableFooterView?.layoutIfNeeded()
         }
 }
 
@@ -45,9 +46,11 @@ extension ReadViewController: UITableViewDelegate {
         case 0:
             cellHeight = 292.adjustedHeight
         case 1:
-            cellHeight = UITableView.automaticDimension
+            cellHeight = 108.adjustedHeight
 //            108.adjustedHeight
-           
+//            UITableView.automaticDimension
+        case 2 :
+            cellHeight = 25.adjustedHeight
         default:
             cellHeight = 0
         }
@@ -57,7 +60,7 @@ extension ReadViewController: UITableViewDelegate {
 
 extension ReadViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -65,6 +68,8 @@ extension ReadViewController: UITableViewDataSource {
         case 0:
             return 1
         case 1:
+            return 1
+        case 2:
             return 1
         default:
             return 0
@@ -80,17 +85,23 @@ extension ReadViewController: UITableViewDataSource {
             }
             cell.delegate=self
             return cell
-        case 1:
             
+        case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PostTableViewCell.reuseIdentifier, for: indexPath) as? PostTableViewCell else {
                 return UITableViewCell()
             }
             cell.delegate=self
             return cell
+            
+        case 2:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: PagingTableViewCell.reuseIdentifier, for: indexPath) as? PagingTableViewCell else {
+                return UITableViewCell()
+            }
+            return cell
+            
         default:
             return UITableViewCell()
         }
-        
     }
 }
 

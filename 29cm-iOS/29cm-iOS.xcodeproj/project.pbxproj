@@ -34,6 +34,10 @@
 		4DAA81E728360431004010B6 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA81E528360431004010B6 /* PostTableViewCell.swift */; };
 		4DAA81E828360431004010B6 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DAA81E628360431004010B6 /* PostTableViewCell.xib */; };
 		4DB6A56D283C019E00370F10 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6A56C283C019E00370F10 /* UIButton+.swift */; };
+		4DC0040D2844789100EE7134 /* PagingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC0040B2844789100EE7134 /* PagingTableViewCell.swift */; };
+		4DC0040E2844789100EE7134 /* PagingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC0040C2844789100EE7134 /* PagingTableViewCell.xib */; };
+		4DCBC7C32843ECB900C2575C /* InfoTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCBC7C22843ECB900C2575C /* InfoTableViewCellDelegate.swift */; };
+		4DCBC7C52843ECE900C2575C /* PostTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCBC7C42843ECE900C2575C /* PostTableViewCellDelegate.swift */; };
 		BDA400142833C7F80046627A /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BDA400132833C7F80046627A /* IQKeyboardManagerSwift */; };
 		F68FE31F28329CFF00FA0254 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE31E28329CFF00FA0254 /* NavigationBarView.swift */; };
 		F68FE32128329DBD00FA0254 /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68FE32028329DBD00FA0254 /* NavigationBarView.xib */; };
@@ -90,6 +94,10 @@
 		4DAA81E528360431004010B6 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		4DAA81E628360431004010B6 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		4DB6A56C283C019E00370F10 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		4DC0040B2844789100EE7134 /* PagingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingTableViewCell.swift; sourceTree = "<group>"; };
+		4DC0040C2844789100EE7134 /* PagingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PagingTableViewCell.xib; sourceTree = "<group>"; };
+		4DCBC7C22843ECB900C2575C /* InfoTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		4DCBC7C42843ECE900C2575C /* PostTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		F68FE31E28329CFF00FA0254 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		F68FE32028329DBD00FA0254 /* NavigationBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
 		F6CE8FC4282F9471005A5C0D /* 29cm-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29cm-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -273,6 +281,7 @@
 		F6CE8FF72830FD6F005A5C0D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4DC0040C2844789100EE7134 /* PagingTableViewCell.xib */,
 				4D1CB91A283DD15E00EEBF11 /* DeletePopUp.storyboard */,
 				F6CE8FF32830FD18005A5C0D /* ReadView.storyboard */,
 				4DAA81E228360379004010B6 /* InfoTableViewCell.xib */,
@@ -288,6 +297,7 @@
 				4DAA81E528360431004010B6 /* PostTableViewCell.swift */,
 				4DAA81E128360379004010B6 /* InfoTableViewCell.swift */,
 				4D1CB91C283DD17C00EEBF11 /* DeletePopUp.swift */,
+				4DC0040B2844789100EE7134 /* PagingTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -368,6 +378,8 @@
 			isa = PBXGroup;
 			children = (
 				F6CE901928310107005A5C0D /* Reusable.swift */,
+				4DCBC7C22843ECB900C2575C /* InfoTableViewCellDelegate.swift */,
+				4DCBC7C42843ECE900C2575C /* PostTableViewCellDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -471,6 +483,7 @@
 				086B72B6283363E100D4BC00 /* NotoSansKR-Regular.otf in Resources */,
 				4DAA81E428360379004010B6 /* InfoTableViewCell.xib in Resources */,
 				F6CE901E28310124005A5C0D /* Colors.xcassets in Resources */,
+				4DC0040E2844789100EE7134 /* PagingTableViewCell.xib in Resources */,
 				4DAA81E828360431004010B6 /* PostTableViewCell.xib in Resources */,
 				086B72BE283363E100D4BC00 /* Quicksand-Regular.ttf in Resources */,
 			);
@@ -492,6 +505,7 @@
 				4DAA81E328360379004010B6 /* InfoTableViewCell.swift in Sources */,
 				F6CE9033283115AD005A5C0D /* BaseViewController.swift in Sources */,
 				4DB6A56D283C019E00370F10 /* UIButton+.swift in Sources */,
+				4DC0040D2844789100EE7134 /* PagingTableViewCell.swift in Sources */,
 				F6CE900C283100AB005A5C0D /* UIView+.swift in Sources */,
 				4DAA81E728360431004010B6 /* PostTableViewCell.swift in Sources */,
 				F6CE9016283100F4005A5C0D /* UITextField+.swift in Sources */,
@@ -499,6 +513,7 @@
 				F6CE902428310DE8005A5C0D /* Adjusted+.swift in Sources */,
 				F6CE8FFF2830FDF7005A5C0D /* NeulDataModel.swift in Sources */,
 				F6CE902D2831120C005A5C0D /* CALayer+.swift in Sources */,
+				4DCBC7C52843ECE900C2575C /* PostTableViewCellDelegate.swift in Sources */,
 				F6CE902628310F69005A5C0D /* UIViewController+.swift in Sources */,
 				4D1CB91D283DD17C00EEBF11 /* DeletePopUp.swift in Sources */,
 				4D1F581E2832335400EBEA05 /* Image.swift in Sources */,
@@ -506,6 +521,7 @@
 				F6CE8FCA282F9471005A5C0D /* SceneDelegate.swift in Sources */,
 				F6CE8FFA2830FDA5005A5C0D /* ReadDataModel.swift in Sources */,
 				4D54BEE3283BFB0C00A0425B /* UITableViewCell+.swift in Sources */,
+				4DCBC7C32843ECB900C2575C /* InfoTableViewCellDelegate.swift in Sources */,
 				F6CE900A28310087005A5C0D /* Const.swift in Sources */,
 				F6CE901C28310114005A5C0D /* Color.swift in Sources */,
 			);

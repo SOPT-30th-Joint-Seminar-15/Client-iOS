@@ -26,10 +26,6 @@ final class PostTableViewCell: UITableViewCell {
         super.touchesBegan(touches, with: event)
         postContentView.isHidden.toggle()
     }
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//       super.setSelected(selected, animated: animated)
-//        postEntireStackView.arrangedSubviews.last?.isHidden.toggle()
-//    }
     
     // MARK: - @IBAction Properties
     @IBAction func deleteButtonClicked(_ sender: UIButton) {
