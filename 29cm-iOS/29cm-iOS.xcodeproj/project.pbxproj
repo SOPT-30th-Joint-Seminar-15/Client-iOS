@@ -34,10 +34,6 @@
 		4DB6A56D283C019E00370F10 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6A56C283C019E00370F10 /* UIButton+.swift */; };
 		F617EB442844C812007312B9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F617EB432844C812007312B9 /* Alamofire */; };
 		F617EB4B2844C8D5007312B9 /* MockParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F617EB4A2844C8D5007312B9 /* MockParser.swift */; };
-		F617EB4D2844CA16007312B9 /* InquiryInfoMock.strings in Resources */ = {isa = PBXBuildFile; fileRef = F617EB4C2844CA16007312B9 /* InquiryInfoMock.strings */; };
-		F617EB4F2844CB10007312B9 /* PurchaseInfoMock.strings in Resources */ = {isa = PBXBuildFile; fileRef = F617EB4E2844CB10007312B9 /* PurchaseInfoMock.strings */; };
-		F617EB512844CB3E007312B9 /* InquiryDeleteMock.strings in Resources */ = {isa = PBXBuildFile; fileRef = F617EB502844CB3E007312B9 /* InquiryDeleteMock.strings */; };
-		F617EB532844CB73007312B9 /* InquiryCreateMock.strings in Resources */ = {isa = PBXBuildFile; fileRef = F617EB522844CB73007312B9 /* InquiryCreateMock.strings */; };
 		F66F774D283C6B5D004666BA /* CompletionPopUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66F774C283C6B5D004666BA /* CompletionPopUpView.storyboard */; };
 		F66F774F283C6B73004666BA /* CompletionPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66F774E283C6B73004666BA /* CompletionPopUpViewController.swift */; };
 		F68FE31F28329CFF00FA0254 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FE31E28329CFF00FA0254 /* NavigationBarView.swift */; };
@@ -99,10 +95,6 @@
 		4DAA81E628360431004010B6 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		4DB6A56C283C019E00370F10 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		F617EB4A2844C8D5007312B9 /* MockParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockParser.swift; sourceTree = "<group>"; };
-		F617EB4C2844CA16007312B9 /* InquiryInfoMock.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InquiryInfoMock.strings; sourceTree = "<group>"; };
-		F617EB4E2844CB10007312B9 /* PurchaseInfoMock.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = PurchaseInfoMock.strings; sourceTree = "<group>"; };
-		F617EB502844CB3E007312B9 /* InquiryDeleteMock.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InquiryDeleteMock.strings; sourceTree = "<group>"; };
-		F617EB522844CB73007312B9 /* InquiryCreateMock.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InquiryCreateMock.strings; sourceTree = "<group>"; };
 		F66F774C283C6B5D004666BA /* CompletionPopUpView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompletionPopUpView.storyboard; sourceTree = "<group>"; };
 		F66F774E283C6B73004666BA /* CompletionPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionPopUpViewController.swift; sourceTree = "<group>"; };
 		F68FE31E28329CFF00FA0254 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
@@ -207,10 +199,6 @@
 			isa = PBXGroup;
 			children = (
 				F617EB492844C8C5007312B9 /* Parser */,
-				F617EB4C2844CA16007312B9 /* InquiryInfoMock.strings */,
-				F617EB4E2844CB10007312B9 /* PurchaseInfoMock.strings */,
-				F617EB502844CB3E007312B9 /* InquiryDeleteMock.strings */,
-				F617EB522844CB73007312B9 /* InquiryCreateMock.strings */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -516,7 +504,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F617EB532844CB73007312B9 /* InquiryCreateMock.strings in Resources */,
 				086B72B3283363E100D4BC00 /* NotoSansKR-Thin.otf in Resources */,
 				086B72BA283363E100D4BC00 /* SpoqaHanSansNeo-Medium.otf in Resources */,
 				086B72B7283363E100D4BC00 /* SpoqaHanSansNeo-Thin.otf in Resources */,
@@ -527,7 +514,6 @@
 				086B72B8283363E100D4BC00 /* SpoqaHanSansNeo-Light.otf in Resources */,
 				F68FE37A283614AF00FA0254 /* CheckListCollectionViewCell.xib in Resources */,
 				086B72B9283363E100D4BC00 /* SpoqaHanSansNeo-Bold.otf in Resources */,
-				F617EB512844CB3E007312B9 /* InquiryDeleteMock.strings in Resources */,
 				086B72BB283363E100D4BC00 /* SpoqaHanSansNeo-Regular.otf in Resources */,
 				086B72B2283363E100D4BC00 /* NotoSansKR-Bold.otf in Resources */,
 				F6C88C04283758E00012B62B /* InputCollectionViewCell.xib in Resources */,
@@ -539,12 +525,10 @@
 				086B72C0283363E100D4BC00 /* Quicksand-Light.ttf in Resources */,
 				F6CE8FD1282F9473005A5C0D /* Assets.xcassets in Resources */,
 				F68FE32128329DBD00FA0254 /* NavigationBarView.xib in Resources */,
-				F617EB4F2844CB10007312B9 /* PurchaseInfoMock.strings in Resources */,
 				086B72B5283363E100D4BC00 /* NotoSansKR-Medium.otf in Resources */,
 				086B72BD283363E100D4BC00 /* Quicksand-Medium.ttf in Resources */,
 				086B72B6283363E100D4BC00 /* NotoSansKR-Regular.otf in Resources */,
 				4DAA81E428360379004010B6 /* InfoTableViewCell.xib in Resources */,
-				F617EB4D2844CA16007312B9 /* InquiryInfoMock.strings in Resources */,
 				F6CE901E28310124005A5C0D /* Colors.xcassets in Resources */,
 				4DAA81E828360431004010B6 /* PostTableViewCell.xib in Resources */,
 				086B72BE283363E100D4BC00 /* Quicksand-Regular.ttf in Resources */,
