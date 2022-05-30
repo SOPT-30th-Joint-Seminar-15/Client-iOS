@@ -29,8 +29,6 @@ final class InputCollectionViewCell: UICollectionViewCell {
     // MARK: - View Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        setStyle()
     }
     
     // MARK: - @IBAction Properties
@@ -43,15 +41,6 @@ final class InputCollectionViewCell: UICollectionViewCell {
 }
 
 // MARK: - Extensions
-extension InputCollectionViewCell {
-    // TODO: - setStyle() → @IBInspectable 이용하는 것으로 변경
-    private func setStyle() {
-        [emailChangeButton, titleTextField, contentsTextView].forEach {
-            $0?.makeRoundedWithBorder(radius: 0, borderColor: Const.Color.cmLineGrey!.cgColor)
-        }
-    }
-}
-
 extension InputCollectionViewCell: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

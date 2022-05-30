@@ -47,17 +47,17 @@
 │   │   └── Common
 │   │   └── Create
 │   │        └── Views
-│   │        └── Models
 │   │        └── Controllers
 │   │   └── Read
 │   │        └── Views
-│   │        └── Models
 │   │        └── Controllers
 │   ├── Service
 │   │   └── Network
-│   │   └── Result
+│   │        └── DTO
+│   │             └── Read
+│   │             └── Create
 │   │   └── Mock
-│   │   └── Model
+│   │        └── MockParser
 └───
 ```
 

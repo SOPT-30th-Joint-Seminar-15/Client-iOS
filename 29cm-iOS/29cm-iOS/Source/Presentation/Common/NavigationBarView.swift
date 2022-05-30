@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol NavigationBarViewDelegate {
-    func dismissButtonClicked()
-}
-
 class NavigationBarView: UIView, Reusable {
 
     // MARK: - Properties
