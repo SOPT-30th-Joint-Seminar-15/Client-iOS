@@ -1,0 +1,16 @@
+/* 
+  InquiryCreateMock.strings
+  29cm-iOS
+
+  Created by 정은희 on 2022/05/30.
+  
+*/
+
+{
+    "status": 200,
+    "success": true,
+    "message": "Qna 생성 성공.",
+        "data" : {
+                "_id": "6290f278c8e297ba6ff122ef"
+    }
+}
