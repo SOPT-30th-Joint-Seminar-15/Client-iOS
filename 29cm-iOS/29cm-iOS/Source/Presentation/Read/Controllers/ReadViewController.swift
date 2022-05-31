@@ -33,7 +33,6 @@ final class ReadViewController: BaseViewController {
             
         readTableView.delegate = self
         readTableView.dataSource = self
-        readTableView.estimatedRowHeight = 108
         readTableView.rowHeight = UITableView.automaticDimension
         }
 }
@@ -46,11 +45,9 @@ extension ReadViewController: UITableViewDelegate {
         case 0:
             cellHeight = 292.adjustedHeight
         case 1:
-            cellHeight = 108.adjustedHeight
-//            108.adjustedHeight
-//            UITableView.automaticDimension
+            cellHeight = UITableView.automaticDimension
         case 2 :
-            cellHeight = 25.adjustedHeight
+            cellHeight = 93.adjustedHeight
         default:
             cellHeight = 0
         }

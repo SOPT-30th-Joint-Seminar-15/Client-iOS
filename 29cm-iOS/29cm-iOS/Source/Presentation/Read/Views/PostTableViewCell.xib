@@ -28,11 +28,11 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="363" id="2ZA-cF-BfO" customClass="PostTableViewCell" customModule="_9cm_iOS" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="364" height="270"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="2ZA-cF-BfO" id="8of-sp-YYv" customClass="PostTableViewCell" customModule="_9cm_iOS" customModuleProvider="target">
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="2ZA-cF-BfO" id="8of-sp-YYv">
                 <rect key="frame" x="0.0" y="0.0" width="364" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kw7-lK-Bsh">
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lOl-sU-5L6">
                         <rect key="frame" x="0.0" y="0.0" width="364" height="270"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaN-o2-iIb">
@@ -103,7 +103,7 @@
                                         <color key="textColor" name="black02_29cm"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbN-ML-xut">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbN-ML-xut">
                                         <rect key="frame" x="20" y="50.5" width="31" height="16.5"/>
                                         <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
                                         <color key="textColor" name="black02_29cm"/>
@@ -115,7 +115,7 @@
                                         <color key="textColor" name="black02_29cm"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nc-Ac-MA4">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nc-Ac-MA4">
                                         <rect key="frame" x="20" y="114.5" width="31" height="17.5"/>
                                         <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
                                         <color key="textColor" name="black02_29cm"/>
@@ -140,18 +140,17 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="kw7-lK-Bsh" firstAttribute="top" secondItem="8of-sp-YYv" secondAttribute="top" id="Ozh-vp-SOS"/>
-                    <constraint firstAttribute="bottom" secondItem="kw7-lK-Bsh" secondAttribute="bottom" id="WyH-0h-GgQ"/>
-                    <constraint firstAttribute="trailing" secondItem="kw7-lK-Bsh" secondAttribute="trailing" id="XX9-Xf-EBc"/>
-                    <constraint firstItem="kw7-lK-Bsh" firstAttribute="leading" secondItem="8of-sp-YYv" secondAttribute="leading" id="cp9-Jp-OHF"/>
+                    <constraint firstAttribute="bottom" secondItem="lOl-sU-5L6" secondAttribute="bottom" id="2zN-Sc-Zsv"/>
+                    <constraint firstAttribute="trailing" secondItem="lOl-sU-5L6" secondAttribute="trailing" id="HWZ-3P-XgT"/>
+                    <constraint firstItem="lOl-sU-5L6" firstAttribute="leading" secondItem="8of-sp-YYv" secondAttribute="leading" id="PB6-uo-tEn"/>
+                    <constraint firstItem="lOl-sU-5L6" firstAttribute="top" secondItem="8of-sp-YYv" secondAttribute="top" id="dQF-bF-wpD"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="E4Z-CR-FCd"/>
             <connections>
                 <outlet property="postContentView" destination="SdI-Xm-OhM" id="ECa-A9-sHF"/>
-                <outlet property="postEntireStackView" destination="kw7-lK-Bsh" id="bfV-qz-I44"/>
             </connections>
-            <point key="canvasLocation" x="700" y="8"/>
+            <point key="canvasLocation" x="698.55072463768124" y="7.3660714285714279"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -12,6 +12,7 @@ final class PostTableViewCell: UITableViewCell {
     // MARK: - Properties
     var delegate : PostTableViewCellDelegate?
     
+    
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var postEntireStackView: UIStackView!
     @IBOutlet weak var postContentView: UIView!
