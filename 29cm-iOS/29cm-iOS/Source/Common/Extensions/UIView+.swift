@@ -33,7 +33,7 @@ extension UIView {
         self.layer.mask = shapeLayer
     }
     
-    // @IBInspectable
+    // 테두리 폭
     @IBInspectable var borderWidth: CGFloat {
         get {
             return layer.borderWidth
@@ -43,6 +43,7 @@ extension UIView {
         }
     }
     
+    // 테두리 색깔
     @IBInspectable var borderColor: UIColor? {
         get {
             return UIColor(cgColor: layer.borderColor!)
