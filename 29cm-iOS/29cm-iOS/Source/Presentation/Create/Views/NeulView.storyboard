@@ -26,7 +26,7 @@
         <!--Neul View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="NeulView" id="Y6W-OH-hqX" customClass="NeulViewController" customModule="_9cm_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NeulViewController" id="Y6W-OH-hqX" customClass="NeulViewController" customModule="_9cm_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="498" height="1682"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -556,7 +556,7 @@
                                                 <rect key="frame" x="20" y="1406.6666666666667" width="304" height="126"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="7" id="nxb-Nv-EYc">
-                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="18.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="618.33333333333337" height="18.666666666666668"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhP-jq-Ef0">

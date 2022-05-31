@@ -7,12 +7,23 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="SpoqaHanSansNeo-Bold.otf">
-            <string>SpoqaHanSansNeo-Bold</string>
-        </array>
-    </customFonts>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="qfI-lb-vDP">
+            <objects>
+                <navigationController id="dSq-dY-UXQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4k4-hu-Sdq">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="gRY-gc-Bhg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iLz-Ox-GUo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-938" y="68"/>
+        </scene>
         <!--Read View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
@@ -22,48 +33,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIe-OQ-LcD" customClass="NavigationBarView" customModule="_9cm_iOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="56"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="5XF-US-Sxq"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="chs-fn-ErI">
-                                <rect key="frame" x="0.0" y="100" width="375" height="678"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="chs-fn-ErI">
+                                <rect key="frame" x="0.0" y="144" width="375" height="634"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <view key="tableFooterView" contentMode="scaleToFill" id="2r9-w3-0Xz">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZFM-uF-soR">
-                                            <rect key="frame" x="181.66666666666666" y="21" width="12" height="22"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syZ-lS-2gq">
-                                                    <rect key="frame" x="0.0" y="0.0" width="12" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="bUj-g7-DSx"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="20"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yt7-5z-uRc">
-                                                    <rect key="frame" x="1.3333333333333428" y="21" width="9" height="1"/>
-                                                    <color key="backgroundColor" systemColor="labelColor"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="9" id="M4N-GZ-Vfx"/>
-                                                        <constraint firstAttribute="height" constant="1" id="zd7-SF-qyO"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
-                                        </stackView>
-                                    </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    <constraints>
-                                        <constraint firstItem="ZFM-uF-soR" firstAttribute="top" secondItem="2r9-w3-0Xz" secondAttribute="top" constant="21" id="6RW-dB-iXe"/>
-                                        <constraint firstItem="ZFM-uF-soR" firstAttribute="centerX" secondItem="2r9-w3-0Xz" secondAttribute="centerX" id="mIj-T7-bkz"/>
-                                    </constraints>
-                                </view>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -78,9 +56,10 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="chs-fn-ErI" secondAttribute="bottom" id="ump-mW-iHi"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="KRK-4G-DKx"/>
                     <connections>
                         <outlet property="navigationBar" destination="KIe-OQ-LcD" id="wzi-mW-lJj"/>
-                        <outlet property="tableView" destination="chs-fn-ErI" id="dcq-NL-bRp"/>
+                        <outlet property="readTableView" destination="chs-fn-ErI" id="HPe-G7-J9M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -89,9 +68,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -26,19 +26,19 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:1 문의 내역" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhg-yU-dGA">
-                        <rect key="frame" x="136.5" y="6" width="100.5" height="26.5"/>
+                        <rect key="frame" x="136.5" y="6.5" width="100.5" height="26.5"/>
                         <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="18"/>
                         <color key="textColor" name="black01_29cm"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상담시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utG-DG-LBz">
-                        <rect key="frame" x="20" y="84.5" width="52" height="20.5"/>
+                        <rect key="frame" x="20" y="85" width="52" height="20.5"/>
                         <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans KR" pointSize="14"/>
                         <color key="textColor" name="black02_29cm"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hE-8l-Myw">
-                        <rect key="frame" x="20" y="112" width="136" height="17.5"/>
+                        <rect key="frame" x="20" y="112.5" width="136" height="17.5"/>
                         <string key="text"> 평일(월 ~ 금) 10:00~17:00
 </string>
                         <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
@@ -46,7 +46,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Off-time 12:00 ~ 14:00, 토/일/공휴일 휴무)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzb-FM-fby">
-                        <rect key="frame" x="20" y="134.5" width="225" height="18"/>
+                        <rect key="frame" x="20" y="135" width="225" height="17.5"/>
                         <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="12"/>
                         <color key="textColor" name="black02_29cm"/>
                         <nil key="highlightedColor"/>
@@ -77,6 +77,9 @@
                         <state key="normal" title="1:1문의 쓰기">
                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
+                        <connections>
+                            <action selector="createPostButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xw8-aL-YkG"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

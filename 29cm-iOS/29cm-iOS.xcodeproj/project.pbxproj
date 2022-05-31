@@ -24,6 +24,8 @@
 		086B72BE283363E100D4BC00 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72AE283363E100D4BC00 /* Quicksand-Regular.ttf */; };
 		086B72BF283363E100D4BC00 /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72AF283363E100D4BC00 /* Quicksand-SemiBold.ttf */; };
 		086B72C0283363E100D4BC00 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72B0283363E100D4BC00 /* Quicksand-Light.ttf */; };
+		4D1CB91B283DD15E00EEBF11 /* DeletePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1CB91A283DD15E00EEBF11 /* DeletePopUp.storyboard */; };
+		4D1CB91D283DD17C00EEBF11 /* DeletePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CB91C283DD17C00EEBF11 /* DeletePopUp.swift */; };
 		4D1F581E2832335400EBEA05 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F581D2832335400EBEA05 /* Image.swift */; };
 		4D1F58202832469300EBEA05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F581F2832469300EBEA05 /* Images.xcassets */; };
 		4D54BEE3283BFB0C00A0425B /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D54BEE2283BFB0C00A0425B /* UITableViewCell+.swift */; };
@@ -31,6 +33,10 @@
 		4DAA81E428360379004010B6 /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DAA81E228360379004010B6 /* InfoTableViewCell.xib */; };
 		4DAA81E728360431004010B6 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA81E528360431004010B6 /* PostTableViewCell.swift */; };
 		4DAA81E828360431004010B6 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DAA81E628360431004010B6 /* PostTableViewCell.xib */; };
+		4DC0040D2844789100EE7134 /* PagingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC0040B2844789100EE7134 /* PagingTableViewCell.swift */; };
+		4DC0040E2844789100EE7134 /* PagingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC0040C2844789100EE7134 /* PagingTableViewCell.xib */; };
+		4DCBC7C32843ECB900C2575C /* InfoTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCBC7C22843ECB900C2575C /* InfoTableViewCellDelegate.swift */; };
+		4DCBC7C52843ECE900C2575C /* PostTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCBC7C42843ECE900C2575C /* PostTableViewCellDelegate.swift */; };
 		F617EB442844C812007312B9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F617EB432844C812007312B9 /* Alamofire */; };
 		F617EB4B2844C8D5007312B9 /* MockParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F617EB4A2844C8D5007312B9 /* MockParser.swift */; };
 		F617EB552844CBA3007312B9 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F617EB542844CBA3007312B9 /* APIConstants.swift */; };
@@ -88,6 +94,8 @@
 		086B72AE283363E100D4BC00 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 		086B72AF283363E100D4BC00 /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
 		086B72B0283363E100D4BC00 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
+		4D1CB91A283DD15E00EEBF11 /* DeletePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeletePopUp.storyboard; sourceTree = "<group>"; };
+		4D1CB91C283DD17C00EEBF11 /* DeletePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePopUp.swift; sourceTree = "<group>"; };
 		4D1F581D2832335400EBEA05 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		4D1F581F2832469300EBEA05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4D54BEE2283BFB0C00A0425B /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
@@ -95,6 +103,10 @@
 		4DAA81E228360379004010B6 /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
 		4DAA81E528360431004010B6 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		4DAA81E628360431004010B6 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		4DC0040B2844789100EE7134 /* PagingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingTableViewCell.swift; sourceTree = "<group>"; };
+		4DC0040C2844789100EE7134 /* PagingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PagingTableViewCell.xib; sourceTree = "<group>"; };
+		4DCBC7C22843ECB900C2575C /* InfoTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		4DCBC7C42843ECE900C2575C /* PostTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		F617EB4A2844C8D5007312B9 /* MockParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockParser.swift; sourceTree = "<group>"; };
 		F617EB542844CBA3007312B9 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		F617EB572844CCD4007312B9 /* InquiryCreateDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryCreateDataModel.swift; sourceTree = "<group>"; };
@@ -360,6 +372,8 @@
 		F6CE8FF72830FD6F005A5C0D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4DC0040C2844789100EE7134 /* PagingTableViewCell.xib */,
+				4D1CB91A283DD15E00EEBF11 /* DeletePopUp.storyboard */,
 				F6CE8FF32830FD18005A5C0D /* ReadView.storyboard */,
 				4DAA81E228360379004010B6 /* InfoTableViewCell.xib */,
 				4DAA81E628360431004010B6 /* PostTableViewCell.xib */,
@@ -373,6 +387,8 @@
 				F6CE8FF12830FD11005A5C0D /* ReadViewController.swift */,
 				4DAA81E528360431004010B6 /* PostTableViewCell.swift */,
 				4DAA81E128360379004010B6 /* InfoTableViewCell.swift */,
+				4D1CB91C283DD17C00EEBF11 /* DeletePopUp.swift */,
+				4DC0040B2844789100EE7134 /* PagingTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -447,6 +463,8 @@
 			isa = PBXGroup;
 			children = (
 				F6CE901928310107005A5C0D /* Reusable.swift */,
+				4DCBC7C22843ECB900C2575C /* InfoTableViewCellDelegate.swift */,
+				4DCBC7C42843ECE900C2575C /* PostTableViewCellDelegate.swift */,
 				F6C4799A284512B7003D1CD8 /* NavigationBarViewDelegate.swift */,
 			);
 			path = Protocols;
@@ -533,6 +551,7 @@
 				4D1F58202832469300EBEA05 /* Images.xcassets in Resources */,
 				F66F774D283C6B5D004666BA /* CompletionPopUpView.storyboard in Resources */,
 				086B72B4283363E100D4BC00 /* NotoSansKR-Black.otf in Resources */,
+				4D1CB91B283DD15E00EEBF11 /* DeletePopUp.storyboard in Resources */,
 				086B72B8283363E100D4BC00 /* SpoqaHanSansNeo-Light.otf in Resources */,
 				F68FE37A283614AF00FA0254 /* CheckListCollectionViewCell.xib in Resources */,
 				086B72B9283363E100D4BC00 /* SpoqaHanSansNeo-Bold.otf in Resources */,
@@ -552,6 +571,7 @@
 				086B72B6283363E100D4BC00 /* NotoSansKR-Regular.otf in Resources */,
 				4DAA81E428360379004010B6 /* InfoTableViewCell.xib in Resources */,
 				F6CE901E28310124005A5C0D /* Colors.xcassets in Resources */,
+				4DC0040E2844789100EE7134 /* PagingTableViewCell.xib in Resources */,
 				4DAA81E828360431004010B6 /* PostTableViewCell.xib in Resources */,
 				086B72BE283363E100D4BC00 /* Quicksand-Regular.ttf in Resources */,
 			);
@@ -573,6 +593,7 @@
 				F6CE8FC8282F9471005A5C0D /* AppDelegate.swift in Sources */,
 				4DAA81E328360379004010B6 /* InfoTableViewCell.swift in Sources */,
 				F6CE9033283115AD005A5C0D /* BaseViewController.swift in Sources */,
+				4DC0040D2844789100EE7134 /* PagingTableViewCell.swift in Sources */,
 				F6CE900C283100AB005A5C0D /* UIView+.swift in Sources */,
 				4DAA81E728360431004010B6 /* PostTableViewCell.swift in Sources */,
 				F6CE9016283100F4005A5C0D /* UITextField+.swift in Sources */,
@@ -581,7 +602,9 @@
 				F6CE902428310DE8005A5C0D /* Adjusted+.swift in Sources */,
 				F68FE37C2836169100FA0254 /* CheckListCollectionViewCell.swift in Sources */,
 				F6CE902D2831120C005A5C0D /* CALayer+.swift in Sources */,
+				4DCBC7C52843ECE900C2575C /* PostTableViewCellDelegate.swift in Sources */,
 				F6CE902628310F69005A5C0D /* UIViewController+.swift in Sources */,
+				4D1CB91D283DD17C00EEBF11 /* DeletePopUp.swift in Sources */,
 				4D1F581E2832335400EBEA05 /* Image.swift in Sources */,
 				F68FE31F28329CFF00FA0254 /* NavigationBarView.swift in Sources */,
 				F6C4799B284512B7003D1CD8 /* NavigationBarViewDelegate.swift in Sources */,
@@ -591,6 +614,7 @@
 				F617EB582844CCD4007312B9 /* InquiryCreateDataModel.swift in Sources */,
 				F617EB552844CBA3007312B9 /* APIConstants.swift in Sources */,
 				4D54BEE3283BFB0C00A0425B /* UITableViewCell+.swift in Sources */,
+				4DCBC7C32843ECB900C2575C /* InfoTableViewCellDelegate.swift in Sources */,
 				F6CE900A28310087005A5C0D /* Const.swift in Sources */,
 				F6CE901C28310114005A5C0D /* Color.swift in Sources */,
 				F617EB5E2844D191007312B9 /* Temp.swift in Sources */,
