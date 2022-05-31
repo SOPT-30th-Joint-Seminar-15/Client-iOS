@@ -103,6 +103,10 @@ extension ReadViewController: UITableViewDataSource {
 }
 
 extension ReadViewController :PostTableViewCellDelegate {
+    func tableViewCellReload() {
+        self.readTableView.performBatchUpdates(nil)
+    }
+    
     func deleteButtonClicked() {
         guard let popUp = UIStoryboard(name: "DeletePopUp", bundle: nil).instantiateViewController(withIdentifier: DeletePopUp.reuseIdentifier) as? DeletePopUp else { return }
         popUp.modalTransitionStyle = .crossDissolve

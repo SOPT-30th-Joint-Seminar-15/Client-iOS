@@ -26,6 +26,7 @@ final class PostTableViewCell: UITableViewCell {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         postContentView.isHidden.toggle()
+        delegate?.tableViewCellReload()
     }
     
     // MARK: - @IBAction Properties
