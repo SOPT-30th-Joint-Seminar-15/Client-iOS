@@ -1,23 +1,16 @@
 {
-  "pins" : [
-    {
-      "identity" : "iqkeyboardmanager",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/hackiftekhar/IQKeyboardManager.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "f0fad1d51f9710cbd0ac6d49121d8b7fddd5c7f6"
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": "master",
+          "revision": "8a9e280b160bbe82b725596d5934572be17389fe",
+          "version": null
+        }
       }
-    },
-    {
-      "identity" : "then",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/devxoul/Then.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "d41ef523faef0f911369f79c0b96815d9dbb6d7a"
-      }
-    }
-  ],
-  "version" : 2
+    ]
+  },
+  "version": 1
 }
