@@ -18,6 +18,7 @@ final class ReadViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNib()
+        getInquiryData()
     }
     
     // MARK: - Functions
@@ -119,5 +120,26 @@ extension ReadViewController :InfoTableViewCellDelegate {
     func createPostButtonClicked() {
         guard let readView = UIStoryboard(name: "NeulView", bundle: nil).instantiateViewController(withIdentifier: NeulViewController.reuseIdentifier) as? NeulViewController else { return }
         self.navigationController?.pushViewController(readView, animated: true)
+    }
+}
+
+extension ReadViewController {
+    func getInquiryData() {
+        InquiryReadDataService.shared.inquiryRead(
+            userId: "628f2a4174995ed500bc18e9") { response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? InquiryReadResponse else { return }
+                print(data)
+            case .requestErr(let err):
+                print(err)
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
     }
 }
