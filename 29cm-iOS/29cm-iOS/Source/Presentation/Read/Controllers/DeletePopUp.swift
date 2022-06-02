@@ -28,7 +28,31 @@ final class DeletePopUp: UIViewController {
         dismiss(animated: true)
     }
     @IBAction func confirmButtonClicked(_ sender: UIButton) {
+        deletePost()
         dismiss(animated: true)
         
+    }
+}
+
+extension DeletePopUp {
+    func deletePost() {
+        InquiryDeleteDataService.shared.inquiryDelete(
+            
+            //TODO: 글 id 가져와서 넣기
+            inquiryId: "628f4cbecc247601f5bcdc50") { response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? InquiryDeleteResponse else { return }
+                print(data)
+            case .requestErr(let err):
+                print(err)
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
     }
 }

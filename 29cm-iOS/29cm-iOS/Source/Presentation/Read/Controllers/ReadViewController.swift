@@ -138,6 +138,7 @@ extension ReadViewController {
             case .serverErr:
                 print("serverErr")
             case .networkFail:
+                print("getInquiryData")
                 print("networkFail")
             }
         }
