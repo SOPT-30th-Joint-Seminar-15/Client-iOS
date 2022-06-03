@@ -94,7 +94,7 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
                           let completionPopUp = self.popUpStoryboard.instantiateViewController(withIdentifier: "CompletionPopUpViewController") as? CompletionPopUpViewController else { return }
                     print("success")
                     completionPopUp.modalPresentationStyle = .overFullScreen
-                    self.present(completionPopUp, animated: true)
+                    self.present(completionPopUp, animated: false)
                 case .requestErr(let error):
                     print(error)
                 case .pathErr:
