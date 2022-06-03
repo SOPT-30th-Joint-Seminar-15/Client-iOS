@@ -7,6 +7,8 @@
 
 import UIKit
 
+import Alamofire
+
 final class NeulViewController: BaseViewController, UITextFieldDelegate {
 
     // MARK: - @IBOutlet Properties
@@ -19,16 +21,19 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
     @IBOutlet var purchaseButtons: [UIButton]!
     @IBOutlet weak var orderDetailView: UIView!
     @IBOutlet weak var orderDetailViewConst: NSLayoutConstraint!
+    @IBOutlet weak var allowEmailButton: UIButton!
     
     // MARK: - Properties
     let titleTextFieldPlaceHolder: String = "제목을 입력해주세요"
     let textViewPlaceHolder: String = "내용을 입력해주세요"
+    var selectedInquiryCategory: String = ""
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setUI()
+        fetchInquiryInfo()
     }
     
     // MARK: - @IBAction Properties
@@ -46,12 +51,22 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
                 orderDetailViewConst.constant = 0
             }
             sender.isSelected = true
+            selectedInquiryCategory = sender.titleLabel?.text ?? ""
+            print(selectedInquiryCategory)
         }
         else {
             sender.isSelected = false
             orderDetailView.isHidden = true
             orderDetailViewConst.constant = 0
-            
+            selectedInquiryCategory = ""
+        }
+    }
+    @IBAction func allowEmailButtonTapped(_ sender: UIButton) {
+        if !sender.isSelected {
+            sender.isSelected = true
+        }
+        else {
+            sender.isSelected = false
         }
     }
     
@@ -107,7 +122,8 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
            let inquiryContentTextView = inquiryContentTextView,
            let changeEmailButton = changeEmailButton,
            let allInquiryButtons = inquiryButtons,
-           let orderDetailView = orderDetailView {
+           let orderDetailView = orderDetailView,
+           let allowEmailButton = allowEmailButton {
             
             inquiryTitleTextField.delegate = self
             inquiryContentTextView.delegate = self
@@ -116,6 +132,8 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
                 allInquiryButtons[i].setImage(Const.Image.icnButtonOff, for: .normal)
                 allInquiryButtons[i].setImage(Const.Image.icnButtonOn, for: .selected)
             }
+            allowEmailButton.setImage(Const.Image.icnSelectboxOn, for: .selected)
+            allowEmailButton.setImage(Const.Image.icnSelectboxOff, for: .normal)
             
             orderDetailView.isHidden = true
             orderDetailViewConst.constant = 0
