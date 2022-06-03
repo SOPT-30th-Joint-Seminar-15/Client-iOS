@@ -80,15 +80,6 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
     @IBAction func registerButtonTapped(_ sender: UIButton) {
         guard let inquiryTitle = inquiryTitleTextField.text,
               let inquiryContent = inquiryContentTextView.text else { return }
-        print("----------------------------")
-        print(Const.UserID.userE9)
-        print("soryeongk@test.com")
-        print(selectedInquiryCategory)
-        print(Const.OrderNum.orderAC)
-        print(inquiryTitle)
-        print(inquiryContent)
-        print(allowEmailButton.isSelected)
-        print("----------------------------")
         InquiryCreateDataService.shared.inquiryCreate(
             userId: Const.UserID.userE9,
             email: "haneul@test.com",

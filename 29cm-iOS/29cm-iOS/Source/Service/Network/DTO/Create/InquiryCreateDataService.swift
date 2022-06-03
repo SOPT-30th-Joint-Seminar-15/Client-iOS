@@ -60,11 +60,11 @@ struct InquiryCreateDataService {
 extension InquiryCreateDataService {
     private func judgeStatus(by statusCode: Int, in data: Data) -> NetworkResult<Any> {
         switch statusCode {
-        case 200:
+        case 200...299:
             return isValidData(in: data)
-        case 400:
+        case 400...499:
             return isUsedPathErr(in: data)
-        case 500:
+        case 500...599:
             return .serverErr
         default:
             return .networkFail
