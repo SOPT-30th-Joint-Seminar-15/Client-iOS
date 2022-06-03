@@ -150,6 +150,24 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
             view.makeRoundedWithBorder(radius: 0, borderColor: Const.Color.cmBoxGrey!.cgColor)
         }
     }
+    func fetchInquiryInfo() {
+        InquiryInfoDataService.shared.inquiryInfo(orderNum: Const.OrderNum.orderAC) { response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? InquiryCreateResponse else { return }
+                print(data)
+                print("success")
+            case .requestErr(let error):
+                print(error)
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
+    }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
