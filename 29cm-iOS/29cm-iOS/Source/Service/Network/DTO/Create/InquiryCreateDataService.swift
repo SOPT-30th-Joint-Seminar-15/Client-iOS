@@ -26,7 +26,7 @@ struct InquiryCreateDataService {
             "Content-Type": "application/json"
         ]
         let body: Parameters = [
-            "userID": userId,
+            "userId": userId,
             "email": email,
             "inquiryCategory": inquiryCategory,
             "orderNum": orderNum,
@@ -73,15 +73,14 @@ extension InquiryCreateDataService {
     
     private func isValidData(in data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(InquiryCreateData.self, from: data)
+        guard let decodedData = try? decoder.decode(InquiryCreateResponse.self, from: data)
         else { return .pathErr }
         return .success(decodedData)
     }
     
     private func isUsedPathErr(in data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(InquiryCreateData.self, from: data)
-        else { return .pathErr }
+        guard let decodedData = try? decoder.decode(InquiryCreateResponse.self, from: data) else { return .pathErr }
         return .requestErr(decodedData)
     }
 }
