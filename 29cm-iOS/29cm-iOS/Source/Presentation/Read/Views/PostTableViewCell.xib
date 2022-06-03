@@ -27,14 +27,14 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="363" id="2ZA-cF-BfO" customClass="PostTableViewCell" customModule="_9cm_iOS" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="364" height="270"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="2ZA-cF-BfO" id="8of-sp-YYv">
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" tableViewCell="2ZA-cF-BfO" id="8of-sp-YYv">
                 <rect key="frame" x="0.0" y="0.0" width="364" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lOl-sU-5L6">
-                        <rect key="frame" x="0.0" y="0.0" width="364" height="270"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lOl-sU-5L6">
+                        <rect key="frame" x="0.0" y="0.0" width="364" height="108"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaN-o2-iIb">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gaN-o2-iIb">
                                 <rect key="frame" x="0.0" y="0.0" width="364" height="108"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022-05-12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slb-Iz-Vg7">
@@ -147,7 +147,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="E4Z-CR-FCd"/>
             <connections>
+                <outlet property="answerLabel" destination="7nc-Ac-MA4" id="82C-ay-WPM"/>
+                <outlet property="createdAtLabel" destination="Slb-Iz-Vg7" id="lKn-8Q-tjg"/>
+                <outlet property="inquiryCategoryLabel" destination="Shu-ht-aiY" id="hyD-Pm-f2W"/>
+                <outlet property="isAnsweredLabel" destination="kZE-s3-6MP" id="CJZ-qh-P2Z"/>
                 <outlet property="postContentView" destination="SdI-Xm-OhM" id="ECa-A9-sHF"/>
+                <outlet property="questionLabel" destination="QbN-ML-xut" id="heE-dt-XdW"/>
             </connections>
             <point key="canvasLocation" x="698.55072463768124" y="7.3660714285714279"/>
         </tableViewCell>

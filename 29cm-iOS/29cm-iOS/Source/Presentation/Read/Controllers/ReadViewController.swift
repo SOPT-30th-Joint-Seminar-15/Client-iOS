@@ -9,6 +9,8 @@ import UIKit
 
 final class ReadViewController: BaseViewController {
 
+    var inquiryList: [InquiryReadData] = []
+    
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var navigationBar: NavigationBarView!
     @IBOutlet weak var readTableView: UITableView!
@@ -66,7 +68,7 @@ extension ReadViewController: UITableViewDataSource {
         case 0:
             return 1
         case 1:
-            return 1
+            return inquiryList.count
         case 2:
             return 1
         default:
@@ -88,6 +90,7 @@ extension ReadViewController: UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: PostTableViewCell.reuseIdentifier, for: indexPath) as? PostTableViewCell else {
                 return UITableViewCell()
             }
+            cell.setData(inquiryList[indexPath.row])
             cell.delegate=self
             return cell
             
@@ -127,10 +130,18 @@ extension ReadViewController {
     func getInquiryData() {
         InquiryReadDataService.shared.inquiryRead(
             userId: "628f2a4174995ed500bc18e9") { response in
+                print(response)
             switch response {
             case .success(let data):
                 guard let data = data as? InquiryReadResponse else { return }
-                print(data)
+                if let data = data.data {
+                    print(data)
+                    self.inquiryList = data
+                    self.readTableView.reloadData()
+                }
+//                    self.inquiryList = inquiryList
+//                    print(inquiryList)
+//                    self.readTableView.reloadData()
             case .requestErr(let err):
                 print(err)
             case .pathErr:

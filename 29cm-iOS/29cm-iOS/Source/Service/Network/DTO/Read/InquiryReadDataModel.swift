@@ -22,6 +22,10 @@ struct InquiryReadData: Codable {
     let answer: String
     let isAnswered: Bool
     
+    enum CodingKeys: String, CodingKey {
+        case inquiryId, inquiryCategory, question, createdAt,answer,isAnswered
+    }
+    
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         inquiryId = (try? values.decode(String.self, forKey: .inquiryId)) ?? ""
