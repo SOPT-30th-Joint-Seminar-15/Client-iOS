@@ -9,6 +9,8 @@ import UIKit
 
 final class DeletePopUp: UIViewController {
     
+    var inquiryId: String = ""
+    
     //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,17 +31,18 @@ final class DeletePopUp: UIViewController {
     }
     @IBAction func confirmButtonClicked(_ sender: UIButton) {
         deletePost()
+        NotificationCenter.default.post(name: Notification.Name("Inquiry Deleted"), object: self, userInfo: ["inquiryId": inquiryId])
         dismiss(animated: true)
-        
+//        ,completion: {if let readView = self.presentingViewController as? ReadViewController {
+//            readView.readTableView.reloadData()
+//        }}
     }
 }
 
 extension DeletePopUp {
     func deletePost() {
         InquiryDeleteDataService.shared.inquiryDelete(
-            
-            //TODO: 글 id 가져와서 넣기
-            inquiryId: "628f4cbecc247601f5bcdc50") { response in
+            inquiryId: inquiryId) { response in
             switch response {
             case .success(let data):
                 guard let data = data as? InquiryDeleteResponse else { return }

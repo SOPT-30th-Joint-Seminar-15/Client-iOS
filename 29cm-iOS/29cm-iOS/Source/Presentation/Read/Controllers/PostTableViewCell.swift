@@ -38,7 +38,7 @@ final class PostTableViewCell: UITableViewCell {
     
     // MARK: - @IBAction Properties
     @IBAction func deleteButtonClicked(_ sender: UIButton) {
-        delegate?.deleteButtonClicked()
+        delegate?.deleteButtonClicked(inquiryId: inquiryId)
     }
     
     

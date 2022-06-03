@@ -18,12 +18,26 @@ final class ReadViewController: BaseViewController {
     
     //MARK: - View Life Cycle
     override func viewDidLoad() {
+//        readTableView.reloadData()
         super.viewDidLoad()
         registerNib()
         getInquiryData()
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(notiReceived),
+                                               name: NSNotification.Name("Inquiry Deleted"),
+                                               object: nil)
     }
     
     // MARK: - Functions
+    @objc func notiReceived(notification: NSNotification) {
+        if let inquiryId = notification.userInfo?["inquiryId"] as? String {
+            print("inquiryId",inquiryId)
+        }
+        self.readTableView.reloadData()
+    }
+    
+    
+    
     private func registerNib() {
             let infoNib = UINib(nibName: InfoTableViewCell.reuseIdentifier, bundle: nil)
         readTableView.register(infoNib, forCellReuseIdentifier: InfoTableViewCell.reuseIdentifier)
@@ -111,8 +125,9 @@ extension ReadViewController :PostTableViewCellDelegate {
         self.readTableView.performBatchUpdates(nil)
     }
     
-    func deleteButtonClicked() {
+    func deleteButtonClicked(inquiryId: String) {
         guard let popUp = UIStoryboard(name: "DeletePopUp", bundle: nil).instantiateViewController(withIdentifier: DeletePopUp.reuseIdentifier) as? DeletePopUp else { return }
+        popUp.inquiryId=inquiryId
         popUp.modalTransitionStyle = .crossDissolve
         popUp.modalPresentationStyle = .overFullScreen
         self.present(popUp,animated: true)

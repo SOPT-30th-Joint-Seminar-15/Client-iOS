@@ -8,6 +8,6 @@
 import Foundation
 
 protocol PostTableViewCellDelegate : AnyObject{
-    func deleteButtonClicked()
+    func deleteButtonClicked(inquiryId: String)
     func tableViewCellReload()
 }

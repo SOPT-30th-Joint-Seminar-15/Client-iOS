@@ -58,14 +58,14 @@ extension InquiryDeleteDataService {
 //
     private func isValidData(in data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(InquiryReadData.self, from: data)
+        guard let decodedData = try? decoder.decode(InquiryDeleteResponse.self, from: data)
         else { return .pathErr }
         return .success(decodedData)
     }
 
     private func isUsedPathErr(in data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(InquiryReadData.self, from: data)
+        guard let decodedData = try? decoder.decode(InquiryDeleteResponse.self, from: data)
         else { return .pathErr }
         return .requestErr(decodedData)
     }
