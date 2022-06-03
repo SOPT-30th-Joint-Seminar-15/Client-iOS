@@ -12,6 +12,7 @@ final class PostTableViewCell: UITableViewCell {
     // MARK: - Properties
     var delegate : PostTableViewCellDelegate?
     var inquiryId=""
+    var index:Int = 0
     
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var postEntireStackView: UIStackView!
@@ -38,7 +39,7 @@ final class PostTableViewCell: UITableViewCell {
     
     // MARK: - @IBAction Properties
     @IBAction func deleteButtonClicked(_ sender: UIButton) {
-        delegate?.deleteButtonClicked(inquiryId: inquiryId)
+        delegate?.deleteButtonClicked(inquiryId: inquiryId,index:index)
     }
     
     
@@ -49,6 +50,5 @@ final class PostTableViewCell: UITableViewCell {
         questionLabel.text = data.question
         answerLabel.text = data.answer
         inquiryId = data.inquiryId
-        
     }
 }

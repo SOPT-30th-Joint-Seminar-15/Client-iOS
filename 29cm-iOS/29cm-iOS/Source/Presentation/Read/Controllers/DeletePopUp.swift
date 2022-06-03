@@ -10,6 +10,7 @@ import UIKit
 final class DeletePopUp: UIViewController {
     
     var inquiryId: String = ""
+    var cellIndex: Int = 0
     
     //MARK: - View Life Cycle
     override func viewDidLoad() {
@@ -31,7 +32,7 @@ final class DeletePopUp: UIViewController {
     }
     @IBAction func confirmButtonClicked(_ sender: UIButton) {
         deletePost()
-        NotificationCenter.default.post(name: Notification.Name("Inquiry Deleted"), object: self, userInfo: ["inquiryId": inquiryId])
+        NotificationCenter.default.post(name: Notification.Name("Inquiry Deleted"), object: self, userInfo: ["inquiryId": inquiryId,"cellIndex":cellIndex])
         dismiss(animated: true)
 //        ,completion: {if let readView = self.presentingViewController as? ReadViewController {
 //            readView.readTableView.reloadData()

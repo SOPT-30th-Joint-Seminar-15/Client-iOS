@@ -23,17 +23,28 @@ final class ReadViewController: BaseViewController {
         registerNib()
         getInquiryData()
         NotificationCenter.default.addObserver(self,
-                                               selector: #selector(notiReceived),
+                                               selector: #selector(postDeletedNotiReceived),
                                                name: NSNotification.Name("Inquiry Deleted"),
                                                object: nil)
     }
     
     // MARK: - Functions
-    @objc func notiReceived(notification: NSNotification) {
-        if let inquiryId = notification.userInfo?["inquiryId"] as? String {
+    @objc func postDeletedNotiReceived(notification: NSNotification) {
+        if let inquiryId = notification.userInfo?["inquiryId"] as? String
+//            ,
+//            let cellIndex = notification.userInfo?["cellIndex"] as? Int
+        {
             print("inquiryId",inquiryId)
+            getInquiryData()
+            OperationQueue.main.addOperation{
+                self.readTableView.reloadData()
+            }
+            
+//            readTableView.deleteRows(at: [IndexPath(row: cellIndex, section: 1)], with: .none)
+//            readTableView.performBatchUpdates(nil) // 일부 특정 셀만 변경할 때.
+//            readTableView.reloadData() //전체 영역 변경할 때
         }
-        self.readTableView.reloadData()
+        
     }
     
     
@@ -105,6 +116,7 @@ extension ReadViewController: UITableViewDataSource {
                 return UITableViewCell()
             }
             cell.setData(inquiryList[indexPath.row])
+            cell.index=indexPath.row
             cell.delegate=self
             return cell
             
@@ -125,9 +137,10 @@ extension ReadViewController :PostTableViewCellDelegate {
         self.readTableView.performBatchUpdates(nil)
     }
     
-    func deleteButtonClicked(inquiryId: String) {
+    func deleteButtonClicked(inquiryId: String,index:Int) {
         guard let popUp = UIStoryboard(name: "DeletePopUp", bundle: nil).instantiateViewController(withIdentifier: DeletePopUp.reuseIdentifier) as? DeletePopUp else { return }
         popUp.inquiryId=inquiryId
+        popUp.cellIndex=index
         popUp.modalTransitionStyle = .crossDissolve
         popUp.modalPresentationStyle = .overFullScreen
         self.present(popUp,animated: true)
@@ -145,12 +158,12 @@ extension ReadViewController {
     func getInquiryData() {
         InquiryReadDataService.shared.inquiryRead(
             userId: "628f2a4174995ed500bc18e9") { response in
-                print(response)
+//                print(response)
             switch response {
             case .success(let data):
                 guard let data = data as? InquiryReadResponse else { return }
                 if let data = data.data {
-                    print(data)
+//                    print(data)
                     self.inquiryList = data
                     self.readTableView.reloadData()
                 }
@@ -164,7 +177,7 @@ extension ReadViewController {
             case .serverErr:
                 print("serverErr")
             case .networkFail:
-                print("getInquiryData")
+//                print("getInquiryData")
                 print("networkFail")
             }
         }
