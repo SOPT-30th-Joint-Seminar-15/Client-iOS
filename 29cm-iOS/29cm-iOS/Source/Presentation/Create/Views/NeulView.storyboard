@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -860,41 +861,83 @@
                                 <state key="normal" title="주문번호">
                                     <color key="titleColor" name="black02_29cm"/>
                                 </state>
+                                <connections>
+                                    <action selector="checkInquiryButtonTapped:" destination="7Xq-Fa-CT7" eventType="touchUpInside" id="mfW-WE-sr9"/>
+                                </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="hYd-hx-LO1">
-                                <rect key="frame" x="19.000000000000004" y="110" width="55.333333333333343" height="105"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5aF-cV-jjk">
+                                <rect key="frame" x="18.999999999999993" y="115" width="113.33333333333331" height="97"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상품명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCx-u0-RZl">
-                                        <rect key="frame" x="0.0" y="0.0" width="55.333333333333336" height="27"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="27" id="A3F-4J-T9I"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주문일자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZZ-yi-V5H">
-                                        <rect key="frame" x="0.0" y="39" width="55.333333333333336" height="27"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="27" id="ayg-0p-b0b"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결제방법" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uw8-Lo-8YV">
-                                        <rect key="frame" x="0.0" y="78" width="55.333333333333336" height="27"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="27" id="Df9-oV-A05"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacingType="standard" id="F42-P6-g3X">
+                                        <rect key="frame" x="0.0" y="0.0" width="55.333333333333336" height="97"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상품명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Lb-6s-38d">
+                                                <rect key="frame" x="0.0" y="0.0" width="55.333333333333336" height="27"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="SR0-JY-TKi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주문일자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZb-kp-aSe">
+                                                <rect key="frame" x="0.0" y="35" width="55.333333333333336" height="27"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="smU-yF-gGS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결제방법" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrY-5s-7PA">
+                                                <rect key="frame" x="0.0" y="70" width="55.333333333333336" height="27"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="LtK-8U-GWS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="yOt-is-7Zc"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hYd-hx-LO1">
+                                        <rect key="frame" x="63.333333333333329" y="0.0" width="50" height="97"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCx-u0-RZl">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="27"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="A3F-4J-T9I"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZZ-yi-V5H">
+                                                <rect key="frame" x="0.0" y="35" width="50" height="27"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="ayg-0p-b0b"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uw8-Lo-8YV">
+                                                <rect key="frame" x="0.0" y="70" width="50" height="27"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="Df9-oV-A05"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAP-GK-U2D">
-                                <rect key="frame" x="0.0" y="234" width="498" height="1"/>
+                                <rect key="frame" x="0.0" y="231" width="498" height="1"/>
                                 <color key="backgroundColor" name="line_grey_29cm"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="FuK-87-rgI"/>
@@ -904,22 +947,25 @@
                         <viewLayoutGuide key="safeArea" id="fhB-gT-HTW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hYd-hx-LO1" firstAttribute="top" secondItem="BJH-HD-zoL" secondAttribute="bottom" constant="14" id="22a-iD-K5r"/>
                             <constraint firstItem="20y-yO-Knr" firstAttribute="centerY" secondItem="BJH-HD-zoL" secondAttribute="centerY" id="68x-54-hhP"/>
                             <constraint firstItem="BJH-HD-zoL" firstAttribute="top" secondItem="Gzj-Sz-Nmj" secondAttribute="bottom" constant="12" id="6PR-6T-r8U"/>
-                            <constraint firstItem="hYd-hx-LO1" firstAttribute="leading" secondItem="vuj-Oe-1hp" secondAttribute="leading" constant="19" id="A7U-WP-Hxx"/>
                             <constraint firstItem="Gzj-Sz-Nmj" firstAttribute="leading" secondItem="vuj-Oe-1hp" secondAttribute="leading" constant="19" id="CqB-An-Okp"/>
                             <constraint firstItem="20y-yO-Knr" firstAttribute="leading" secondItem="BJH-HD-zoL" secondAttribute="trailing" constant="10" id="SEH-hM-e9X"/>
+                            <constraint firstItem="AAP-GK-U2D" firstAttribute="top" secondItem="5aF-cV-jjk" secondAttribute="bottom" constant="19" id="eVg-9X-fbN"/>
                             <constraint firstAttribute="trailing" secondItem="AAP-GK-U2D" secondAttribute="trailing" id="ljM-DK-gFP"/>
-                            <constraint firstItem="AAP-GK-U2D" firstAttribute="top" secondItem="hYd-hx-LO1" secondAttribute="bottom" constant="19" id="ly6-BX-qIH"/>
                             <constraint firstItem="BJH-HD-zoL" firstAttribute="leading" secondItem="vuj-Oe-1hp" secondAttribute="leading" constant="20" id="p9i-ce-Wfr"/>
                             <constraint firstItem="Gzj-Sz-Nmj" firstAttribute="top" secondItem="vuj-Oe-1hp" secondAttribute="top" constant="13" id="rkG-lG-mIC"/>
+                            <constraint firstItem="5aF-cV-jjk" firstAttribute="leading" secondItem="fhB-gT-HTW" secondAttribute="leading" constant="19" id="s1k-jt-FBY"/>
+                            <constraint firstItem="5aF-cV-jjk" firstAttribute="top" secondItem="BJH-HD-zoL" secondAttribute="bottom" constant="19" id="wew-GL-kMY"/>
                             <constraint firstItem="AAP-GK-U2D" firstAttribute="leading" secondItem="vuj-Oe-1hp" secondAttribute="leading" id="xak-0G-qhC"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="inquiryNumberButton" destination="20y-yO-Knr" id="c5k-WD-Zaj"/>
                         <outlet property="inquiryNumberTextField" destination="BJH-HD-zoL" id="Rm0-x0-H8V"/>
+                        <outlet property="orderDateLabel" destination="LZZ-yi-V5H" id="0mH-5a-ttz"/>
+                        <outlet property="payMethodLabel" destination="uw8-Lo-8YV" id="5SJ-mg-x86"/>
+                        <outlet property="productNameLabel" destination="KCx-u0-RZl" id="sw1-qs-wq6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8p-Pv-wsx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

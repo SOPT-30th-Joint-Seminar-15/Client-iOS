@@ -22,6 +22,9 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
     @IBOutlet weak var orderDetailView: UIView!
     @IBOutlet weak var orderDetailViewConst: NSLayoutConstraint!
     @IBOutlet weak var allowEmailButton: UIButton!
+    @IBOutlet weak var productNameLabel: UILabel!
+    @IBOutlet weak var orderDateLabel: UILabel!
+    @IBOutlet weak var payMethodLabel: UILabel!
     
     // MARK: - Properties
     let titleTextFieldPlaceHolder: String = "제목을 입력해주세요"
@@ -33,7 +36,6 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         setUI()
-        fetchInquiryInfo()
     }
     
     // MARK: - @IBAction Properties
@@ -69,16 +71,19 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
             sender.isSelected = false
         }
     }
+    @IBAction func checkInquiryButtonTapped(_ sender: UIButton) {
+        fetchInquiryInfo()
+    }
     
     
     @IBAction func registerButtonTapped(_ sender: UIButton) {
         guard let inquiryTitle = inquiryTitleTextField.text,
               let inquiryContent = inquiryContentTextView.text else { return }
         print("----------------------------")
-        print(Const.UserID.userC7)
+        print(Const.UserID.userE9)
         print("soryeongk@test.com")
         print(selectedInquiryCategory)
-        print(Const.OrderNum.orderAA)
+        print(Const.OrderNum.orderAC)
         print(inquiryTitle)
         print(inquiryContent)
         print(allowEmailButton.isSelected)
@@ -169,12 +174,32 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
         }
     }
     func fetchInquiryInfo() {
-        InquiryInfoDataService.shared.inquiryInfo(orderNum: Const.OrderNum.orderAC) { response in
+        guard let inquiryNumber = inquiryNumberTextField.text else { return }
+        InquiryInfoDataService.shared.inquiryInfo(orderNum: inquiryNumber) { response in
             switch response {
             case .success(let data):
-                guard let data = data as? InquiryCreateResponse else { return }
-                print(data)
+                guard let data = data as? InquiryInfoResponse,
+                      let inquiryData = data.data?.first
+                else { return }
+                // 상품명
+                self.productNameLabel.text = inquiryData.productName
+                
+                // 결제방법
+                self.payMethodLabel.text = inquiryData.payMethod
+         
+                // 주문일자
+                let dateFormatter = DateFormatter()
+                let simpleDateFormatter = DateFormatter()
+                
+                dateFormatter.locale = Locale(identifier: "ko_KR")
+                dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+                
+                guard let date = dateFormatter.date(from: inquiryData.orderDate) else { return }
+                simpleDateFormatter.dateFormat = "yyyy.MM.dd"
+
+                self.orderDateLabel.text = simpleDateFormatter.string(from: date)
                 print("success")
+                
             case .requestErr(let error):
                 print(error)
             case .pathErr:
