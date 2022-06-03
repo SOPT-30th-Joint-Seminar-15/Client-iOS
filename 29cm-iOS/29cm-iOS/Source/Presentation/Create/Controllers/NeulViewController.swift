@@ -55,6 +55,49 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
         }
     }
     
+    
+    @IBAction func registerButtonTapped(_ sender: UIButton) {
+        guard let inquiryTitle = inquiryTitleTextField.text,
+              let inquiryContent = inquiryContentTextView.text else { return }
+        print("----------------------------")
+        print(Const.UserID.userC7)
+        print("soryeongk@test.com")
+        print(selectedInquiryCategory)
+        print(Const.OrderNum.orderAA)
+        print(inquiryTitle)
+        print(inquiryContent)
+        print(allowEmailButton.isSelected)
+        print("----------------------------")
+        InquiryCreateDataService.shared.inquiryCreate(
+            userId: Const.UserID.userE9,
+            email: "haneul@test.com",
+            inquiryCategory: selectedInquiryCategory,
+            orderNum: Const.OrderNum.orderAC,
+            title: inquiryTitle,
+            content: inquiryContent,
+            isSubscribed: allowEmailButton.isSelected) { response in
+                switch response {
+                case .success(let data):
+                    guard let data = data as? InquiryCreateResponse else { return }
+                    print(data)
+                    print("success")
+                    guard let completionPopUp = self.storyboard?.instantiateViewController(withIdentifier: CompletionPopUpViewController.reuseIdentifier) as? CompletionPopUpViewController
+                    else { return }
+                    completionPopUp.modalPresentationStyle = .overFullScreen
+                    self.present(completionPopUp, animated: true)
+                case .requestErr(let error):
+                    print(error)
+                case .pathErr:
+                    print("pathErr")
+                case .serverErr:
+                    print("serverErr")
+                case .networkFail:
+                    print("networkFail")
+                }
+                
+            }
+    }
+    
     // MARK: - Functions
     func setUI() {
         
