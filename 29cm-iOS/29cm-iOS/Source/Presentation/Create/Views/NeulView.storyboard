@@ -535,6 +535,9 @@
                                                 <state key="normal" title="이메일 받기" image="icnSelectboxOff">
                                                     <color key="titleColor" name="black02_29cm"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="allowEmailButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="igq-bl-NPS"/>
+                                                </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8i-8P-PTo">
                                                 <rect key="frame" x="0.0" y="1299.6666666666667" width="498" height="1"/>
@@ -556,7 +559,7 @@
                                                 <rect key="frame" x="20" y="1406.6666666666667" width="304" height="126"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="7" id="nxb-Nv-EYc">
-                                                        <rect key="frame" x="0.0" y="0.0" width="618.33333333333337" height="18.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="18.666666666666668"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhP-jq-Ef0">
@@ -672,6 +675,9 @@
                                                 <state key="normal" title="등록하기">
                                                     <color key="titleColor" name="white_29cm"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="registerButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Etw-ju-Weq"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -780,6 +786,7 @@
                     </view>
                     <size key="freeformSize" width="498" height="1682"/>
                     <connections>
+                        <outlet property="allowEmailButton" destination="puQ-Ox-zxf" id="CyH-Ux-GfM"/>
                         <outlet property="changeEmailButton" destination="xHG-0D-zX2" id="y4M-OI-FnL"/>
                         <outlet property="inquiryContentTextView" destination="0NM-J8-0CM" id="thN-I5-wHY"/>
                         <outlet property="inquiryTitleTextField" destination="2DE-eq-1Pg" id="MA7-0J-pHT"/>
