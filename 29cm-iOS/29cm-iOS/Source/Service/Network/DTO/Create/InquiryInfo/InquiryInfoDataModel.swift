@@ -11,7 +11,7 @@ struct InquiryInfoResponse: Codable {
     let status: Int
     let success: Bool
     let message: String
-    let data: [InquiryData]
+    let data: [InquiryData]?
 }
 
 struct InquiryData: Codable {

@@ -16,6 +16,6 @@ extension Const {
         static let inquiryInfo = baseURL + "/user/:userId/inquiry"
         static let inquiryCreate = baseURL + "/inquiry/user"
         static let inquiryDelete = baseURL + "/inquiry/:inquiryId"
-        static let purchaseInfo = baseURL + "/order/:orderNum"
+        static let purchaseInfo = baseURL + "/order/"
     }
 }

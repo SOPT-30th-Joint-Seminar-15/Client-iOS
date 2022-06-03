@@ -15,7 +15,7 @@ struct InquiryInfoDataService {
     func inquiryInfo(orderNum: String,
                      completion: @escaping (NetworkResult<Any>) -> Void) {
         
-        let url = Const.APIConstants.inquiryInfo + orderNum
+        let url = Const.APIConstants.purchaseInfo + orderNum
         let header: HTTPHeaders = [
             "Content-Type": "application/json"
         ]
