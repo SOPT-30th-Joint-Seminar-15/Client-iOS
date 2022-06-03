@@ -30,6 +30,7 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
     let titleTextFieldPlaceHolder: String = "제목을 입력해주세요"
     let textViewPlaceHolder: String = "내용을 입력해주세요"
     var selectedInquiryCategory: String = ""
+    let popUpStoryboard = UIStoryboard.init(name: "CompletionPopUpView", bundle: nil)
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
@@ -98,11 +99,9 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
             isSubscribed: allowEmailButton.isSelected) { response in
                 switch response {
                 case .success(let data):
-                    guard let data = data as? InquiryCreateResponse else { return }
-                    print(data)
+                    guard let data = data as? InquiryCreateResponse,
+                          let completionPopUp = self.popUpStoryboard.instantiateViewController(withIdentifier: "CompletionPopUpViewController") as? CompletionPopUpViewController else { return }
                     print("success")
-                    guard let completionPopUp = self.storyboard?.instantiateViewController(withIdentifier: CompletionPopUpViewController.reuseIdentifier) as? CompletionPopUpViewController
-                    else { return }
                     completionPopUp.modalPresentationStyle = .overFullScreen
                     self.present(completionPopUp, animated: true)
                 case .requestErr(let error):
