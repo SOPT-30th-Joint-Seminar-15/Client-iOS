@@ -9,6 +9,7 @@ import UIKit
 
 final class PagingTableViewCell: UITableViewCell {
 
+    //MARK: - View Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
     }

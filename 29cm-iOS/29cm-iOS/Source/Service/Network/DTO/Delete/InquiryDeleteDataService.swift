@@ -16,14 +16,13 @@ struct InquiryDeleteDataService {
                        completion: @escaping (NetworkResult<Any>) -> Void) {
         
         let url = Const.APIConstants.baseURL+"/inquiry/"+inquiryId
-        let header: HTTPHeaders = [
-            "Content-Type": "application/json"
-        ]
+        let header: HTTPHeaders = ["Content-Type": "application/json"]
         
         let dataRequest = AF.request(url,
                                      method: .delete,
                                      encoding: JSONEncoding.default,
                                      headers: header)
+        
         dataRequest.responseData { response in
             switch response.result {
             case .success:
@@ -43,30 +42,20 @@ struct InquiryDeleteDataService {
 
 extension InquiryDeleteDataService {
     private func judgeStatus(by statusCode: Int, in data: Data) -> NetworkResult<Any> {
+        
+        let decoder = JSONDecoder()
+        guard let decodedData = try? decoder.decode(InquiryDeleteResponse.self, from: data)
+        else { return .pathErr }
+        
         switch statusCode {
         case ..<300:
-            return isValidData(in: data)
+            return .success(decodedData)
         case 400..<500:
-            return isUsedPathErr(in: data)
+            return .requestErr(decodedData)
         case 500..<600:
             return .serverErr
         default:
-            print("judgeStatus")
             return .networkFail
         }
-    }
-//
-    private func isValidData(in data: Data) -> NetworkResult<Any> {
-        let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(InquiryDeleteResponse.self, from: data)
-        else { return .pathErr }
-        return .success(decodedData)
-    }
-
-    private func isUsedPathErr(in data: Data) -> NetworkResult<Any> {
-        let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(InquiryDeleteResponse.self, from: data)
-        else { return .pathErr }
-        return .requestErr(decodedData)
     }
 }

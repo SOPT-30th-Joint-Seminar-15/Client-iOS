@@ -37,12 +37,6 @@ final class PostTableViewCell: UITableViewCell {
         delegate?.tableViewCellReload()
     }
     
-    // MARK: - @IBAction Properties
-    @IBAction func deleteButtonClicked(_ sender: UIButton) {
-        delegate?.deleteButtonClicked(inquiryId: inquiryId,index:index)
-    }
-    
-    
     func setData(_ data : InquiryReadData){
         createdAtLabel.text = data.createdAt
         inquiryCategoryLabel.text = data.inquiryCategory
@@ -50,5 +44,10 @@ final class PostTableViewCell: UITableViewCell {
         questionLabel.text = data.question
         answerLabel.text = data.answer
         inquiryId = data.inquiryId
+    }
+    
+    // MARK: - @IBAction Properties
+    @IBAction func deleteButtonClicked(_ sender: UIButton) {
+        delegate?.deleteButtonClicked(inquiryId: inquiryId,index:index)
     }
 }

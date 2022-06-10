@@ -15,15 +15,13 @@ struct InquiryReadDataService {
                        completion: @escaping (NetworkResult<Any>) -> Void) {
         
         let url = Const.APIConstants.baseURL+"/user/"+userId+"/inquiry"
-        let header: HTTPHeaders = [
-            "Content-Type": "application/json",
-//            "userId": userId
-        ]
+        let header: HTTPHeaders = ["Content-Type": "application/json"]
         
         let dataRequest = AF.request(url,
                                      method: .get,
                                      encoding: JSONEncoding.default,
                                      headers: header)
+        
         dataRequest.responseData { response in
             switch response.result {
             case .success:
@@ -32,7 +30,6 @@ struct InquiryReadDataService {
                 else { return }
                 print("응답 상태!!!!", statusCode)
                 let networkResult = self.judgeStatus(by: statusCode, in: value)
-//                dump(networkResult)
                 completion(networkResult)
             case .failure:
                 completion(.networkFail)
@@ -43,30 +40,20 @@ struct InquiryReadDataService {
 
 extension InquiryReadDataService {
     private func judgeStatus(by statusCode: Int, in data: Data) -> NetworkResult<Any> {
+        
+        let decoder = JSONDecoder()
+        guard let decodedData = try? decoder.decode(InquiryReadResponse.self, from: data)
+        else { return .pathErr }
+        
         switch statusCode {
         case ..<300:
-//            dump(data)
-            return isValidData(in: data)
+            return .success(decodedData)
         case 400..<500:
-            return isUsedPathErr(in: data)
+            return .requestErr(decodedData)
         case 500..<600:
             return .serverErr
         default:
             return .networkFail
         }
-    }
-    
-    private func isValidData(in data: Data) -> NetworkResult<Any> {
-        let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(InquiryReadResponse.self, from: data)
-        else { return .pathErr }
-        return .success(decodedData)
-    }
-    
-    private func isUsedPathErr(in data: Data) -> NetworkResult<Any> {
-        let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(InquiryReadResponse.self, from: data)
-        else { return .pathErr }
-        return .requestErr(decodedData)
     }
 }

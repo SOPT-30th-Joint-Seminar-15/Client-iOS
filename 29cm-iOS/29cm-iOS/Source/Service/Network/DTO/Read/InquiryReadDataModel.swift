@@ -36,35 +36,3 @@ struct InquiryReadData: Codable {
         isAnswered = (try? values.decode(Bool.self, forKey: .isAnswered)) ?? false
     }
 }
-
-//{
-//    "status": 200,
-//    "success": true,
-//    "message": "유저 문의 조회",
-//    "data": [
-//        {
-//            "inquiryId": "628f2a4174995ed500bc18e9",
-//            "inquiryCategory": "배송문의",
-//            "question": "제곧내",
-//            "createdAt": "2022-05-26",
-//            "answer": "",
-//            "isAnswered": false
-//        },
-//        {
-//            "inquiryId": "628f2a4174995ed500bc18e9",
-//                        "inquiryCategory": "웅앵문의",
-//            "question": "히히 다른아이디",
-//            "createdAt": "2022-05-27",
-//            "answer": "",
-//            "isAnswered": false
-//        },
-//        {
-//            "inquiryId": "628f2a4174995ed500bc18e9",
-//                        "inquiryCategory": "기타문의",
-//            "question": "니다",
-//            "createdAt": "2022-05-27",
-//            "answer": "",
-//            "isAnswered": false
-//        }
-//    ]
-//}

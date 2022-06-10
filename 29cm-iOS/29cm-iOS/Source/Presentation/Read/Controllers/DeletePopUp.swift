@@ -9,6 +9,7 @@ import UIKit
 
 final class DeletePopUp: UIViewController {
     
+    // MARK: - Properties
     var inquiryId: String = ""
     var cellIndex: Int = 0
     
@@ -30,16 +31,15 @@ final class DeletePopUp: UIViewController {
     @IBAction func cancelButtonClicked(_ sender: UIButton) {
         dismiss(animated: true)
     }
+    
     @IBAction func confirmButtonClicked(_ sender: UIButton) {
         deletePost()
         NotificationCenter.default.post(name: Notification.Name("Inquiry Deleted"), object: self, userInfo: ["inquiryId": inquiryId,"cellIndex":cellIndex])
         dismiss(animated: true)
-//        ,completion: {if let readView = self.presentingViewController as? ReadViewController {
-//            readView.readTableView.reloadData()
-//        }}
     }
 }
 
+// MARK: - Extensions
 extension DeletePopUp {
     func deletePost() {
         InquiryDeleteDataService.shared.inquiryDelete(

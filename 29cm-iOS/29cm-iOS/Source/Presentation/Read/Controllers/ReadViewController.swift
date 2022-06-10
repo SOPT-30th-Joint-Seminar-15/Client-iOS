@@ -9,16 +9,15 @@ import UIKit
 
 final class ReadViewController: BaseViewController {
 
+    // MARK: - Properties
     var inquiryList: [InquiryReadData] = []
     
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var navigationBar: NavigationBarView!
     @IBOutlet weak var readTableView: UITableView!
-//    @IBOutlet weak var paginationView: UIView!
     
     //MARK: - View Life Cycle
     override func viewDidLoad() {
-//        readTableView.reloadData()
         super.viewDidLoad()
         registerNib()
         getInquiryData()
@@ -31,33 +30,24 @@ final class ReadViewController: BaseViewController {
     // MARK: - Functions
     @objc func postDeletedNotiReceived(notification: NSNotification) {
         if let inquiryId = notification.userInfo?["inquiryId"] as? String
-//            ,
-//            let cellIndex = notification.userInfo?["cellIndex"] as? Int
         {
             print("inquiryId",inquiryId)
             getInquiryData()
             OperationQueue.main.addOperation{
                 self.readTableView.reloadData()
             }
-            
-//            readTableView.deleteRows(at: [IndexPath(row: cellIndex, section: 1)], with: .none)
-//            readTableView.performBatchUpdates(nil) // 일부 특정 셀만 변경할 때.
-//            readTableView.reloadData() //전체 영역 변경할 때
         }
-        
     }
     
-    
-    
     private func registerNib() {
-            let infoNib = UINib(nibName: InfoTableViewCell.reuseIdentifier, bundle: nil)
+        let infoNib = UINib(nibName: InfoTableViewCell.reuseIdentifier, bundle: nil)
         readTableView.register(infoNib, forCellReuseIdentifier: InfoTableViewCell.reuseIdentifier)
             
-            let postNib = UINib(nibName: PostTableViewCell.reuseIdentifier, bundle: nil)
+        let postNib = UINib(nibName: PostTableViewCell.reuseIdentifier, bundle: nil)
         readTableView.register(postNib, forCellReuseIdentifier: PostTableViewCell.reuseIdentifier)
         
         let pageNib = UINib(nibName: PagingTableViewCell.reuseIdentifier, bundle: nil)
-    readTableView.register(pageNib, forCellReuseIdentifier: PagingTableViewCell.reuseIdentifier)
+        readTableView.register(pageNib, forCellReuseIdentifier: PagingTableViewCell.reuseIdentifier)
             
         readTableView.delegate = self
         readTableView.dataSource = self
@@ -158,18 +148,13 @@ extension ReadViewController {
     func getInquiryData() {
         InquiryReadDataService.shared.inquiryRead(
             userId: "628f2a4174995ed500bc18e9") { response in
-//                print(response)
             switch response {
             case .success(let data):
                 guard let data = data as? InquiryReadResponse else { return }
                 if let data = data.data {
-//                    print(data)
                     self.inquiryList = data
                     self.readTableView.reloadData()
                 }
-//                    self.inquiryList = inquiryList
-//                    print(inquiryList)
-//                    self.readTableView.reloadData()
             case .requestErr(let err):
                 print(err)
             case .pathErr:
@@ -177,7 +162,6 @@ extension ReadViewController {
             case .serverErr:
                 print("serverErr")
             case .networkFail:
-//                print("getInquiryData")
                 print("networkFail")
             }
         }
