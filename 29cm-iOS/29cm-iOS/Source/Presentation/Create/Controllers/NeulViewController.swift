@@ -27,10 +27,10 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
     @IBOutlet weak var payMethodLabel: UILabel!
     
     // MARK: - Properties
-    let titleTextFieldPlaceHolder: String = "제목을 입력해주세요"
-    let textViewPlaceHolder: String = "내용을 입력해주세요"
-    var selectedInquiryCategory: String = ""
-    let popUpStoryboard = UIStoryboard.init(name: "CompletionPopUpView", bundle: nil)
+    private let titleTextFieldPlaceHolder: String = "제목을 입력해주세요"
+    private let textViewPlaceHolder: String = "내용을 입력해주세요"
+    private var selectedInquiryCategory: String = ""
+    private let popUpStoryboard = UIStoryboard.init(name: "CompletionPopUpView", bundle: nil)
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
@@ -61,7 +61,7 @@ final class NeulViewController: BaseViewController, UITextFieldDelegate {
             sender.isSelected = false
             orderDetailView.isHidden = true
             orderDetailViewConst.constant = 0
-            selectedInquiryCategory = ""
+            selectedInquiryCategory.removeAll(keepingCapacity: true)
         }
     }
     @IBAction func allowEmailButtonTapped(_ sender: UIButton) {

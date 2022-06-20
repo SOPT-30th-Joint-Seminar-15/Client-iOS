@@ -14,7 +14,7 @@ final class CompletionPopUpViewController: BaseViewController {
     @IBOutlet weak var completionButton: UIButton!
     
     // MARK: - Properties
-    let readViewStoryboard = UIStoryboard.init(name: "ReadView", bundle: nil)
+    private let readViewStoryboard = UIStoryboard.init(name: "ReadView", bundle: nil)
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
