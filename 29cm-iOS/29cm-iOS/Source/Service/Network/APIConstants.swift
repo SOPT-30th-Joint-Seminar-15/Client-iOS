@@ -14,10 +14,10 @@ extension Const {
         
         // feature URL
         static let inquiryCreate = baseURL + "/inquiry/user"
-        static let purchaseInfo = baseURL + "/order/:orderNum"
         static var userId = String()
         static var inquiryRead : String{
             return baseURL+"/user/\(userId)/inquiry"
         }
+        static let purchaseInfo = baseURL + "/order/"
     }
 }
