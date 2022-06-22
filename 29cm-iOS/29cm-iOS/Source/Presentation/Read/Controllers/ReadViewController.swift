@@ -33,9 +33,7 @@ final class ReadViewController: BaseViewController {
         {
             print("inquiryId",inquiryId)
             getInquiryData()
-            OperationQueue.main.addOperation{
-                self.readTableView.reloadData()
-            }
+            self.readTableView.reloadData()
         }
     }
     

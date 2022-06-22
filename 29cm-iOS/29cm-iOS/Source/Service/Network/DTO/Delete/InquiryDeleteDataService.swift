@@ -43,19 +43,29 @@ struct InquiryDeleteDataService {
 extension InquiryDeleteDataService {
     private func judgeStatus(by statusCode: Int, in data: Data) -> NetworkResult<Any> {
         
-        let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(InquiryDeleteResponse.self, from: data)
-        else { return .pathErr }
-        
         switch statusCode {
         case ..<300:
-            return .success(decodedData)
+            return isValidData(in: data)
         case 400..<500:
-            return .requestErr(decodedData)
+            return isUsedPathErr(in: data)
         case 500..<600:
             return .serverErr
         default:
             return .networkFail
         }
     }
+    
+    private func isValidData(in data: Data) -> NetworkResult<Any> {
+            let decoder = JSONDecoder()
+            guard let decodedData = try? decoder.decode(InquiryDeleteResponse.self, from: data)
+            else { return .pathErr }
+            return .success(decodedData)
+        }
+
+        private func isUsedPathErr(in data: Data) -> NetworkResult<Any> {
+            let decoder = JSONDecoder()
+            guard let decodedData = try? decoder.decode(InquiryDeleteResponse.self, from: data)
+            else { return .pathErr }
+            return .requestErr(decodedData)
+        }
 }

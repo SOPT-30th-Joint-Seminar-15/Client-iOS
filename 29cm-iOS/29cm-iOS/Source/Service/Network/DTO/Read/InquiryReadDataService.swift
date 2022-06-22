@@ -13,8 +13,8 @@ struct InquiryReadDataService {
 
     func inquiryRead(userId: String,
                        completion: @escaping (NetworkResult<Any>) -> Void) {
-        
-        let url = Const.APIConstants.baseURL+"/user/"+userId+"/inquiry"
+        Const.APIConstants.userId = userId
+        let url = Const.APIConstants.inquiryRead
         let header: HTTPHeaders = ["Content-Type": "application/json"]
         
         let dataRequest = AF.request(url,
@@ -40,20 +40,31 @@ struct InquiryReadDataService {
 
 extension InquiryReadDataService {
     private func judgeStatus(by statusCode: Int, in data: Data) -> NetworkResult<Any> {
-        
-        let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(InquiryReadResponse.self, from: data)
-        else { return .pathErr }
-        
+    
         switch statusCode {
         case ..<300:
-            return .success(decodedData)
+            return isValidData(in: data)
         case 400..<500:
-            return .requestErr(decodedData)
+            return  isUsedPathErr(in: data)
         case 500..<600:
             return .serverErr
         default:
             return .networkFail
         }
     }
+    
+    
+    private func isValidData(in data: Data) -> NetworkResult<Any> {
+            let decoder = JSONDecoder()
+            guard let decodedData = try? decoder.decode(InquiryDeleteResponse.self, from: data)
+            else { return .pathErr }
+            return .success(decodedData)
+        }
+
+        private func isUsedPathErr(in data: Data) -> NetworkResult<Any> {
+            let decoder = JSONDecoder()
+            guard let decodedData = try? decoder.decode(InquiryDeleteResponse.self, from: data)
+            else { return .pathErr }
+            return .requestErr(decodedData)
+        }
 }
