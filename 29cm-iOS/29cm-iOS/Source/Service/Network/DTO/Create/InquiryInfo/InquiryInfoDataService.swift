@@ -1,43 +1,27 @@
 //
-//  InquiryCreateDataService.swift
+//  InquiryInfoDataService.swift
 //  29cm-iOS
 //
-//  Created by 정은희 on 2022/05/30.
+//  Created by 김하늘 on 2022/06/03.
 //
 
 import Foundation
 
 import Alamofire
 
-struct InquiryCreateDataService {
-    static let shared = InquiryCreateDataService()
-
-    func inquiryCreate(userId: String,
-                       email: String,
-                       inquiryCategory: String,
-                       orderNum: String,
-                       title: String,
-                       content: String,
-                       isSubscribed: Bool,
-                       completion: @escaping (NetworkResult<Any>) -> Void) {
+struct InquiryInfoDataService {
+    static let shared = InquiryInfoDataService()
+    
+    func inquiryInfo(orderNum: String,
+                     completion: @escaping (NetworkResult<Any>) -> Void) {
         
-        let url = Const.APIConstants.inquiryCreate
+        let url = Const.APIConstants.purchaseInfo + orderNum
         let header: HTTPHeaders = [
             "Content-Type": "application/json"
         ]
-        let body: Parameters = [
-            "userId": userId,
-            "email": email,
-            "inquiryCategory": inquiryCategory,
-            "orderNum": orderNum,
-            "title": title,
-            "content": content,
-            "isSubscribed": isSubscribed
-        ]
         
         let dataRequest = AF.request(url,
-                                     method: .post,
-                                     parameters: body,
+                                     method: .get,
                                      encoding: JSONEncoding.default,
                                      headers: header)
         dataRequest.responseData { response in
@@ -46,7 +30,6 @@ struct InquiryCreateDataService {
                 guard let statusCode = response.response?.statusCode,
                       let value = response.value
                 else { return }
-                print("응답 상태!!!!", statusCode)
                 let networkResult = self.judgeStatus(by: statusCode, in: value)
                 dump(networkResult)
                 completion(networkResult)
@@ -57,13 +40,13 @@ struct InquiryCreateDataService {
     }
 }
 
-extension InquiryCreateDataService {
+extension InquiryInfoDataService {
     private func judgeStatus(by statusCode: Int, in data: Data) -> NetworkResult<Any> {
         switch statusCode {
         case 200...299:
             return isValidData(in: data)
         case 400...499:
-            return isUsedPathErr(in: data)
+            return .pathErr
         case 500...599:
             return .serverErr
         default:
@@ -73,14 +56,15 @@ extension InquiryCreateDataService {
     
     private func isValidData(in data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(InquiryCreateResponse.self, from: data)
+        guard let decodedData = try? decoder.decode(InquiryInfoResponse.self, from: data)
         else { return .pathErr }
         return .success(decodedData)
     }
     
     private func isUsedPathErr(in data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(InquiryCreateResponse.self, from: data) else { return .pathErr }
+        guard let decodedData = try? decoder.decode(InquiryInfoResponse.self, from: data)
+        else { return .pathErr }
         return .requestErr(decodedData)
     }
 }

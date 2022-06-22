@@ -13,6 +13,9 @@ final class CompletionPopUpViewController: BaseViewController {
     @IBOutlet weak var completionPopUp: UIView!
     @IBOutlet weak var completionButton: UIButton!
     
+    // MARK: - Properties
+    private let readViewStoryboard = UIStoryboard.init(name: "ReadView", bundle: nil)
+    
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +38,7 @@ final class CompletionPopUpViewController: BaseViewController {
     }
     
     @IBAction func completionButtonClicked(_ sender: UIButton) {
-        guard let readViewController = self.storyboard?.instantiateViewController(withIdentifier: ReadViewController.reuseIdentifier) as? ReadViewController
+        guard let readViewController = self.readViewStoryboard.instantiateViewController(withIdentifier: ReadViewController.reuseIdentifier) as? ReadViewController
         else { return }
         self.navigationController?.pushViewController(readViewController, animated: true)
     }

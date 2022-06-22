@@ -18,6 +18,6 @@ extension Const {
         static var userId = String()
         static var inquiryRead : String{
             return baseURL+"/user/\(userId)/inquiry"
-        }
+        static let purchaseInfo = baseURL + "/order/"
     }
 }
