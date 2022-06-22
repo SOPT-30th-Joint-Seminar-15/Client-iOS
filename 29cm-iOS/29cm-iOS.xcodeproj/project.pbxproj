@@ -24,9 +24,6 @@
 		086B72BE283363E100D4BC00 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72AE283363E100D4BC00 /* Quicksand-Regular.ttf */; };
 		086B72BF283363E100D4BC00 /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72AF283363E100D4BC00 /* Quicksand-SemiBold.ttf */; };
 		086B72C0283363E100D4BC00 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086B72B0283363E100D4BC00 /* Quicksand-Light.ttf */; };
-		08C73FE728491172003387C1 /* InquiryCreateDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C73FE628491172003387C1 /* InquiryCreateDummyData.swift */; };
-		08ECA69F2849298F0005F006 /* InquiryInfoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ECA69E2849298F0005F006 /* InquiryInfoDataModel.swift */; };
-		08ECA6A128492A7E0005F006 /* InquiryInfoDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ECA6A028492A7E0005F006 /* InquiryInfoDataService.swift */; };
 		4D1CB91B283DD15E00EEBF11 /* DeletePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1CB91A283DD15E00EEBF11 /* DeletePopUp.storyboard */; };
 		4D1CB91D283DD17C00EEBF11 /* DeletePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1CB91C283DD17C00EEBF11 /* DeletePopUp.swift */; };
 		4D1F581E2832335400EBEA05 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F581D2832335400EBEA05 /* Image.swift */; };
@@ -100,9 +97,6 @@
 		086B72AE283363E100D4BC00 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 		086B72AF283363E100D4BC00 /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
 		086B72B0283363E100D4BC00 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
-		08C73FE628491172003387C1 /* InquiryCreateDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryCreateDummyData.swift; sourceTree = "<group>"; };
-		08ECA69E2849298F0005F006 /* InquiryInfoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryInfoDataModel.swift; sourceTree = "<group>"; };
-		08ECA6A028492A7E0005F006 /* InquiryInfoDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryInfoDataService.swift; sourceTree = "<group>"; };
 		4D1CB91A283DD15E00EEBF11 /* DeletePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeletePopUp.storyboard; sourceTree = "<group>"; };
 		4D1CB91C283DD17C00EEBF11 /* DeletePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePopUp.swift; sourceTree = "<group>"; };
 		4D1F581D2832335400EBEA05 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
@@ -215,14 +209,13 @@
 			path = Quicksand;
 			sourceTree = "<group>";
 		};
-
-		08ECA69D284929670005F006 /* InquiryInfo */ = {
+		4D8A17D428494EC50029C235 /* Delete */ = {
 			isa = PBXGroup;
 			children = (
-				08ECA69E2849298F0005F006 /* InquiryInfoDataModel.swift */,
-				08ECA6A028492A7E0005F006 /* InquiryInfoDataService.swift */,
+				4D8A17D528494EE00029C235 /* InquiryDeleteDataModel.swift */,
+				4D8A17D728494F0F0029C235 /* InquiryDeleteDataService.swift */,
 			);
-			path = InquiryInfo;
+			path = Delete;
 			sourceTree = "<group>";
 		};
 		F617EB452844C85D007312B9 /* Service */ = {
@@ -273,10 +266,8 @@
 		F617EB5B2844D17E007312B9 /* Create */ = {
 			isa = PBXGroup;
 			children = (
-				08ECA69D284929670005F006 /* InquiryInfo */,
 				F617EB572844CCD4007312B9 /* InquiryCreateDataModel.swift */,
 				F617EB5F2844D1BE007312B9 /* InquiryCreateDataService.swift */,
-				08C73FE628491172003387C1 /* InquiryCreateDummyData.swift */,
 			);
 			path = Create;
 			sourceTree = "<group>";
@@ -464,9 +455,9 @@
 		F6CE900628310045005A5C0D /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				F6CE900528310034005A5C0D /* Consts */,
 				F6CE90082831007F005A5C0D /* Protocols */,
 				F6CE90072831006F005A5C0D /* Extensions */,
+				F6CE900528310034005A5C0D /* Consts */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -633,7 +624,6 @@
 				4D686C912849382900E71437 /* InquiryReadDataService.swift in Sources */,
 				F6CE902628310F69005A5C0D /* UIViewController+.swift in Sources */,
 				4D1CB91D283DD17C00EEBF11 /* DeletePopUp.swift in Sources */,
-				08ECA69F2849298F0005F006 /* InquiryInfoDataModel.swift in Sources */,
 				4D1F581E2832335400EBEA05 /* Image.swift in Sources */,
 				F68FE31F28329CFF00FA0254 /* NavigationBarView.swift in Sources */,
 				F6C4799B284512B7003D1CD8 /* NavigationBarViewDelegate.swift in Sources */,
@@ -641,7 +631,6 @@
 				F6C88C03283758E00012B62B /* InputCollectionViewCell.swift in Sources */,
 				F6CE8FCA282F9471005A5C0D /* SceneDelegate.swift in Sources */,
 				F617EB582844CCD4007312B9 /* InquiryCreateDataModel.swift in Sources */,
-				08ECA6A128492A7E0005F006 /* InquiryInfoDataService.swift in Sources */,
 				F617EB552844CBA3007312B9 /* APIConstants.swift in Sources */,
 				4D54BEE3283BFB0C00A0425B /* UITableViewCell+.swift in Sources */,
 				4D8A17D828494F0F0029C235 /* InquiryDeleteDataService.swift in Sources */,
@@ -649,7 +638,6 @@
 				F6CE900A28310087005A5C0D /* Const.swift in Sources */,
 				F6CE901C28310114005A5C0D /* Color.swift in Sources */,
 				F617EB5E2844D191007312B9 /* InquiryReadDataModel.swift in Sources */,
-				08C73FE728491172003387C1 /* InquiryCreateDummyData.swift in Sources */,
 				F617EB602844D1BE007312B9 /* InquiryCreateDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

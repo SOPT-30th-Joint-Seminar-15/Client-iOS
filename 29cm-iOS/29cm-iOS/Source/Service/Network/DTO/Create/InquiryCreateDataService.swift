@@ -26,7 +26,7 @@ struct InquiryCreateDataService {
             "Content-Type": "application/json"
         ]
         let body: Parameters = [
-            "userId": userId,
+            "userID": userId,
             "email": email,
             "inquiryCategory": inquiryCategory,
             "orderNum": orderNum,
@@ -60,11 +60,11 @@ struct InquiryCreateDataService {
 extension InquiryCreateDataService {
     private func judgeStatus(by statusCode: Int, in data: Data) -> NetworkResult<Any> {
         switch statusCode {
-        case 200...299:
+        case 200:
             return isValidData(in: data)
-        case 400...499:
+        case 400:
             return isUsedPathErr(in: data)
-        case 500...599:
+        case 500:
             return .serverErr
         default:
             return .networkFail
@@ -73,14 +73,15 @@ extension InquiryCreateDataService {
     
     private func isValidData(in data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(InquiryCreateResponse.self, from: data)
+        guard let decodedData = try? decoder.decode(InquiryCreateData.self, from: data)
         else { return .pathErr }
         return .success(decodedData)
     }
     
     private func isUsedPathErr(in data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(InquiryCreateResponse.self, from: data) else { return .pathErr }
+        guard let decodedData = try? decoder.decode(InquiryCreateData.self, from: data)
+        else { return .pathErr }
         return .requestErr(decodedData)
     }
 }
