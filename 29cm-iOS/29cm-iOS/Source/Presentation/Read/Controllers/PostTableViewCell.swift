@@ -11,11 +11,19 @@ final class PostTableViewCell: UITableViewCell {
     
     // MARK: - Properties
     var delegate : PostTableViewCellDelegate?
-    
+    var inquiryId=""
+    var index:Int = 0
     
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var postEntireStackView: UIStackView!
     @IBOutlet weak var postContentView: UIView!
+    
+    @IBOutlet weak var createdAtLabel: UILabel!
+    @IBOutlet weak var inquiryCategoryLabel: UILabel!
+    @IBOutlet weak var isAnsweredLabel: UILabel!
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var answerLabel: UILabel!
+    
     
     //MARK: - View Life Cycle
     override func awakeFromNib() {
@@ -29,8 +37,17 @@ final class PostTableViewCell: UITableViewCell {
         delegate?.tableViewCellReload()
     }
     
+    func setData(_ data : InquiryReadData){
+        createdAtLabel.text = data.createdAt
+        inquiryCategoryLabel.text = data.inquiryCategory
+        isAnsweredLabel.text = data.isAnswered ? "YES" : "NO"
+        questionLabel.text = data.question
+        answerLabel.text = data.answer
+        inquiryId = data.inquiryId
+    }
+    
     // MARK: - @IBAction Properties
     @IBAction func deleteButtonClicked(_ sender: UIButton) {
-        delegate?.deleteButtonClicked()
+        delegate?.deleteButtonClicked(inquiryId: inquiryId,index:index)
     }
 }

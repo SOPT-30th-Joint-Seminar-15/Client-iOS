@@ -13,9 +13,11 @@ extension Const {
         static let baseURL = "http://15.164.163.246:8000"
         
         // feature URL
-        static let inquiryInfo = baseURL + "/user/:userId/inquiry"
         static let inquiryCreate = baseURL + "/inquiry/user"
-        static let inquiryDelete = baseURL + "/inquiry/:inquiryId"
+        static var userId = String()
+        static var inquiryRead : String{
+            return baseURL+"/user/\(userId)/inquiry"
+        }
         static let purchaseInfo = baseURL + "/order/"
     }
 }

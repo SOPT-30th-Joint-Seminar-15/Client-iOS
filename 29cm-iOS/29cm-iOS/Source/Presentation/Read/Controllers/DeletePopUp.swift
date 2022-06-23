@@ -9,6 +9,10 @@ import UIKit
 
 final class DeletePopUp: UIViewController {
     
+    // MARK: - Properties
+    var inquiryId: String = ""
+    var cellIndex: Int = 0
+    
     //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +31,32 @@ final class DeletePopUp: UIViewController {
     @IBAction func cancelButtonClicked(_ sender: UIButton) {
         dismiss(animated: true)
     }
+    
     @IBAction func confirmButtonClicked(_ sender: UIButton) {
+        deletePost()
+        NotificationCenter.default.post(name: Notification.Name("Inquiry Deleted"), object: self, userInfo: ["inquiryId": inquiryId,"cellIndex":cellIndex])
         dismiss(animated: true)
-        
+    }
+}
+
+// MARK: - Extensions
+extension DeletePopUp {
+    func deletePost() {
+        InquiryDeleteDataService.shared.inquiryDelete(
+            inquiryId: inquiryId) { response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? InquiryDeleteResponse else { return }
+                print(data)
+            case .requestErr(let err):
+                print(err)
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
     }
 }
